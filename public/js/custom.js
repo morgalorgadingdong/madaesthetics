@@ -449,7 +449,7 @@ function translateCartData() {
 
 function checkout() {
   translateCartData()
-  fetch('/checkout', {
+  fetch('/store/checkout', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json'

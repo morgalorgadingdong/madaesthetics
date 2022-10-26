@@ -12,10 +12,10 @@ const mongoose = require('mongoose')
 const connectDB = require('./config/database')
 // const session = require('express-session')
 const mainRoutes = require('./routes/main')
-// const storeRoutes = require('./routes/store')
+const storeRoutes = require('./routes/store')
 // const bootcampRoutes = require('./routes/bootcamp')
 
-require('dotenv').config({path: './config/.env'})
+const env = require('./env')
 
 app.use(express.static("public"));
 app.use(express.json());
@@ -27,6 +27,7 @@ app.use(express.json());
 // )
 
 app.use('/', mainRoutes)
+app.use('/store', storeRoutes)
 // app.use('/store', storeRoutes)
 // app.use('/bootcamp', bootcampRoutes)
 
@@ -35,8 +36,8 @@ app.use('/', mainRoutes)
 // app.get('/', (req, res) => {
 //   res.sendFile('index.html');
 // })
-let password = process.env.cryptoPW
-let port = process.env.PORT;
+let password = env.cryptoPW
+let port = env.port;
 if (port == null || port == "") {
   port = 8000;
 }
@@ -44,22 +45,22 @@ app.listen(port);
 
 
 //Update store items whenever catalog update web hook fires
-app.post("/hook", (req, res) => {
-  retrieveStoreItems()
-  res.status(200).end() // Responding with 200 status
-})
+// app.post("/hook", (req, res) => {
+//   retrieveStoreItems()
+//   res.status(200).end() // Responding with 200 status
+// })
 
-app.post("/checkout", async (req, res) => {
-  let cart = req.body
-  if (validateCart(cart)) {
-    let url = await createCheckOutPage(cart)
-    console.log(url)
-    // res.status(200).end() // Responding with 200 status
-    res.json({checkoutPage: url})
-  } else {
-    //Respond with error message stating cart not valid
-  }
-})
+// app.post("/checkout", async (req, res) => {
+//   let cart = req.body
+//   if (validateCart(cart)) {
+//     let url = await createCheckOutPage(cart)
+//     console.log(url)
+//     // res.status(200).end() // Responding with 200 status
+//     res.json({checkoutPage: url})
+//   } else {
+//     //Respond with error message stating cart not valid
+//   }
+// })
 
 //Test change
 
@@ -68,26 +69,26 @@ app.get('/redirected', (req, res) => {
   res.json({checkout: url})
 })
 
-app.post("/test", async (req, res) => {
-  console.log('checkout request')
-  // console.log(req.body)
-  const idempotency = await generateIdempotencyKey(process.env.cryptoPW)
-  // generateIdempotencyKey(process.env.cryptoPW)
-  //   .then((res) => { console.log('random key', res)})
+// app.post("/test", async (req, res) => {
+//   console.log('checkout request')
+//   // console.log(req.body)
+//   const idempotency = await generateIdempotencyKey(process.env.cryptoPW)
+//   // generateIdempotencyKey(process.env.cryptoPW)
+//   //   .then((res) => { console.log('random key', res)})
   
-  console.log(idempotency)
-  // res.json(req.data)
-})
+//   console.log(idempotency)
+//   // res.json(req.data)
+// })
 
-const { Client, Environment, ApiError } =  require('square');
+    const { Client, Environment, ApiError } =  require('square');
 const { resolve } = require("path");
 
-const client = new Client({
-  accessToken: process.env.SQUARE_ACCESS_TOKEN,
-  environment: Environment.Production,
-});
+    const client = new Client({
+      accessToken: process.env.SQUARE_ACCESS_TOKEN,
+      environment: Environment.Production,
+    });
 
-let storeItems
+    let storeItems
 //Retrieve online store items
 async function retrieveStoreItems() {
   try {
