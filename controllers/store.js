@@ -13,7 +13,11 @@
 
     const Store = require('../models/Store')
     const crypto = require('node:crypto');
-    const env = require('../env')
+    const env = require('../env');
+    const path = require('path');
+    const fs = require("fs");
+    const cors = require('cors');
+    const axios = require("axios");
     const { Client, Environment, ApiError } =  require('square');
     const client = new Client({
         // accessToken: process.env.SQUARE_ACCESS_TOKEN,
@@ -76,16 +80,16 @@
                 createStorePages()
               }
             function createStorePages() {
-            for (const item of storeItems) { 
-                let id = item.id;
-                fs.copyFile('public/products/product-template.html', `public/products/${id}.html`, (err) => {
-                if (err) throw err;
-                console.log(`Product ${id} page created`);
-                });
-            }
+                for (const item of storeItems) { 
+                    let id = item.id;
+                    fs.copyFile('public/products/product-template.html', `public/products/${id}.html`, (err) => {
+                    if (err) throw err;
+                    console.log(`Product ${id} page created`);
+                    });
+                }
             }
             retrieveStoreItems()
-            res.status(200).end() // Responding with 200 status
+            // res.status(200).end() // Responding with 200 status
           },
         checkout: async (req, res) => {
             let cart = req.body

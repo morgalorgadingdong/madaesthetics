@@ -80,128 +80,128 @@ app.get('/redirected', (req, res) => {
 //   // res.json(req.data)
 // })
 
-    const { Client, Environment, ApiError } =  require('square');
-const { resolve } = require("path");
+//     const { Client, Environment, ApiError } =  require('square');
+// const { resolve } = require("path");
 
-    const client = new Client({
-      accessToken: process.env.SQUARE_ACCESS_TOKEN,
-      environment: Environment.Production,
-    });
+//     const client = new Client({
+//       accessToken: process.env.SQUARE_ACCESS_TOKEN,
+//       environment: Environment.Production,
+//     });
 
-    let storeItems
+//     let storeItems
 //Retrieve online store items
-async function retrieveStoreItems() {
-  try {
-    const response = await client.catalogApi.searchCatalogItems({
-      customAttributeFilters: [
-        {
-          customAttributeDefinitionId: 'SOHE7MR2IVQ73GE3BUFWN44F',
-          boolFilter: true
-        }
-      ]
-    });
-    console.log('Retrieved store items');
-    storeItems = response.result.items;
-    retrieveStoreItemImgs()
-  } catch(error) {
-    console.log(error);
-  }
-}
+// async function retrieveStoreItems() {
+//   try {
+//     const response = await client.catalogApi.searchCatalogItems({
+//       customAttributeFilters: [
+//         {
+//           customAttributeDefinitionId: 'SOHE7MR2IVQ73GE3BUFWN44F',
+//           boolFilter: true
+//         }
+//       ]
+//     });
+//     console.log('Retrieved store items');
+//     storeItems = response.result.items;
+//     retrieveStoreItemImgs()
+//   } catch(error) {
+//     console.log(error);
+//   }
+// }
 
-// Grabbing all img URLs and appending them to each item as a property
-async function retrieveStoreItemImgs() {    
-  let index = 0;
+// // Grabbing all img URLs and appending them to each item as a property
+// async function retrieveStoreItemImgs() {    
+//   let index = 0;
 
-  //IN SERIES
-  for (const item of storeItems) {
-    let id = String(item.itemData.imageIds)
-    try {
-      const response = await client.catalogApi.retrieveCatalogObject(id);
-      storeItems[index].itemData.imgURL = response.result.object.imageData.url
-    } catch(error) {
-      console.log(error);
-    }
-    index++
-  }
+//   //IN SERIES
+//   for (const item of storeItems) {
+//     let id = String(item.itemData.imageIds)
+//     try {
+//       const response = await client.catalogApi.retrieveCatalogObject(id);
+//       storeItems[index].itemData.imgURL = response.result.object.imageData.url
+//     } catch(error) {
+//       console.log(error);
+//     }
+//     index++
+//   }
   
-  // IN PARRALLEL
-  // await Promise.all(storeItems.map(async (item) => {
-  //   let id = String(item.itemData.imageIds)
-  //   let index2 = storeItems.id.indexOf(item.id)
-  //   console.log(item.itemData.name, index2)
-  //   try {
-  //     const response = await client.catalogApi.retrieveCatalogObject(id);
-  //     // console.log(`INDEX ${index}`)
-  //     // console.log(storeItems[index].itemData.name)
-  //     // console.log(response.result.object.imageData.url);
-  //     storeItems[index2].itemData.imgURL = response.result.object.imageData.url
-  //     // console.log(storeItems)
-  //     index++
-  //   } catch(error) {
-  //     console.log(error);
-  //   }
-  // }))
+//   // IN PARRALLEL
+//   // await Promise.all(storeItems.map(async (item) => {
+//   //   let id = String(item.itemData.imageIds)
+//   //   let index2 = storeItems.id.indexOf(item.id)
+//   //   console.log(item.itemData.name, index2)
+//   //   try {
+//   //     const response = await client.catalogApi.retrieveCatalogObject(id);
+//   //     // console.log(`INDEX ${index}`)
+//   //     // console.log(storeItems[index].itemData.name)
+//   //     // console.log(response.result.object.imageData.url);
+//   //     storeItems[index2].itemData.imgURL = response.result.object.imageData.url
+//   //     // console.log(storeItems)
+//   //     index++
+//   //   } catch(error) {
+//   //     console.log(error);
+//   //   }
+//   // }))
 
 
-  //TIMEOUT WORKAROUND
-  //Search square for all catalog images
-  //Filter out ones not a part of storeItems imgID's property
-  //Attach correct URL to matching storeItem's imgID's property
+//   //TIMEOUT WORKAROUND
+//   //Search square for all catalog images
+//   //Filter out ones not a part of storeItems imgID's property
+//   //Attach correct URL to matching storeItem's imgID's property
 
-  console.log('Appended all img URLs')
-  createJSONStoreItems()
-}
-
-
-
-//Creating JSON File with all store items in it for front end use
-function createJSONStoreItems() {
-  //BigInt workaround
-  const json = JSON.stringify(storeItems, (key, value) =>
-  typeof value === "bigint" ? value.toString() + "n" : value
-, 2);
-  fs.writeFile('public/store-items.json', json, 'utf8', function(err) {
-    if (err) throw err;
-  });
-  console.log('Updated JSON Store File')
-  createStorePages()
-}
-
-function createStorePages() {
-  for (const item of storeItems) { 
-    let id = item.id;
-    fs.copyFile('public/products/product-template.html', `public/products/${id}.html`, (err) => {
-      if (err) throw err;
-      console.log(`Product ${id} page created`);
-    });
-  }
-}
-
-// retrieveStoreItems(); //For development use only, remove for production
+//   console.log('Appended all img URLs')
+//   createJSONStoreItems()
+// }
 
 
-function validateCart(cart) {
-  let validCart = true
-  //Take total from cart and compare it to what it should be based on storeItems variable
-  return validCart
-}
 
-function generateIdempotencyKey(password) {
-  let key
-  return new Promise(resolve => {
-    let salt = crypto.randomBytes(8).toString("hex")
-    crypto.scrypt(password, salt, 32, (err, derivedKey) => {
-      if (err) throw err;
-      key = derivedKey.toString("base64");
-      console.log('key', key)
-      resolve(key)
-    })
-  })
-}
+// //Creating JSON File with all store items in it for front end use
+// function createJSONStoreItems() {
+//   //BigInt workaround
+//   const json = JSON.stringify(storeItems, (key, value) =>
+//   typeof value === "bigint" ? value.toString() + "n" : value
+// , 2);
+//   fs.writeFile('public/store-items.json', json, 'utf8', function(err) {
+//     if (err) throw err;
+//   });
+//   console.log('Updated JSON Store File')
+//   createStorePages()
+// }
 
-async function getIdempotencyKey() {
-  return await generateIdempotencyKey(password)
-}
+// function createStorePages() {
+//   for (const item of storeItems) { 
+//     let id = item.id;
+//     fs.copyFile('public/products/product-template.html', `public/products/${id}.html`, (err) => {
+//       if (err) throw err;
+//       console.log(`Product ${id} page created`);
+//     });
+//   }
+// }
+
+// // retrieveStoreItems(); //For development use only, remove for production
+
+
+// function validateCart(cart) {
+//   let validCart = true
+//   //Take total from cart and compare it to what it should be based on storeItems variable
+//   return validCart
+// }
+
+// function generateIdempotencyKey(password) {
+//   let key
+//   return new Promise(resolve => {
+//     let salt = crypto.randomBytes(8).toString("hex")
+//     crypto.scrypt(password, salt, 32, (err, derivedKey) => {
+//       if (err) throw err;
+//       key = derivedKey.toString("base64");
+//       console.log('key', key)
+//       resolve(key)
+//     })
+//   })
+// }
+
+// async function getIdempotencyKey() {
+//   return await generateIdempotencyKey(password)
+// }
   
   // let myPromise = new Promise(function(resolve, reject) {
   //   idempotency = crypto.scrypt(password, salt, 32, 
@@ -246,45 +246,45 @@ async function getIdempotencyKey() {
 
 
   
-async function createCheckOutPage(cart) {
-  let url
-  let total = 0
-  let shipping = 0
-  cart.forEach(item => {
-    total += (item.basePriceMoney.amount * Number(item.quantity))
-  })
-  if (total < 10000) {
-    shipping = 600
-  }
-  let key = await getIdempotencyKey()
-    try {
-    const response = await client.checkoutApi.createPaymentLink({
-      idempotencyKey: key,
-      order: {
-        locationId: 'J2WJWF13GKN3W', //production locationId
-        // locationId: 'LY7R6151RVTQ7', //sandbox locationId
-        lineItems: cart,
-        pricingOptions: {
-          autoApplyTaxes: true
-        }
-      },
-      checkoutOptions: {
-        askForShippingAddress: true,
-        shippingFee: {
-          name: 'Standard Shipping (5-8 business days)',
-          charge: {
-            amount: shipping,
-            currency: 'USD'
-          }
-        }
-      }
-    });
+// async function createCheckOutPage(cart) {
+//   let url
+//   let total = 0
+//   let shipping = 0
+//   cart.forEach(item => {
+//     total += (item.basePriceMoney.amount * Number(item.quantity))
+//   })
+//   if (total < 10000) {
+//     shipping = 600
+//   }
+//   let key = await getIdempotencyKey()
+//     try {
+//     const response = await client.checkoutApi.createPaymentLink({
+//       idempotencyKey: key,
+//       order: {
+//         locationId: 'J2WJWF13GKN3W', //production locationId
+//         // locationId: 'LY7R6151RVTQ7', //sandbox locationId
+//         lineItems: cart,
+//         pricingOptions: {
+//           autoApplyTaxes: true
+//         }
+//       },
+//       checkoutOptions: {
+//         askForShippingAddress: true,
+//         shippingFee: {
+//           name: 'Standard Shipping (5-8 business days)',
+//           charge: {
+//             amount: shipping,
+//             currency: 'USD'
+//           }
+//         }
+//       }
+//     });
   
-    console.log(response.result);
-    url = response.result.paymentLink.url
-  } catch(error) {
-    console.log(error);
-  }
+//     console.log(response.result);
+//     url = response.result.paymentLink.url
+//   } catch(error) {
+//     console.log(error);
+//   }
   
-  return url
-}
+//   return url
+// }

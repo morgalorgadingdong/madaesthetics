@@ -2,8 +2,8 @@
   {
     "type": "ITEM",
     "id": "VBHSJLUBFU5GJCONUTVC4RV5",
-    "updatedAt": "2022-10-25T18:49:34.717Z",
-    "version": "1666723774717n",
+    "updatedAt": "2022-10-26T21:52:26.897Z",
+    "version": "1666821146897n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -16,7 +16,7 @@
       "J2WJWF13GKN3W"
     ],
     "itemData": {
-      "name": "Acne Face and Body Scrub",
+      "name": "Acne Face and Body Scrub *TEST*",
       "description": "This powerful scrub contains acne-fighting benzoyl peroxide to help unclog pores and prevent them from clogging, while natural cellulose beads gently exfoliate skin allowing for improved penetration of active treatment products.",
       "abbreviation": "",
       "availableOnline": false,
