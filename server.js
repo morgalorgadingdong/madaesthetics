@@ -248,7 +248,7 @@ async function createCheckOutPage(cart) {
   let total = 0
   let shipping = 0
   cart.forEach(item => {
-    total += item.basePriceMoney.amount
+    total += (item.basePriceMoney.amount * Number(item.quantity))
   })
   if (total < 10000) {
     shipping = 600
