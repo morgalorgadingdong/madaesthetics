@@ -20,7 +20,6 @@
     const axios = require("axios");
     const { Client, Environment, ApiError } =  require('square');
     const client = new Client({
-        // accessToken: process.env.SQUARE_ACCESS_TOKEN,
         accessToken: env.accessToken,
         environment: Environment.Production,
     });
