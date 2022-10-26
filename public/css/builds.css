@@ -1,0 +1,125 @@
+#vanBuild1 {
+    background-image: url('../images/builds/build1.JPG');
+  }
+
+  #vanBuild2 {
+    background-image: url('../images/builds/build2.jpg');
+  }
+
+  #vanBuild3 {
+    background-image: url('../images/builds/build3.jpg');
+  }
+
+  #vanBuild4 {
+    background-image: url('../images/builds/build4.jpg');
+  }
+
+  #vanBuild7 {
+    background-image: url('../images/builds/build7.jpg');
+  }
+
+  #vanBuild8 {
+    background-image: url('../images/builds/build8.jpg');
+  }
+
+  #vanBuild9 {
+    background-image: url('../images/builds/build9.jpg');
+  }
+
+  .tag {
+    margin: 5px;
+    line-height: 2rem;
+    height: auto;
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+
+  .tag p {
+    border: gray solid 2px;
+    border-radius: 3.5rem;
+    margin: 5px;
+    padding: 0 8px;
+  }
+
+  #gridPhotoContainer {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+  }
+
+  .gridPhoto {
+    min-height: 10rem;
+    max-height: 20rem;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .gridPhoto:hover {
+    cursor: pointer;
+  }
+
+
+
+
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  .lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+    
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+
+  .gridPhotoContainer:target + .lightbox {
+    display: none;
+  }
+
+  /* .lightbox:not(:target) {
+    display: none;
+  } */
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:default;
+  }

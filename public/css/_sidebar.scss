@@ -1,0 +1,29 @@
+
+/*****************************
+  		Sidebar
+*****************************/
+.categorize {
+	li {
+		a {
+			background: $gray-1;
+			color: $secondary;
+			padding: 16px 30px;
+			display: block;
+			margin-bottom: 3px;
+			font-size: 16px;
+			font-weight: 600;
+
+			span {
+				display: block;
+			}
+
+		}
+
+		a.active {
+			border-left: 5px solid $primary;
+			color: $primary;
+		}
+
+	}
+
+}

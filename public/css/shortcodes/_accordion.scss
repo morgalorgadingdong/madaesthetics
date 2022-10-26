@@ -1,0 +1,110 @@
+/*****************************
+  Shortcodes
+*****************************/
+
+/*****************************
+  Accordion
+*****************************/
+
+.accordion {
+ 	 .accordion-item{
+    	border: none;
+	    padding: 0 12px;
+	    margin-bottom: 20px;
+  		 .accordion-header{
+			background: none;
+			border: 1px solid $border-color;
+			padding: 0;
+			&:before {
+			border-bottom: 1px solid $border-color;
+			}
+		  .accordion-button {
+			position: relative;
+		    font-size: 22px;
+			color: $primary;
+ 			padding:17px 30px 17px 30px;
+			width: 100%;
+			text-align: left;
+			border: 1px solid $border-color;
+			&:focus{
+				box-shadow:inherit;
+			}
+		  }
+		  .accordion-button.collapsed{
+		  	color: $gray-8;
+		  }
+		}
+		.accordion-collapse{
+		   border: 1px solid $border-color;
+		 .accordion-body {
+		  padding: 30px;
+		  border: 1px solid $border-color;
+ 		}
+ 	  }
+   }
+ }
+
+
+/* accordion-02 */
+.accordion.accordion-02 {
+	.accordion-item {
+		margin-bottom: 10px;
+		.accordion-header {
+			margin-bottom: 0;
+			border: none;
+
+			.accordion-button {
+				font-size: 18px;
+		    padding: 10px 0 10px 30px;
+		    border: none;
+		    font-weight: 500;
+
+			&:after {
+				background-size: 1rem;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		   	&:before{
+                    line-height: 12px;
+                    font-size: 8px;
+                    position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0;
+					content: "\f068";
+					font-family: "Font Awesome 5 Free";
+					border: 1px solid $gray-9;
+					width: 15px;
+					height: 15px;
+					line-height: 12px;
+					border-radius: 50%;
+					z-index: 9;
+					text-align: center;
+			}
+			&:after{
+				display: none;
+	     	}
+		  }
+	   	}
+		.accordion-collapse{
+            border: none;
+            .accordion-body{
+              padding: 0;
+              border: none;
+            }
+		 }
+	   }
+	}
+
+.accordion-button:not(.collapsed) {
+	background-color: transparent;
+	color: $primary;
+}
+
+.accordion .accordion-button.collapsed:after{
+	display: none;
+}
+.accordion .accordion-button:not(.collapsed):after{
+	display: none;
+}

@@ -1,0 +1,159 @@
+/*****************************
+  Footer
+*****************************/
+
+.footer {
+  .footer-useful-List{
+    display: flex;
+    ul{
+      width: 100%;
+      display: inline-block;
+      li{
+        margin-bottom: 15px;
+        font-size: 16px;
+        a{
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .footer-insta{
+    ul{
+      li{
+        img{
+          width: 65px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .footer-tag {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 3px;
+      margin-bottom: 3px;
+      display: block;
+
+      a {
+        background: $black;
+        color: $white;
+        padding: 10px 16px;
+        display: block;
+
+        span {
+          display: block;
+        }
+
+        &:hover {
+          background: $primary;
+          color: $secondary;
+        }
+
+      }
+
+    }
+
+  }
+
+.footer-bottom {
+  padding: 50px 0px 0px 0px;
+
+  .footer-logo {
+    img{
+      height: 50px;
+    }
+  }
+
+}
+
+}
+
+.social-round {
+  display: flex;
+
+  li {
+    a {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      display: block;
+      background: $primary;
+      color: $white;
+      border-radius: 50%;
+      margin: 0 5px;
+      font-size: 18px;
+
+      &:hover {
+        background: darken($primary, 6%);
+        color: $white;
+      }
+
+    }
+
+  }
+
+}
+
+.footer-contact-info{
+  a{
+    span{
+      font-size: 12px;
+    }
+  }
+}
+
+/* Footer Dark */
+.footer-dark {
+  background-color: $gray-7;
+  color: rgba($white, 0.4);
+  h4 {
+    font-weight: 500;
+    color: rgba($white, 0.5);
+  }
+
+  .display-6  {
+    font-size: 30px;
+    color: $primary;
+  }
+
+  ul {
+    li {
+      a {
+        color: rgba($white, 0.4);
+        line-height: 38px;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  form {
+    .form-control {
+      background-color: rgba($white, 0.1);
+      color: rgba($white, 0.3);
+      border: none;
+    }
+  }
+
+}
+
+.footer.footer-dark .footer-bottom {
+  padding: 20px 0;
+}
+
+.footer-dark .form-control::-moz-placeholder {
+	color: rgba($white, 0.4);
+}
+
+.footer-dark .form-control::-ms-input-placeholder {
+	color: rgba($white, 0.4);
+}
+
+.footer-dark .form-control::-webkit-input-placeholder {
+	color: rgba($white, 0.4);
+}

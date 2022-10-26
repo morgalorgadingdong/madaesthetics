@@ -1,0 +1,33 @@
+- Build gallery page
+- Finish acne bootcamp page
+- Build Online Acne Bootcamp functionality
+    User pays online bootcamp fee (checkout functionality)
+    User receives link to page with questionaire form and photo upload
+    User recieves maddie's regimen via email
+        idea: Maddie's regime gets translated into a cart link that she sends with the email
+    
+- Animations
+- 'Notice' visible on all device widths
+- Design footer
+- Final design edits on all screens (font-sizes, fine tune positioning, etc.)
+- Migrate domain to heroku hosting
+- Edit testimonies section 
+    flickity slider? Simple scroll x slider?
+- Finish cart system
+    - link back to relevant product page from each cart item
+
+- Figure out sales tax debacle
+    - Maddie will collect sales tax for state, and then pay it when she places the order through Face Reality
+
+- Add MVC Structure to backend
+    - SVELTE for views?
+- Set up mongoDB and install mongoose
+- Duplicate repo with .env and node_modules ignored
+- Connect heroku to new repo
+
+
+
+
+font link
+    https://fonts.google.com/share?selection.family=Allura%7CCormorant%20Garamond:wght@400;500;600;700%7CEB%20Garamond%7CMarcellus
+

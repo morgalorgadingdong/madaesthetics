@@ -1,0 +1,88 @@
+/*
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+/*==============================================
+[  Table of contents  ]
+================================================
+
+ :: Typography
+ :: Helper Classes
+ :: Shortcodes
+    - Accordion
+    - Button
+		- Counter
+		- Date time Picker
+		- Newsletter
+		- Owl carousel
+		- Range Slider
+		- Select
+		- Tabs
+ :: Header
+   - Header default
+   - Header transparent
+   - Header light
+ :: Banner
+   - Banner home
+   - Banner shop
+   - Banner location
+   - Slider product
+ :: Layout
+   - Section Title
+   - Page title
+   - About box
+ :: Sidebar
+ :: Blog
+   - Blog post
+   - Blog sidebar
+   - Blog detail
+ :: Shop
+   - Product
+   - Product Detail
+    - Shop Sidebar
+    - Checkout
+    - Cart
+ :: Not Found
+ :: Footer
+
+======================================
+[ End table content ]
+======================================*/
+
+// Core files
+@import "variables";
+@import "typography";
+@import "helpers";
+
+// Shortcodes
+@import "shortcodes/accordion";
+@import "shortcodes/newsletter";
+@import "shortcodes/counter";
+@import "shortcodes/tabs";
+@import "shortcodes/owl-carousel";
+@import "shortcodes/datetimepicker";
+@import "shortcodes/button";
+@import "shortcodes/select";
+@import "shortcodes/range-slider";
+
+// Structure
+@import "header";
+@import "sidebar";
+@import "banner";
+@import "layout";
+
+// Pages
+@import "shop";
+@import "blog";
+@import "footer";
+
+// Responsive
+@import "responsive";
+
+
+
+
+// Carousel
+

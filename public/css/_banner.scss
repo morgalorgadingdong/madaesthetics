@@ -1,0 +1,145 @@
+/*****************************
+    Banner
+*****************************/
+
+
+/*****************************
+    Banner
+*****************************/
+
+/*slider-02*/
+
+.banner.slider-02{
+	position: relative;
+  overflow: hidden;
+}
+.banner.slider-02 .swiper-container{
+	overflow: visible;
+}
+.banner.slider-02 .swiper-slide.swiper-slide-active{
+  .blog-overlay{
+  	&:before{
+      background: linear-gradient(0deg, rgba($black,0.8) 10%, rgba($black,0.09) 100%);
+  	}
+  }
+}
+.banner.slider-02 .swiper-slide{
+  .blog-overlay{
+  	&:before{
+      background: rgba($black,0.8);
+  	}
+  }
+}
+
+
+/*****************************
+    Banner-03
+*****************************/
+.banner-03{
+	.swiper-slide{
+		height: 750px;
+	}
+}
+
+/*****************************
+    Banner-04
+*****************************/
+.banner-04{
+	.swiper-slide{
+		height: 550px;
+	}
+}
+.banner-04 .blog-post .blog-post-footer a{
+		color: $white;
+	}
+
+.banner .icon-btn {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  background: $gray-2;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  color: $secondary;
+  font-size: 30px;
+  border-radius: $border-radius;
+  transition: all 0.3s ease-in-out;
+
+	&:hover {
+  background: $white;
+	}
+
+		&:focus {
+  		outline: none;
+  		box-shadow: none;
+	}
+}
+
+
+.banner {
+	.swiper-button-prev.icon-btn {
+		left: 100px;
+
+		i {
+			font-size: 16px;
+		}
+
+	}
+
+}
+
+.banner {
+	.swiper-button-next.icon-btn {
+		right: 100px;
+
+		i {
+			font-size: 16px;
+		}
+
+	}
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+	z-index: 8;
+}
+
+
+/*****************************
+    Responsive
+*****************************/
+
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+
+
+}
+
+@media (max-width:575px) {
+
+	.social {
+		display: none;
+	}
+
+	.banner.slider-05{
+   .blog-overlay-02{
+    .blog-name{
+	   h1{
+         font-size:24px;
+	   }
+	   .blog-post.blog-post-footer{
+       padding-bottom: 0;
+	   }
+    }
+   }
+	}
+}

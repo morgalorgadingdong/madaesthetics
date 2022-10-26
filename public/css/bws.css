@@ -1,0 +1,345 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+  
+  /******************************************
+  /* SECTIONS
+  /*******************************************/
+  
+  /* FOOTER */
+  .footerSocial {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  /* FLEX BOX */
+  .flexContainer {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .flexLeft {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .flexRight {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .flexCenterH {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flexSpaceBetweenH {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flexSpaceAroundH {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .flexBottom {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .flexTop {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .flexCenterV {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flexSpaceBetweenV {
+    display: flex;
+    align-content: space-between;
+  }
+  
+  .flexSpaceAroundV {
+    display: flex;
+    align-content: space-around;
+  }
+  
+  .flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flexFit {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flexColumn {
+    flex-direction: column;
+  }
+  
+  .flexGrow1 {
+    flex-grow: 1;
+  }
+
+  .flexVertical {
+    flex-direction: column;
+  }
+  
+  /* RELATIVE SIZING */
+  .tenth {
+    width: 10%;
+  }
+  
+  .fif {
+    width: 20%;
+  }
+  
+  .quarter {
+    width: 25%;
+  }
+  
+  .thirdy {
+    width: 30%;
+  }
+  
+  .third {
+    width: 33.3%;
+  }
+  
+  .foedee {
+    width: 40%;
+  }
+  
+  .colt45 {
+    width: 45%;
+  }
+  
+  .fiddy {
+    width: 50%;
+  }
+  
+  .sixty {
+    width: 60%;
+  }
+  
+  .seventy {
+    width: 70%;
+  }
+  
+  .threeQuarter {
+    width: 75%;
+  }
+  
+  .ayyydee {
+    width: 80%;
+  }
+  
+  .ninety {
+    width: 90%;
+  }
+  
+  .oneHundo {
+    width: 100%;
+  }
+  
+  /******************************************
+  /* REUSABLE ELEMENTS/OBJECTS
+  /*******************************************/
+  /* COLORS */
+  .black {
+    background-color: black;
+  }
+  
+  
+  .gray {
+    background-color: #3e3f3c;
+  }
+  
+  .grayText {
+    color: #3e3f3c;
+  }
+  
+  .lightGray {
+    background-color: #afadac;
+  }
+  
+  .lightGrayText {
+    color: #afadac;
+  }
+  
+  .lightLightGray {
+    background-color: #fafafa;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .whiteText {
+    color: white;
+  }
+  
+  .blue {
+    background-color: #05c3f9;
+  }
+  
+  .blueText {
+    color: #05c3f9;
+  }
+  
+  .lightBlue {
+    background-color: #ecf9fe;
+  }
+  
+  .lightBlueText {
+    color: #ecf9fe;
+  }
+  
+  .pink {
+    background-color: #f84c6c;
+  }
+  
+  .pinkText {
+    color: #f84c6c;
+  }
+  
+  .lightPink {
+    background-color: #feecf0;
+  }
+  
+  .lightPinkText {
+    color: #feecf0;
+  }
+  
+  .green {
+    background-color: #02cc7d;
+  }
+  
+  .greenText {
+    color: #02cc7d;
+  }
+  
+  .gold {
+    background-color: #fabe05;
+  }
+  
+  .goldText {
+    color: #fabe05;
+  }
+  
+  .purple {
+    background-color: #9a40bd;
+  }
+  
+  .purpleText {
+    color: #9a40bd;
+  }
+  
+  /* MISC CLASSES */
+  .center {
+    margin: auto;
+  }
+  
+  .pad5 {
+    padding: 5px;
+  }
+  
+  .padL {
+    padding-left: 15px;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .textLeft {
+    text-align: left;
+  }
+  
+  .sectionSubHeader {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .circleIMG {
+    border-radius: 50%;
+  }
+  
+  .underline {
+    text-decoration: underline #f84c6c;
+  }
+  
+  .shadowBottom {
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.9);
+  }
+  
+  .contentSection {
+    padding-bottom: 40px;
+  }
+  
+  .card {
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .2);
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 3;
+  }
+  
+  img.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    overflow-x: hidden;
+  }
+  
+  .textLight {
+    font-weight: lighter;
+  }
+  
+  
+  .lastItem {
+    margin-bottom: 20px;
+  }
+  
+  /* LISTING CARD */
+  
+  /******************************************
+  /* ELEMENTS
+  /*******************************************/
+
+  
+  footer {
+    
+  }
+  
+  p {
+
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+  

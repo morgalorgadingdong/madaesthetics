@@ -1,0 +1,181 @@
+
+/*****************************
+    Layout
+*****************************/
+
+/* section title */
+.section-title {
+	margin-bottom: 50px;
+
+	.sub-title {
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+	}
+
+	.pre-title {
+		font-size: 16px;
+	}
+
+	.title-shape {
+		display: inline-block;
+		width: 16px;
+
+		&:before {
+			content: "";
+			background: $secondary;
+			height: 20px;
+			width: 8px;
+			left: 0;
+			top: 0;
+			position: absolute;
+		}
+
+		&:after {
+			content: "";
+			background: $primary;
+			height: 20px;
+			width: 8px;
+			left: 8px;
+			top: 0;
+			position: absolute;
+		}
+
+	}
+
+	.dark-title {
+		.title-shape {
+			&:before {
+				background-color: $white;
+			}
+		}
+	}
+
+	.theme-title {
+		.title-shape {
+			&:after {
+				background-color: $white;
+			}
+		}
+	}
+
+}
+
+
+
+/* About box */
+.map iframe.contact-map {
+ height: 620px;
+ width: 100%;
+ border:0;
+}
+
+
+.map-box {
+	iframe {
+		border:0;
+		width: 100%;
+		height: 200px;
+	}
+}
+
+/* Load more */
+
+.more-row {
+	display:none;
+}
+
+/* Dark page */
+.dark-page {
+	background-color: $black;
+}
+
+
+
+.dropcap {
+		font-weight: 500;
+    font-size: 90px;
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Instagram */
+.instagram-grid-4 {
+	min-height: 920px;
+}
+
+.instagram-grid-6 {
+	.instagram_profile {
+		display: none;
+	}
+}
+
+
+#search {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($white, 0.9);
+	transition: opacity .5s ease-in-out;
+	opacity: 0;
+	visibility:  hidden;
+	z-index: 9999;
+
+}
+
+#search.open {
+	opacity: 1;
+	visibility:visible ;
+	transition: opacity .5s ease-in-out;
+}
+
+#search input[type="search"] {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	color: $gray-8;
+	background: $gray-1;
+	font-size: 60px;
+	font-weight: 300;
+	text-align: center;
+	border: $border-color;
+	border-radius: $border-radius;
+	margin: 0px auto;
+	margin-top: -51px;
+	padding-left: 30px;
+	padding-right: 30px;
+	outline: none;
+}
+
+#search .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 61px;
+	margin-left: -45px;
+}
+
+#search .close {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	color: #fff;
+	background-color: $black;
+	color: $white;
+	opacity: 1;
+	padding: 3px 17px;
+	font-size: 27px;
+}
+
+
+.page-title-02 {
+	height: 600px;
+}
