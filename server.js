@@ -61,6 +61,8 @@ app.post("/checkout", async (req, res) => {
   }
 })
 
+//Test change
+
 app.get('/redirected', (req, res) => {
   let url = 'https://www.google.com'
   res.json({checkout: url})
