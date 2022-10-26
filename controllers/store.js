@@ -89,7 +89,7 @@
                 }
             }
             retrieveStoreItems()
-            // res.status(200).end() // Responding with 200 status
+            res.status(200).end() // Responding with 200 status
           },
         checkout: async (req, res) => {
             let cart = req.body
