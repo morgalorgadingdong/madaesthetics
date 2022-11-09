@@ -1,30 +1,27 @@
-- Build gallery page
-- Finish acne bootcamp page
+- redo acne bootcamp page
 - Build Online Acne Bootcamp functionality
     User pays online bootcamp fee (checkout functionality)
     User receives link to page with questionaire form and photo upload
     User recieves maddie's regimen via email
         idea: Maddie's regime gets translated into a cart link that she sends with the email
     
-- Animations
 - 'Notice' visible on all device widths
+- Create change password functionality
+- Cancel subscription functionality
+- Error handling for attempting to submit non pictures to bootcamp
 - Design footer
 - Final design edits on all screens (font-sizes, fine tune positioning, etc.)
-- Migrate domain to heroku hosting
-- Edit testimonies section 
-    flickity slider? Simple scroll x slider?
-- Finish cart system
-    - link back to relevant product page from each cart item
-
+- Cart is empty message when cart empty
+- Update header on all pages
 - Figure out sales tax debacle
     - Maddie will collect sales tax for state, and then pay it when she places the order through Face Reality
-
-- Add MVC Structure to backend
-    - SVELTE for views?
-- Set up mongoDB and install mongoose
-- Duplicate repo with .env and node_modules ignored
-- Connect heroku to new repo
-
+-Redo Services page
+    - 3 sections
+    1. Treatments
+        Services menu
+    2. Online Bootcamp
+        Info on Acne bootcamp, link to sign up page
+    3. Acne Bootcamp
 
 
 

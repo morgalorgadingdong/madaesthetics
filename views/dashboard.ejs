@@ -1,0 +1,63 @@
+<%- include('partials/header') -%>
+<% if (locals.messages.errors) { %>
+    <% messages.errors.forEach( el => { %>
+        <div class="alert alert-danger text-center"><%= el.msg %></div>
+    <% }) %>    
+<% } %>
+<% if (locals.messages.info) { %>
+    <% messages.info.forEach( el => { %>
+        <div class="alert alert-success text-center"><%= el.msg %></div>
+    <% }) %>    
+<% } %>
+
+<section id="dashboard" >
+    <div class="row col-12 d-flex justify-content-center flex-wrap">
+    <div class="col-10 d-flex justify-content-start flex-wrap my-5">
+        <h2 class="col-12 text-center my-5">Hello, <%= user.firstName %></h2>
+        <div class="col-12 col-md-9 d-flex flex-wrap">           
+            <h2 class="col-12 mb-3">Upcoming Check Ins</h2>
+            <ul class="col-12 d-flex flex-wrap px-3 checkInContainer">
+              <% clientCheckIns.forEach( el => { %>
+                <a onclick="getCheckIn(this)" data-id="<%=el._id%>" data-checkIn="<%=el.checkIn%>" class="checkInItem col-12 col-md-5 col-lg-4 col-xl-3 <%= el.active === true ? 'activeCheckIn' : 'inactiveCheckIn'%> <%= el.checkIn %>CheckIn"><li >
+                    <div class="col-12 d-flex justify-content-center"><h4 class="px-1 text-center"><%=el.title%></h4></div>
+                    <div class="col-12 d-flex justify-content-center"><h5 class="px-1 text-center"><%=el.status%></h5></div>
+                </li></a>
+                <% }) %>
+
+                
+            </ul>
+            <h2 class="col-12 mt-5 mb-3">Completed Check Ins</h2>
+            <ul class="col-12 d-flex flex-wrap checkInContainer">
+              <% maddieCheckIns.forEach( el => { %>
+                <a onclick="getCheckIn(this)" data-id="<%=el._id%>" data-checkIn="<%=el.checkIn%>" class="checkInItem col-12 col-md-5 col-lg-4 col-xl-3 <%= el.reviewed === true ? 'activeCheckIn' : 'inactiveCheckIn'%> <%= el.checkIn %>CheckIn"><li >
+                  <div class="col-12 d-flex justify-content-center"><h4 class="px-1 text-center"><%=el.title%></h4></div>
+                  <div class="col-12 d-flex justify-content-center"><h5 class="px-1 text-center"><%=el.status%></h5></div>
+                </li></a>
+                <% }) %> 
+
+            </ul>
+        </div>
+        <div class="col-12 col-md-3 d-flex flex-wrap align-content-start">
+            <h3 class="col-12">Account</h3>
+            <div class="col-12"><a href="/changePassword"><p>Change password</p></a></div>
+            <div class="col-12"><a href="/cancel"><p>Cancel subscription</p></a></div>
+            <div class="col-12"><a href="/bootcamp/logout"><p>Logout</p></a></div>
+        </div>
+        
+    <form id="firstCheckInForm" class="hidden" action="/bootcamp/firstCheckIn" method="POST">
+      <input type="text" name="id" id="firstCheckInID"/>
+      <button type="submit" id="firstCheckInSubmit"></button>
+    </form>
+    <form id="secondCheckInForm" class="hidden" action="/bootcamp/secondCheckIn" method="POST">
+      <input type="text" name="id" id="secondCheckInID"/>
+      
+      <input type="submit" id="secondCheckInSubmit" />
+    </form>
+    <form id="defaultCheckInForm" class="hidden" action="/bootcamp/defaultCheckIn" method="POST">
+      <input type="text" name="id" id="defaultCheckInID"/>
+      <input type="submit" id="defaultCheckInSubmit" />
+    </form>
+</div>
+</div>
+</section>
+<%- include('partials/footer') -%>

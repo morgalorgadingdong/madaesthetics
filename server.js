@@ -1,24 +1,59 @@
-const { response } = require("express");
+// const { response } = require("express");
 const express = require("express");
+const app = express();
+const mongoose = require('mongoose')
+const passport = require('passport')
+const logger = require('morgan')
+const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
+const flash = require('express-flash')
+const connectDB = require('./config/database')
+const mainRoutes = require('./routes/main')
+// const todoRoutes = require('./routes/todos')
+const storeRoutes = require('./routes/store')
+const bootcampRoutes = require('./routes/bootcamp')
+const adminRoutes = require('./routes/admin')
+const env = require('./env')
+const cloudinary = require('cloudinary').v2
+const bodyParser = require('body-parser')
+
+require('./config/passport')(passport)
+
 const http = require('http')
 const fs = require("fs");
-const app = express();
 const path = require('path');
 const router = express.Router();
 const axios = require("axios");
 const crypto = require('node:crypto');
+
 const cors = require('cors');
-const mongoose = require('mongoose')
-const connectDB = require('./config/database')
-// const session = require('express-session')
-const mainRoutes = require('./routes/main')
-const storeRoutes = require('./routes/store')
-// const bootcampRoutes = require('./routes/bootcamp')
 
-const env = require('./env')
+connectDB()
 
+app.set('view engine', 'ejs')
 app.use(express.static("public"));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
+app.use(logger('dev'))
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({ type: 'application/*+json' }));
+
+
+
+app.use(
+  session({
+    secret: 'keybard cat',
+    resave: false,
+    saveUninitialized: false,
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  }) 
+)
+
+app.use(passport.initialize())
+app.use(passport.session())
+
+app.use(flash())
+
 // Add headers before the routes are defined
 // app.use(
 //   cors({
@@ -27,16 +62,17 @@ app.use(express.json());
 // )
 
 app.use('/', mainRoutes)
+// app.use('/todos', todoRoutes)
 app.use('/store', storeRoutes)
-// app.use('/store', storeRoutes)
-// app.use('/bootcamp', bootcampRoutes)
+app.use('/bootcamp', bootcampRoutes)
+app.use('/admin', adminRoutes)
+
 
 
 //Sending back index page
 // app.get('/', (req, res) => {
 //   res.sendFile('index.html');
 // })
-let password = env.cryptoPW
 let port = env.port;
 if (port == null || port == "") {
   port = 8000;

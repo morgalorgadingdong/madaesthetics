@@ -29,8 +29,9 @@
 
     module.exports = {
         updateStore: (req, res) => {
-            let storeItems
-            
+          console.log('Web hook notification recieved, updating store')  
+          let storeItems
+ 
             async function retrieveStoreItems() {
                 try {
                   const response = await client.catalogApi.searchCatalogItems({

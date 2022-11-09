@@ -1,0 +1,270 @@
+<%- include('partials/header') -%>
+
+<section id="dashboard">
+    <div class="row col-12 d-flex justify-content-center flex-wrap">
+    <div class="col-10 d-flex justify-content-center flex-wrap my-5">
+      <!-- <h2 class="col-12 text-center <%= user.admin === true ? 'hidden' : ''%>">Hello, <%= user.firstName %></h2>   -->
+      <h2 class="col-12 text-center">Initial Questionnaire</h2>
+        <h4 class="col-12 text-center">Status: <%= checkIn.status %></h4>
+        <div class="col-12 col-md-9 d-flex justify-content-center flex-wrap mt-5">           
+            <form class="mb-5 <%= user.admin === true || checkIn.submitted == true ? 'hidden' : ''%>" action="/bootcamp/firstCheckInSubmit" method="POST" enctype="multipart/form-data">
+              <div id="orderForm">
+                <div class="mb-5">
+                    <h6 class="textLeft">Your Info</h6>
+                    <div class="mb-3">
+                            <input id="formName" name="name" type="text" class="form-control" value="<%= user.firstName %>" required>
+                        </div>                    
+                        <div class="mb-3">
+                            <input id="formEmail" name="email" type="email" class="form-control" value="<%= user.email %>" required>
+                        </div>
+                    </div>  
+                    <div class="mb-5">
+                        <h6 class="textLeft">Medications</h6>
+                        <p>Leave medication blank if you've never taken it</p>
+                    <div class="mb-3 d-flex align-items-center">
+                      <p class="d-flex m-0 px-3 col-3 text-center">Accutane</p>  
+                      <input name="med1Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                        <input id="howLong" name="med1Dur" type="text" class="form-control mx-1" placeholder="For how long?">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <p class="d-flex m-0 px-3 col-3 text-center">Androstendione</p>
+                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                      <p class="d-flex m-0 px-3 col-3 text-center">Antibiotics</p>
+                      <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Avita</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Azelex</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Benzoyl</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Cleocin-T</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Cocaine/Speed</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Copaxone</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Corticosteroids</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Cream or Gel</p>
+                    <div class="col-9 d-flex flex-wrap align-items-center px-0">
+                      <input type="text" name="medXdescription" placeholder="describe" class="form-control col-12 mb-2"/>
+                      <div class="d-flex align-items-center col-12  px-0">
+                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Cyclosporin</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Danzol</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Differin</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Dilantin/Tegretol</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Disulfuram</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">E-mycin-T</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Isoniazid</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Immuran</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Lithium</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Marijuana</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Peroxide</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Progesterone</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Quinine</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Retin A</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Steroids</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Tazorac</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Testosterone</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Thyroid</p>
+                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-3 text-center">Other meds</p>
+                    <div class="col-9 d-flex flex-wrap align-items-center px-0">
+                      <input type="text" name="medXdescription" placeholder="describe" class="form-control col-12 mb-2"/>
+                      <div class="d-flex align-items-center col-12  px-0">
+                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                      </div>
+                    </div> 
+                  </div> 
+                  </div>
+                  <h6 class="textLeft">Medical History (please check all that apply)</h6>
+                  <div class="mb-3 d-flex align-items-center flex-wrap mb-5">
+                      <p class="d-flex m-0 px-3 col-3 text-center">Herpes Simplex<input name="Herpes" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Eczema<input name="Eczema" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Psoriasis<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Hepatitis<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Cancer<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Staph Infection/MRSA<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">HIV/AIDS<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Thyroid Problems<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Hormone Problems<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Hysterectomy<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Over(ies) Removed<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Pacemaker<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Hemophilia<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Lupus<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Anemia<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">High Blood Pressure<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Diabetes<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-3 text-center">Metal Pins in Body<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                  </div>
+                  <h6 class="textLeft">Lifestyle Considerations</h6>
+                    <label for="">Have you ever had any reaction to any products or anything you have put on your face?</label>
+                    <input type="radio" id="adverseReaction">Yes
+                    <input name="checkInNumber" value="first" hidden="hidden" />
+
+                        <label for="file">Picture 1</label>
+                    <div class="col-12 ">
+                        <input type="file" id="" name="file" accept="image/png, image/jpeg">
+                    </div>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    
+            </form>
+            
+        </div>
+        <div class="<%= user.admin === true || checkIn.submitted == true ? '' : 'hidden'%> col-12">
+            <h4 class="<%= user.admin === true ? '' : 'hidden'%>">Client Response</h4>
+            <h4 class="<%= user.admin === true ? 'hidden' : ''%>">Your Response</h4>
+            <p>Name: <%= checkIn.firstCheckIn.name %></p>
+            <email>Email: <%= checkIn.firstCheckIn.email %></email>
+            <p>Pic</p>
+            <img class="col-12 mb-5" src="<%= checkIn.firstCheckIn.picURL%>" />
+        </div>
+
+        <div class="<%= user.admin === true && checkIn.submitted === false ? '' : 'hidden'%> col-12 text-center ">
+          <h4>Awaiting submission</h4>
+        </div>
+
+        <div class="<%= user.admin === false && checkIn.submitted === true && checkIn.reviewed === false ? '' : 'hidden'%> col-12 text-center">
+          <h4>Awaiting feedback</h4>
+        </div>
+
+        <form class="<%= user.admin === true && checkIn.submitted === true && checkIn.reviewed === false ? '' : 'hidden'%> col-12 my-5" action="/bootcamp/firstCheckInReview" method="POST">
+          <h4>Your comments</h4>
+          <textarea name="comments" cols="40" class="col-12" rows="5"></textarea>
+          <label for="acneMed">Prescribed Acne Med?</label>
+          <input name="acneMed" type="checkbox"/>
+          <input name="id" type="text" value="<%= checkIn._id %>" class="hidden"/>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+        <div class="<%= checkIn.submitted == true && checkIn.reviewed == true ? '' : 'hidden'%> col-12">
+          <h4>Madaesthetics Comments</h4>
+          <p><%= checkIn.reviewComments %></p>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center z-reset my-5">
+          <a href="/bootcamp"><button class="btn-primary"><h5>Bootcamp Dashboard</h5></button></a>
+        </div>
+
+        
+            <!-- <div class="col-12 col-md-3 d-flex flex-wrap align-content-start">
+              <h3 class="col-12">Account</h3>
+              <div class="col-12"><a href="/password"><p>Change password</p></a></div>
+              <div class="col-12"><a href="/cancel"><p>Cancel subscription</p></a></div>
+              <div class="col-12"><a href="/bootcamp/logout"><p>Logout</p></a></div>
+          </div> -->
+</div>
+</div>
+</section>
+
+<%- include('partials/footer') -%>

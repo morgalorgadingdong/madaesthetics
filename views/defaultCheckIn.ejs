@@ -1,0 +1,66 @@
+<%- include('partials/header') -%>
+<section id="dashboard">
+    <div class="row col-12 d-flex justify-content-center flex-wrap">
+    <div class="col-10 d-flex justify-content-center flex-wrap my-5">
+        <h2 class="col-12 text-center">Initial Questionnaire</h2>
+        <h2 class="col-12 text-center">Hello, <%= user.firstName %></h2>
+        <div class="col-12 col-md-9 d-flex flex-wrap">           
+            <form class="mb-5 <%= user.admin === true ? 'hidden' : ''%>" action="/bootcamp/firstCheckIn" method="POST" enctype="multipart/form-data" >
+                <div id="orderForm">
+                    <div class="mb-5">
+                        <h6 class="textLeft">Your Info</h6>
+                        <div class="mb-3">
+                            <input id="formName" name="name" type="text" class="form-control" value="<%= user.firstName %>" required>
+                        </div>                    
+                        <div class="mb-3">
+                            <input id="formEmail" name="email" type="email" class="form-control" value="<%= user.email %>" required>
+                        </div>
+                    </div>  
+                    <div class="mb-5">
+                        <h6 class="textLeft">Medications</h6>
+                    <div class="mb-3 d-flex align-items-center">
+                        <p class="d-flex m-0 px-3 col-3 text-center">Accutane <input name="Accutane" type="checkbox" class="d-flex mx-3 medication-checkbox"/></p>
+                        <input name="med1Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" disabled />
+                        <input id="howLong" name="med1Dur" type="text" class="form-control mx-1" placeholder="For how long?" disabled>
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                        <p class="d-flex m-0 px-3 col-3 text-center">Androstendione <input name="Androstendione" type="checkbox" class="d-flex mx-3 medication-checkbox"/></p>
+                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" disabled />
+                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" disabled>
+                    </div>
+                    
+                    </div>
+                    
+                    <input name="checkInNumber" value="first" hidden="hidden" />
+
+                        <label for="file">Picture 1</label>
+                    <div class="col-12 ">
+                        <input type="file" id="" name="file" accept="image/png, image/jpeg">
+                    </div>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    
+            </form>
+            
+            <div class="<%= user.admin === true ? '' : 'hidden'%>">
+                <h4>User Response</h4>
+                <p>Name: <%= checkIn.firstCheckIn.name %></p>
+                <email>Email: <%= checkIn.firstCheckIn.email %></email>
+                <p>Pic</p>
+                <img src="<%= checkIn.firstCheckIn.picURL%>" />
+            </div>
+        </div>
+        <div class="col-12 col-md-3 d-flex flex-wrap align-content-start">
+            <h3 class="col-12">Account</h3>
+            <div class="col-12"><a href="/password"><p>Change password</p></a></div>
+            <div class="col-12"><a href="/cancel"><p>Cancel subscription</p></a></div>
+            <div class="col-12"><a href="/bootcamp/logout"><p>Logout</p></a></div>
+        </div>
+        
+    
+</div>
+</div>
+</section>
+
+<%- include('partials/footer') -%>

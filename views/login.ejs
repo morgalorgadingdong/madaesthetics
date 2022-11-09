@@ -1,0 +1,36 @@
+<%- include('partials/header') -%>
+<% if (locals.messages.errors) { %>
+    <% messages.errors.forEach( el => { %>
+        <div class="alert alert-danger text-center""><%= el.msg %></div>
+    <% }) %>    
+<% } %>
+<% if (locals.messages.info) { %>
+    <% messages.info.forEach( el => { %>
+        <div class="alert alert-success text-center""><%= el.msg %></div>
+    <% }) %>    
+<% } %>
+<section id="login">
+    <div class="row col-12 d-flex justify-content-center flex-wrap">
+    <div class="col-10 d-flex justify-content-start flex-wrap my-5">
+        <h1 class="col-12">Login</h1>
+        <form action="/bootcamp/login" method="POST">
+            <label for="email-input">Email</label>
+            <input name="email" id="email-input" type="email" placeholder="email">
+            <label for="password-input">Password</label>
+            <input name="password" id="password-input" type="password" placeholder="password">
+            <input type="submit">
+        </form>
+</div>
+
+<div class="col-10 d-flex justify-content-start flex-wrap my-5">
+    <h2 class="col-12">Sign Up</h2>
+    <form action="/bootcamp/signup" method="POST">
+        <input name="id" type="text" placeholder="Square ID">
+        <input name="name" type="text" placeholder="name">
+        <input name="email" type="email" placeholder="email">
+        <input type="submit">
+    </form>
+    </div>
+</div>
+</section>
+<%- include('partials/footer') -%>

@@ -91,6 +91,8 @@
   --color-gray-dark:#444444;
   --color-primary-dark: black;
   --color-primary-mid: rgb(3, 2, 2);
+  /* --color-accent-1: #DAF5AE; */
+  --color-accent-1: #AF9178;
   /* --color-primary-mid: #F7EFE7; */
   --color-primary-light: #FEFAEF;
   --font-basic: 'Inter', sans-serif;
@@ -6353,4 +6355,106 @@ li.nav-item.active {
   background-size: cover;
   background-position: center;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+.checkInContainer {
+  gap: 2vw;
+  z-index: 0;
+}
+
+.checkInItem {
+  aspect-ratio: 1/1;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+  border-radius: 2%;
+  /* margin: 2%; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+
+
+.checkInItem > li {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.checkInItem > li > h4, .checkInItem > li > h5 {
+  background-color: rgb(255,255,255, 0.7);
+  z-index: 2;
+}
+
+.firstCheckIn {
+  /* background-image: url('../images/dashboard/checkin1.jpeg'); */
+  background: linear-gradient(linear-gradient(0deg, var(--color-primary-light), var(--color-primary-dark)));
+  background-size: cover;
+  background-position: center;
+}
+
+.checkInItem {
+  /* background-image: url('../images/dashboard/checkin2.jpeg'); */
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent-1));
+  background-size: cover;
+  background-position: center;
+}
+
+/* .thirdCheckIn {
+  background-image: url('../images/dashboard/checkin3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fourthCheckIn {
+  background-image: url('../images/dashboard/checkin4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fifthCheckIn {
+  background-image: url('../images/dashboard/checkin5.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sixthCheckIn {
+  background-image: url('../images/dashboard/checkin6.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.seventhCheckIn {
+  background-image: url('../images/dashboard/checkin');
+  background-size: cover;
+  background-position: center;
+} */
+
+.activeCheckIn:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, .2);
+  background-color: rgb(240,240,240, 0.5);
+}
+
+.activeCheckIn {
+
+}
+
+
+.inactiveCheckIn {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* .inactiveCheckIn:hover {
+  cursor:not-allowed;
+} */
+
+#changePW {
+  border: #000000 solid 1px;
 }

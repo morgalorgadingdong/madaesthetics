@@ -1,6 +1,3 @@
-
-//giddyUp var
-
 //Create storeItems variable from JSON
 //Check local storage for cart items and update cart variable with items if present
 //Check which page we're on based on elements present
@@ -459,6 +456,15 @@ function checkout() {
   .then((response) => response.json())
   .then((data) => {
     window.open(data.checkoutPage, '_self');
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
+
+function bootcamp() {
+  fetch('/bootcamp', {
+    method: 'GET',
   })
   .catch((error) => {
     console.error('Error:', error);

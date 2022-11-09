@@ -1,0 +1,46 @@
+1. User purchases subscription using subscription link
+2. Subscription webhook notifies server, server creates new user in database and sends an email to client with login information
+    Server also creates first checkin for user in database
+3. User logs in, creating password on first log in, and then is taken to their dashboard
+4. Their dashboard shows 1 checkin for them to complete, the initial questionnaire
+5. User completes questionnaire, uploads photos, and then the task is sent to Maddie's dashboard. Maddie also recieves an email notification of new check in to review
+   - Users response gets stored in the CheckIn document, with the images being sent to cloudinary and the URLs stored in the document.
+   - 
+6. Maddie reviews questionnaire, and responds in a text field with regimen and comments
+7. User recieves Maddie's feedback
+8. 2 weeks later, second check in pops up in their account. User also recieves an email 1 day(?) before reminding them to complete their check in
+    -How to handle no responses or late responses?
+        -User recieves reminder emails everyday until check in is complete
+9. 
+
+
+Idea - User timeline - A timeline bar that shows each check in chronologically, as the user completes them the timeline events fill out with their photos
+
+
+3. Dashboard shows past tasks and upcoming tasks
+4. User completes tasks
+5. Maddie has admin privilidges and can view all users data
+6. Maddie recieves automated emails whenever someone completes a tasks
+7. In Maddie's dashboard she see's all of the people who have completed tasks that are awaiting review from her
+
+
+
+
+CheckIn Objects
+Properties
+- name: Checkin1, Checkin2, etc
+- acneMed: true/false
+- checkInNumber: 1, 2, 3, 4, 5, or 6
+- dueDate: [previouse check in completionDate + 14]
+- completionDate: [dueDate]
+- clientID: 
+- submitted: true/false
+- reviewed: true/false
+- visible
+
+
+User Objects
+- id: 'string'
+- name: user name
+- email: email
+- password: pw
