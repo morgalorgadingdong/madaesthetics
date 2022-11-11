@@ -81,6 +81,7 @@ module.exports = {
         let checkIn = new Bootcamp({
             // userId: '6363f254b20c6ec9b981bcaf',
             userId: req.user._id,
+            userEmail: req.user.email,
             checkIn: 'first',
             acneMed: false,
             dueDate: date,
@@ -96,6 +97,17 @@ module.exports = {
               console.log('error')
                 console.log(err) }
         })
+
+        const users = await User.find({_id:req.user._id})
+        const user = users[0]
+        user.initializeAccount = true
+        await user.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+        })
+        //Email user with login information and reminder to complete first check in
+
         res.redirect('/bootcamp')
     },
     getFirstCheckIn: async (req, res) => {
@@ -106,39 +118,133 @@ module.exports = {
         if (!req.user) {
             return res.redirect('../bootcamp')
         } else {
-        if (req.user.admin) {
             res.render('firstCheckIn.ejs', {user: req.user, checkIn: checkIn[0]})
-        } else {
-            res.render('firstCheckIn.ejs', {user: req.user, checkIn: checkIn[0]})
-        }
-            
         }
     },
+    getSecondCheckIn: async (req, res) => {
+      console.log(req.user)
+      console.log(req.body)
+      const checkIn = await Bootcamp.find({_id: req.body.id})
+      console.log(checkIn)
+      if (!req.user) {
+          return res.redirect('../bootcamp')
+      } else {
+          res.render('secondCheckIn.ejs', {user: req.user, checkIn: checkIn[0]})  
+      }
+  },
     postFirstCheckIn: async (req, res) => {
-        const checkInItem = await Bootcamp.find({userId:req.user.id, checkIn: req.body.checkInNumber})
+        const checkIns = await Bootcamp.find({userId:req.user.id, checkIn: req.body.checkInNumber})
+        const checkIn = checkIns[0]
+        const users = await User.find({_id:req.user._id})
+        const user = users[0]
         // console.log(req)
+        // console.log(req.body)
+        // console.log(req.files)
+        // console.log(checkIns)
+
+        //Update user profile with info
+        user.age = req.body.age
+        // user.skinType = req.body.lifestyleQ2
+
+        // Update Check In document with form data
+        checkIn.firstCheckIn.name = req.body.name
+        checkIn.firstCheckIn.email = req.body.email
+        //Medications
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+        // checkIn.firstCheckIn.medications.androstendione.start = req.body.androstendioneStart
+        // checkIn.firstCheckIn.medications.androstendione.duration = req.body.androstendioneDuration
+        // checkIn.firstCheckIn.medications.antibiotics.start = req.body.antibioticsStart
+        // checkIn.firstCheckIn.medications.antibiotics.duration = req.body.antibioticsDuration
+        // checkIn.firstCheckIn.medications.avita.start = req.body.avitaStart
+        // checkIn.firstCheckIn.medications.avita.duration = req.body.avitaDuration
+        // checkIn.firstCheckIn.medications.azelex.start = req.body.azelexStart
+        // checkIn.firstCheckIn.medications.azelex.duration = req.body.azelexDuration
+
+        // checkIn.firstCheckIn.medications.benzoylstart = req.body.benzoylStart
+        // checkIn.firstCheckIn.medications.benzoylduration = req.body.benzoylDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+        // checkIn.firstCheckIn.medications.accutane.start = req.body.accutaneStart
+        // checkIn.firstCheckIn.medications.accutane.duration = req.body.accutaneDuration
+
+
+        checkIn.firstCheckIn = req.body
+        checkIn.submitted = true
+        checkIn.status = 'Awaiting feedback'
+        // checkIn.active = false
+
+        let i = 1
+        for (const picture of req.files) {
+          try {
+            const result = await cloudinary.uploader.upload(picture.path)
+            if (i == 1) {
+              checkIn.pic1URL = result.url
+            } else if (i == 2) {
+              checkIn.pic2URL = result.url
+            } else if (i == 3) {
+              checkIn.pic3URL = result.url
+            }
+            i++
+          } catch(error) {
+            console.log(error);
+          }
+        }
         console.log(req.body)
-        console.log(checkInItem)
-        checkInItem[0].firstCheckIn.name = req.body.name
-        checkInItem[0].firstCheckIn.email = req.body.email
-        checkInItem[0].submitted = true
-        checkInItem[0].status = 'Awaiting feedback'
-        checkInItem[0].active = false
-        await cloudinary.uploader.upload(req.file.path)
-	        .then(result => {
-                checkInItem[0].firstCheckIn.picURL = result.url
-                console.log(result)
-                checkInItem[0].save((err) => {
-                    if (err) { 
-                    console.log('error')
-                        console.log(err) }
-                        else {
-                            console.log('updated Database')
-                        }
-                    })
-            })
-	        .catch(error => {console.log(error)});
+        console.log(checkIn)
+        checkIn.save((err) => {
+            if (err) { 
+              console.log('error')
+              console.log(err) }
+            else {
+              console.log('updated Database')
+            }
+          })
+
         
+        
+
+
+
+        //OLD image upload code
+        // await cloudinary.uploader.upload(req.files[0].path)
+	      //   .then(result => {
+        //         checkIn.pic1URL = result.url
+        //         checkIn.save((err) => {
+        //             if (err) { 
+        //             console.log('error')
+        //                 console.log(err) }
+        //                 else {
+        //                     console.log('updated Database')
+        //                 }
+        //             })
+        //     })
+	      //   .catch(error => {console.log(error)});
+        
+        //Email Maddie letting her know there's a new Check In to review, set email reminder to true
         res.redirect('/bootcamp')
     },  
     postFirstCheckInReview: async (req, res) => {
@@ -181,6 +287,7 @@ module.exports = {
         let checkIn2 = new Bootcamp({
             userId: checkInItem[0].userId,
             userName: checkInItem[0].userName,
+            userEmail: checkInItem[0].userEmail,
             checkIn: 'second',
             acneMed: checkInItem[0].acneMed,
             dueDate: date2,
@@ -199,6 +306,7 @@ module.exports = {
             // userId: '63645fc5afc0880f6c6a89a9',
             userId: checkInItem[0].userId,
             userName: checkInItem[0].userName,
+            userEmail: checkInItem[0].userEmail,
             checkIn: 'third',
             acneMed: checkInItem[0].acneMed,
             dueDate: date3,
@@ -217,6 +325,7 @@ module.exports = {
           let checkIn4 = new Bootcamp({
             userId: checkInItem[0].userId,
             userName: checkInItem[0].userName,
+            userEmail: checkInItem[0].userEmail,
             checkIn: 'fourth',
             acneMed: checkInItem[0].acneMed,
             dueDate: date4,
@@ -234,6 +343,7 @@ module.exports = {
           let checkIn5 = new Bootcamp({
             userId: checkInItem[0].userId,
             userName: checkInItem[0].userName,
+            userEmail: checkInItem[0].userEmail,
             checkIn: 'fifth',
             acneMed: checkInItem[0].acneMed,
             dueDate: date5,
@@ -251,6 +361,7 @@ module.exports = {
           let checkIn6 = new Bootcamp({
             userId: checkInItem[0].userId,
             userName: checkInItem[0].userName,
+            userEmail: checkInItem[0].userEmail,
             checkIn: 'sixth',
             acneMed: checkInItem[0].acneMed,
             dueDate: date6,
@@ -268,6 +379,7 @@ module.exports = {
           let checkIn7 = new Bootcamp({
             userId: checkInItem[0].userId,
             userName: checkInItem[0].userName,
+            userEmail: checkInItem[0].userEmail,
             checkIn: 'seventh',
             acneMed: checkInItem[0].acneMed,
             dueDate: date7,
@@ -285,34 +397,34 @@ module.exports = {
 
         res.redirect('/bootcamp')
     },
-    createOneCheckIn: async (req, res) => {
-        let date = new Date()
-        let today = new Date()
+    // createOneCheckIn: async (req, res) => {
+    //     let date = new Date()
+    //     let today = new Date()
         
-        // date.setDate(date.getDate() + 28)
-        // let diff = (date - today) / 1000 / 60 / 60 / 24
-        //Checkin 2
-        let checkIn = new Bootcamp({
-            // userId: '63645fc5afc0880f6c6a89a9',
-            userId: '6366b797532100be8f7ec378', //bob
-            // userId: req.userID,
-            checkIn: 'first',
-            acneMed: false,
-            dueDate: date,
-            submitted: false,
-            active: true,
-            reviewed: false,
-            status: 'Incomplete',
-            // title: 'Week 2 Check In'
-            title: 'Initial Questionnaire'
-          })
-          await checkIn.save((err) => {
-            if (err) { 
-              console.log('error')
-                console.log(err) }
-            })
-          res.redirect('/bootcamp')
-    },
+    //     // date.setDate(date.getDate() + 28)
+    //     // let diff = (date - today) / 1000 / 60 / 60 / 24
+    //     //Checkin 2
+    //     let checkIn = new Bootcamp({
+    //         // userId: '63645fc5afc0880f6c6a89a9',
+    //         userId: '6366b797532100be8f7ec378', //bob
+    //         // userId: req.userID,
+    //         checkIn: 'first',
+    //         acneMed: false,
+    //         dueDate: date,
+    //         submitted: false,
+    //         active: true,
+    //         reviewed: false,
+    //         status: 'Incomplete',
+    //         // title: 'Week 2 Check In'
+    //         title: 'Initial Questionnaire'
+    //       })
+    //       await checkIn.save((err) => {
+    //         if (err) { 
+    //           console.log('error')
+    //             console.log(err) }
+    //         })
+    //       res.redirect('/bootcamp')
+    // },
     createSecondCheckIn: async (req, res) => {
         console.log(req.user)
         let date = new Date()
@@ -324,6 +436,7 @@ module.exports = {
             // userId: '63645fc5afc0880f6c6a89a9',
             // userId: '6366b797532100be8f7ec378', //bob
             userId: req.user._id,
+            userEmail: req.user.email,
             checkIn: 'second',
             acneMed: false,
             dueDate: date,

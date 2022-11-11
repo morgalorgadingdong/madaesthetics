@@ -11,6 +11,9 @@ const UserSchema = new mongoose.Schema({
   lastName: {
     type: String 
   },
+  age: {
+    type: Number
+  },
   squareID: {
     type: String, 
     unique: true
@@ -31,6 +34,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     unique: false,
     required: false
+  },
+  accountInitialized: {
+    type: Boolean,
+    default: false
   }
 })
 

@@ -1,12 +1,16 @@
-- redo acne bootcamp page
-- Build Online Acne Bootcamp functionality
-    User pays online bootcamp fee (checkout functionality)
-    User receives link to page with questionaire form and photo upload
-    User recieves maddie's regimen via email
-        idea: Maddie's regime gets translated into a cart link that she sends with the email
-    
+- First check in form
+- first check in results
+- Second check in form
+- Second check in results
+- Default check in form
+- Default check in results
+- Email functionality
+- Update heroku account
+= purchase updated heroku hosting
+- redo acne bootcamp page 
 - 'Notice' visible on all device widths
-- Create change password functionality
+- Web hook on subscription functionality
+- Password rules functionality
 - Cancel subscription functionality
 - Error handling for attempting to submit non pictures to bootcamp
 - Design footer

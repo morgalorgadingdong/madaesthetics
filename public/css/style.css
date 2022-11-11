@@ -5753,36 +5753,22 @@ li.nav-item.active {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* width */
 ::-webkit-scrollbar {
   background: rgba(0, 0, 0, 0);
-  width: 0;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  /* background: var(--color-primary-light); */
-  background: var(--color-primary-dark);
+  background: var(--color-primary-light);
+  /* background: var(--color-primary-dark); */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: var(--color-primary-dark); */
-  background: var(--color-primary-light);
+  background: var(--color-primary-dark);
+  /* background: var(--color-primary-light); */
 }
 
 
@@ -6358,7 +6344,7 @@ li.nav-item.active {
 }
 
 .checkInContainer {
-  gap: 2vw;
+  gap: 2.5vw;
   z-index: 0;
 }
 
@@ -6373,6 +6359,7 @@ li.nav-item.active {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 10;
+  /* border: solid black 1px; */
 }
 
 
@@ -6457,4 +6444,13 @@ li.nav-item.active {
 
 #changePW {
   border: #000000 solid 1px;
+}
+form output {
+  display: flex;
+  align-self: center;
+}
+
+#checkIn form {
+  border: solid black 1px;
+  padding: 2rem;
 }

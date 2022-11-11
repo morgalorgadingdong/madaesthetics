@@ -7,15 +7,7 @@
         <div class="col-12 col-md-9 d-flex flex-wrap">           
             <form class="mb-5 <%= user.admin === true ? 'hidden' : ''%>" action="/bootcamp/firstCheckIn" method="POST" enctype="multipart/form-data" >
                 <div id="orderForm">
-                    <div class="mb-5">
-                        <h6 class="textLeft">Your Info</h6>
-                        <div class="mb-3">
-                            <input id="formName" name="name" type="text" class="form-control" value="<%= user.firstName %>" required>
-                        </div>                    
-                        <div class="mb-3">
-                            <input id="formEmail" name="email" type="email" class="form-control" value="<%= user.email %>" required>
-                        </div>
-                    </div>  
+                  <%- include('partials/hiddenFormItems') -%> 
                     <div class="mb-5">
                         <h6 class="textLeft">Medications</h6>
                     <div class="mb-3 d-flex align-items-center">

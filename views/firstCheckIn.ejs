@@ -1,217 +1,343 @@
 <%- include('partials/header') -%>
 
-<section id="dashboard">
+<section id="checkIn">
     <div class="row col-12 d-flex justify-content-center flex-wrap">
-    <div class="col-10 d-flex justify-content-center flex-wrap my-5">
+      
+      <div class="col-10 d-flex justify-content-center flex-wrap my-5">
       <!-- <h2 class="col-12 text-center <%= user.admin === true ? 'hidden' : ''%>">Hello, <%= user.firstName %></h2>   -->
+      
       <h2 class="col-12 text-center">Initial Questionnaire</h2>
         <h4 class="col-12 text-center">Status: <%= checkIn.status %></h4>
         <div class="col-12 col-md-9 d-flex justify-content-center flex-wrap mt-5">           
-            <form class="mb-5 <%= user.admin === true || checkIn.submitted == true ? 'hidden' : ''%>" action="/bootcamp/firstCheckInSubmit" method="POST" enctype="multipart/form-data">
-              <div id="orderForm">
-                <div class="mb-5">
-                    <h6 class="textLeft">Your Info</h6>
-                    <div class="mb-3">
-                            <input id="formName" name="name" type="text" class="form-control" value="<%= user.firstName %>" required>
-                        </div>                    
-                        <div class="mb-3">
-                            <input id="formEmail" name="email" type="email" class="form-control" value="<%= user.email %>" required>
-                        </div>
-                    </div>  
+            <form id="checkInForm" class="mb-5 <%= user.admin === true || checkIn.submitted == true ? 'hidden' : ''%>" action="/bootcamp/firstCheckInSubmit" method="POST" enctype="multipart/form-data">
+                <div id="orderForm">
+                  <h6 class="textLeft">Your Info</h6>
+                  <input name="checkInNumber" value="first" class="hidden"/>
+                  <div class="mb-3">
+                    <input name="nameFirst" type="text" class="form-control col-12 col-md-6" value="<%= user.firstName %>">
+                  </div>
+                  <div class="mb-3">
+                    <input name="nameLast" type="text" class="form-control col-12 col-md-6" value="<%= user.lastName %>">
+                  </div>                  
+                  <div class="mb-3">
+                    <input name="email" type="email" class="form-control col-12 col-md-6" placeholder="email" value="<%= user.email %>">
+                  </div>
+                  <div class="mb-3">
+                    <input name="phone" type="tel" class="form-control col-12 col-md-6" placeholder="Phone Number" value="<%= user.phone %>">
+                  </div>
+                  <div class="mb-3">
+                    <input name="age" type="number" class="form-control col-12 col-md-6" placeholder="Age" value="<%= user.age %>">
+                  </div>
                     <div class="mb-5">
                         <h6 class="textLeft">Medications</h6>
                         <p>Leave medication blank if you've never taken it</p>
-                    <div class="mb-3 d-flex align-items-center">
-                      <p class="d-flex m-0 px-3 col-3 text-center">Accutane</p>  
-                      <input name="med1Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
-                        <input id="howLong" name="med1Dur" type="text" class="form-control mx-1" placeholder="For how long?">
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Accutane</p>  
+                      <input name="accutaneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                      <input name="accutaneDuration" type="text" class="form-control mx-1" placeholder="For how long?">
                     </div>
-                    <div class="mb-3 d-flex align-items-center">
-                        <p class="d-flex m-0 px-3 col-3 text-center">Androstendione</p>
-                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                        <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Androstendione</p>
+                        <input name="androstendioneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                        <input name="androstendioneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                     </div>
-                    <div class="mb-3 d-flex align-items-center">
-                      <p class="d-flex m-0 px-3 col-3 text-center">Antibiotics</p>
-                      <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Antibiotics</p>
+                      <input name="antibioticsStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="antibioticsDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Avita</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Avita</p>
+                    <input name="avitaStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this. name="type='date')" onblur="(this.type='text')"  />
+                    <input name="avitaDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Azelex</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Azelex</p>
+                    <input name="azelexStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="azelexDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Benzoyl</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Benzoyl</p>
+                    <input name="benzoylStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="benzoylDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Cleocin-T</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cleocin-T</p>
+                    <input name="cleocinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="cleocinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Cocaine/Speed</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cocaine/Speed</p>
+                    <input name="cocaineStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="cocaineDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Copaxone</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Copaxone</p>
+                    <input name="copaxoneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="copaxoneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Corticosteroids</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Corticosteroids</p>
+                    <input name="corticosteroidsStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="corticosteroidsDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Cream or Gel</p>
-                    <div class="col-9 d-flex flex-wrap align-items-center px-0">
-                      <input type="text" name="medXdescription" placeholder="describe" class="form-control col-12 mb-2"/>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cream or Gel</p>
+                    <div class="col-md-9 col-12 d-flex flex-wrap align-items-center px-0">
+                      <input type="text" name="creamMedDescription" placeholder="describe" class="form-control col-12 "/>
                       <div class="d-flex align-items-center col-12  px-0">
-                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                        <input name="creamStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                        <input name="creamDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                       </div>
                     </div>
                   </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Cyclosporin</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Danzol</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Differin</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Dilantin/Tegretol</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Disulfuram</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">E-mycin-T</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Isoniazid</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Immuran</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Lithium</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Marijuana</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Peroxide</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Progesterone</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Quinine</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Retin A</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Steroids</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Tazorac</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Testosterone</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Thyroid</p>
-                    <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cyclosporin</p>
+                    <input name="cyclosporinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="cyclosporinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                   </div>
                   <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-3 text-center">Other meds</p>
-                    <div class="col-9 d-flex flex-wrap align-items-center px-0">
-                      <input type="text" name="medXdescription" placeholder="describe" class="form-control col-12 mb-2"/>
-                      <div class="d-flex align-items-center col-12  px-0">
-                        <input name="med2Start" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                        <input id="howLong" name="med2Dur" type="text" class="form-control mx-1" placeholder="For how long?" >
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Danzol</p>
+                    <input name="danzolStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="danzolDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Differin</p>
+                    <input name="differinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="differinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Dilantin/Tegretol</p>
+                    <input name="dilantinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="dilantinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Disulfuram</p>
+                    <input name="disulfuramStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="disulfuramDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">E-mycin-T</p>
+                    <input name="emycinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="emycinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Isoniazid</p>
+                    <input name="isoniazidStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="isoniazidDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Immuran</p>
+                    <input name="immuranStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="immuranDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Lithium</p>
+                    <input name="lithiumStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="lithiumDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Marijuana</p>
+                    <input name="marijuanaStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="marijuanaDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Peroxide</p>
+                    <input name="peroxideStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="peroxideDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Progesterone</p>
+                    <input name="progesteroneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="progesteroneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Quinine</p>
+                    <input name="quinineStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="quinineDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Retin A</p>
+                    <input name="retinAStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="retinADuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Steroids</p>
+                    <input name="steroidStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="steroidDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Tazorac</p>
+                    <input name="tazoracStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="tazoracDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Testosterone</p>
+                    <input name="testosteroneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="testosteroneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Thyroid</p>
+                    <input name="thyroidStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                    <input name="thyroidDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
+                  </div>
+                  <div class="mb-3 d-flex align-items-center flex-wrap">
+                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Other meds</p>
+                    <div class="col-12 col-md-9 d-flex flex-wrap align-items-center px-0">
+                      <input type="text" name="otherMedDescription" placeholder="describe" class="form-control col-12 "/>
+                      <div class="d-flex align-items-center col-12 px-0 flex-wrap">
+                        <input name="otherMedStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                        <input name="otherMedDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
                       </div>
                     </div> 
                   </div> 
                   </div>
-                  <h6 class="textLeft">Medical History (please check all that apply)</h6>
-                  <div class="mb-3 d-flex align-items-center flex-wrap mb-5">
-                      <p class="d-flex m-0 px-3 col-3 text-center">Herpes Simplex<input name="Herpes" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Eczema<input name="Eczema" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Psoriasis<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Hepatitis<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Cancer<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Staph Infection/MRSA<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">HIV/AIDS<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Thyroid Problems<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Hormone Problems<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Hysterectomy<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Over(ies) Removed<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Pacemaker<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Hemophilia<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Lupus<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Anemia<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">High Blood Pressure<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Diabetes<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-3 text-center">Metal Pins in Body<input name="Psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                  <h6 class="textLeft mt-5">Medical History (please check all that apply)</h6>
+                  <div class="mb-5 d-flex align-items-center flex-wrap mb-5">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Herpes Simplex<input name="herpes" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Eczema<input name="eczema" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Psoriasis<input name="psoriasis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hepatitis<input name="hepatitis" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cancer<input name="cancer" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Staph Infection/MRSA<input name="mrsa" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">HIV/AIDS<input name="hiv" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Thyroid Problems<input name="thyroidProblems" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hormone Problems<input name="hormoneProblems" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hysterectomy<input name="hysterectomy" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Overies Removed<input name="overiesRemoved" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Pacemaker<input name="pacemaker" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hemophilia<input name="hemophilia" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Lupus<input name="lupus" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Anemia<input name="anemia" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">High Blood Pressure<input name="highBloodPressure" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Diabetes<input name="diabetes" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Metal Pins in Body<input name="metalPinsInBody" type="checkbox" class="d-flex mx-3"/></p>
                   </div>
-                  <h6 class="textLeft">Lifestyle Considerations</h6>
-                    <label for="">Have you ever had any reaction to any products or anything you have put on your face?</label>
-                    <input type="radio" id="adverseReaction">Yes
-                    <input name="checkInNumber" value="first" hidden="hidden" />
+                  <p>Are you under a dermatologist’s or other physician’s care?</p>
+                  <input type="text" name="lifestyleQ1" class="form-control mb-5" placeholder="Doctor's name">
+                  
+                  <h6 class="textLeft mt-5">Lifestyle Considerations</h6>
+                  <p>How would you describe your skin?</p>
+                  <select name="lifestyleQ2" class="form-control mb-5">
+                    <option value="">--Please choose an option--</option>
+                    <option value="oily">Oily</option>
+                    <option value="dry">Dry</option>
+                    <option value="combination">Combination</option>
+                    <option value="idk">I don't know</option>
+                  </select>  
+                  <p>Have you ever had any reactions to any products or anything you have put on your face? If so, what products?</p>
+                    <input type="text" name="lifestyleQ3" class="form-control mb-5">
+                    <p>Please list any allergies that you know you have:</p>
+                    <input type="text" name="lifestyleQ4" class="form-control mb-5"/>
+                    <p>Do you smoke?</p>
+                    <input type="text" name="lifestyleQ5" class="form-control mb-5"/>
+                    <p>Do you use fabric softener or fabric softener sheets in the dryer?</p>
+                    <input type="text" name="lifestyleQ6" class="form-control mb-5"/>
+                    <p>Do you regularly swim in a chlorinated pool?</p>
+                    <input type="text" name="lifestyleQ7" class="form-control mb-5"/>
+                    <p>Do you work around chemicals, tars, oils, grease or inks?</p>
+                    <input type="text" name="lifestyleQ8" class="form-control mb-5"/>
+                    <p>Occupation:</p>
+                    <input type="text" name="lifestyleQ9" class="form-control mb-5"/>
+                    <p>Are you currently under a lot of stress?</p>
+                    <input type="text" name="lifestyleQ10" class="form-control mb-5"/>
+                    <p><b>Women:</b> Do you use birth control pills, shots or an IUD? If so, which type and brand (if pill)?</p>
+                    <input type="text" name="lifestyleQ11" class="form-control mb-5"/>
+                    <p><b>Men:</b> Do you have shaving irritation? If so, what type of razor do you use for shaving?</p>
+                    <input type="text" name="lifestyleQ12" class="form-control mb-5"/>
 
-                        <label for="file">Picture 1</label>
-                    <div class="col-12 ">
-                        <input type="file" id="" name="file" accept="image/png, image/jpeg">
+                    <h6 class="textLeft mt-5">Diet</h6>
+                    <p>Do you regularly consume any of the following</p>
+                    <div class="mb-5 d-flex align-items-center flex-wrap mb-5">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Fast Food<input name="fastFood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Processed Food<input name="processedFood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Salty Snacks<input name="saltySnacks" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Milk/Yogurt<input name="milk" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cheese<input name="cheese" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Whey or Soy Protein<input name="whey" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Peanut Butter<input name="peanutButter" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Peanuts<input name="peanuts" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Sushi<input name="sushi" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Kelp or Seaweed<input name="kelp" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Miso Soup<input name="miso" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Soy<input name="soy" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Vitamin Supplements<input name="vitaminSupplements" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Seafood<input name="seafood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                  </div>
+                    <h6 class="textLeft mt-5">Products currently Using</h6>
+                    <p>Please provide product names</p>
+                    <p>Cleanser</p>
+                    <input type="text" name="cleanser" class="form-control mb-5"/>
+                    <p>Toner</p>
+                    <input type="text" name="toner" class="form-control mb-5"/>
+                    <p>Serum</p>
+                    <input type="text" name="serum" class="form-control mb-5"/>
+                    <p>Moisturizer</p>
+                    <input type="text" name="moisturizer" class="form-control mb-5"/>
+                    <p>Sunscreen</p>
+                    <input type="text" name="sunscreen" class="form-control mb-5"/>
+                    <p>Mask</p>
+                    <input type="text" name="mask" class="form-control mb-5"/>
+                    <p>Foundation</p>
+                    <input type="text" name="foundation" class="form-control mb-5"/>
+                    <p>Blush</p>
+                    <input type="text" name="blush" class="form-control mb-5"/>
+                    <p>Exfoliant (acids, serums, scrubs)</p>
+                    <input type="text" name="exfoliant" class="form-control mb-5"/>
+                    <p>Acne Medications</p>
+                    <input type="text" name="acneMedications" class="form-control mb-5"/>
+                    <p>Anything else?</p>
+                    <input type="text" name="productsOther" class="form-control mb-5"/>
+
+                    <h6>Other treatments: What else have you done for your skin in the last 90 days?</h6>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Checical Peels</p>
+                      <input name="chemicalPeelDescription" type="text" class="form-control mx-1" placeholder="What type?" >
+                      <input name="chemicalPeelWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="chemicalPeelWhere" type="text" class="form-control mx-1" placeholder="Where?" >
                     </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Microdermabrasion</p>
+                      <input name="microdermabrasionWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="microdermabrasionWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Dermabrasion</p>
+                      <input name="dermabrasionWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="dermabrasionWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Laser Hair Removal</p>
+                      <input name="laserHairRemovalWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="laserHairRemovalWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Laser Rejuvenation/Resurfacing</p>
+                      <input name="laserRejuvenationWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="laserRejuvenationWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Skin Cancer Removal</p>
+                      <input name="skinCancerRemovalWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="skinCancerRemovalWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Facial Waxing</p>
+                      <input name="facialWaxingWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="facialWaxingWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Electrolysis</p>
+                      <input name="ElectrolysisWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="ElectrolysisWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Other</p>
+                      <input name="otherTreatmentsDescription" type="text" class="form-control mx-1" placeholder="Describe" >
+                      <input name="otherTreatmentsWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="otherTreatmentsWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                    </div>
+                    <%- include('partials/pictureUpload') -%>
                       <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
@@ -219,13 +345,497 @@
             </form>
             
         </div>
-        <div class="<%= user.admin === true || checkIn.submitted == true ? '' : 'hidden'%> col-12">
+        
+        <div class="<%= checkIn.submitted == true && checkIn.reviewed == true ? '' : 'hidden'%> col-12 mb-5">
+          <h4>Madaesthetics Comments</h4>
+          <p><%= checkIn.reviewComments %></p>
+        </div>
+        
+        <div class="<%= checkIn.submitted == true ? '' : 'hidden'%> col-12">
             <h4 class="<%= user.admin === true ? '' : 'hidden'%>">Client Response</h4>
             <h4 class="<%= user.admin === true ? 'hidden' : ''%>">Your Response</h4>
-            <p>Name: <%= checkIn.firstCheckIn.name %></p>
-            <email>Email: <%= checkIn.firstCheckIn.email %></email>
-            <p>Pic</p>
-            <img class="col-12 mb-5" src="<%= checkIn.firstCheckIn.picURL%>" />
+            <h6>Basic Info</h6>
+            <div class="mb-5">
+              <p>Name: <%= checkIn.firstCheckIn.firstName %> <%= checkIn.firstCheckIn.lastName %></p>
+              <p>Email: <%= checkIn.firstCheckIn.email %></p>
+              <p>Phone: <%= checkIn.firstCheckIn.phone %></p>
+              <p>Age: <%= checkIn.firstCheckIn.age %></p>
+            </div>
+            
+            <h6>Medications</h6>
+            <div class="d-flex justify-content-between flex-wrap mb-5">
+              <div class="<%= checkIn.firstCheckIn.accutaneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Accutane:</p>
+                <p><%= checkIn.firstCheckIn.accutaneStart %></p>
+                <p><%= checkIn.firstCheckIn.accutaneDuration %></p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.androstendioneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Androstendione:</p>
+                <p><%= checkIn.firstCheckIn.androstendioneStart %></p>
+                <p><%= checkIn.firstCheckIn.androstendioneDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.antibioticsStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Antibiotics:</p>
+                <p><%= checkIn.firstCheckIn.antibioticsStart %></p>
+                <p><%= checkIn.firstCheckIn.antibioticsDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.avitaStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Avita:</p>
+                <p><%= checkIn.firstCheckIn.avitaStart %></p>
+                <p><%= checkIn.firstCheckIn.avitaDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.azelexStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Azelex:</p>
+                <p><%= checkIn.firstCheckIn.azelexStart %></p>
+                <p><%= checkIn.firstCheckIn.azelexDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.benzoylStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Benzoyl:</p>
+                <p><%= checkIn.firstCheckIn.benzoylStart %></p>
+                <p><%= checkIn.firstCheckIn.benzoylDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.cleocinStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Cleocin-T</p>
+                <p><%= checkIn.firstCheckIn.cleocinStart %></p>
+                <p><%= checkIn.firstCheckIn.cleocinDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.cocaineStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Cocaine/Speed:</p>
+                <p><%= checkIn.firstCheckIn.cocaineStart %></p>
+                <p><%= checkIn.firstCheckIn.cocaineDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.copaxoneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Copaxone:</p>
+                <p><%= checkIn.firstCheckIn.copaxoneStart %></p>
+                <p><%= checkIn.firstCheckIn.copaxoneDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.androstendioneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Androstendione:</p>
+                <p><%= checkIn.firstCheckIn.androstendioneStart %></p>
+                <p><%= checkIn.firstCheckIn.androstendioneDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.corticosteroidsStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Corticosteroids:</p>
+                <p><%= checkIn.firstCheckIn.corticosteroidsStart %></p>
+                <p><%= checkIn.firstCheckIn.corticosteroidsDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.creamStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Cream or Gel:</p>
+                <p><%= checkIn.firstCheckIn.creamMedDescription %></p>
+                <p><%= checkIn.firstCheckIn.creamStart %></p>
+                <p><%= checkIn.firstCheckIn.creamDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.cyclosporinStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Cyclosporin:</p>
+                <p><%= checkIn.firstCheckIn.cyclosporinStart %></p>
+                <p><%= checkIn.firstCheckIn.cyclosporinDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.danzolStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Danzol:</p>
+                <p><%= checkIn.firstCheckIn.danzolStart %></p>
+                <p><%= checkIn.firstCheckIn.danzolDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.differinStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Differin:</p>
+                <p><%= checkIn.firstCheckIn.differinStart %></p>
+                <p><%= checkIn.firstCheckIn.differinDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.androstendioneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Androstendione:</p>
+                <p><%= checkIn.firstCheckIn.androstendioneStart %></p>
+                <p><%= checkIn.firstCheckIn.androstendioneDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.dilantinStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Dilantin:</p>
+                <p><%= checkIn.firstCheckIn.dilantinStart %></p>
+                <p><%= checkIn.firstCheckIn.dilantinDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.disulfuramStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Disulfuram:</p>
+                <p><%= checkIn.firstCheckIn.disulfuramStart %></p>
+                <p><%= checkIn.firstCheckIn.disulfuramDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.emycinStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>E-mycin-T:</p>
+                <p><%= checkIn.firstCheckIn.emycinStart %></p>
+                <p><%= checkIn.firstCheckIn.emycinDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.immuranStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Immuran:</p>
+                <p><%= checkIn.firstCheckIn.immuranStart %></p>
+                <p><%= checkIn.firstCheckIn.immuranDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.lithiumStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Lithium:</p>
+                <p><%= checkIn.firstCheckIn.lithiumStart %></p>
+                <p><%= checkIn.firstCheckIn.lithiumDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.marijuanaStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Marijuana:</p>
+                <p><%= checkIn.firstCheckIn.marijuanaStart %></p>
+                <p><%= checkIn.firstCheckIn.marijuanaDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.peroxideStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>peroxide:</p>
+                <p><%= checkIn.firstCheckIn.peroxideStart %></p>
+                <p><%= checkIn.firstCheckIn.peroxideDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.immuranStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Immuran:</p>
+                <p><%= checkIn.firstCheckIn.immuranStart %></p>
+                <p><%= checkIn.firstCheckIn.immuranDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.progesteroneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Progesterone:</p>
+                <p><%= checkIn.firstCheckIn.progesteroneStart %></p>
+                <p><%= checkIn.firstCheckIn.progesteroneDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.quinineStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Quinine:</p>
+                <p><%= checkIn.firstCheckIn.quinineStart %></p>
+                <p><%= checkIn.firstCheckIn.quinineDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.retinAStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Retin A:</p>
+                <p><%= checkIn.firstCheckIn.retinAStart %></p>
+                <p><%= checkIn.firstCheckIn.retinADuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.steroidStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Steroids:</p>
+                <p><%= checkIn.firstCheckIn.steroidStart %></p>
+                <p><%= checkIn.firstCheckIn.steroidDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.tazoracStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Tazorac:</p>
+                <p><%= checkIn.firstCheckIn.tazoracStart %></p>
+                <p><%= checkIn.firstCheckIn.tazoracDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.testosteroneStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Testosterone:</p>
+                <p><%= checkIn.firstCheckIn.testosteroneStart %></p>
+                <p><%= checkIn.firstCheckIn.testosteroneDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.thyroidStart ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Thyroid:</p>
+                <p><%= checkIn.firstCheckIn.thyroidStart %></p>
+                <p><%= checkIn.firstCheckIn.thyroidDuration %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.otherMedDescription ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Other meds:</p>
+                <p><%= checkIn.firstCheckIn.otherMedDescription %></p>
+                <p><%= checkIn.firstCheckIn.otherMedStart %></p>
+                <p><%= checkIn.firstCheckIn.otherMedDuration %></p>
+              </div>
+
+
+            </div>
+
+            <h6>Medical History</h6>
+            <div class="d-flex justify-content-between flex-wrap mb-5">
+              <div class="<%= checkIn.firstCheckIn.herpes ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Herpes</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.eczema ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Eczema</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.psoriasis ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Psoriasis</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.hepatitis ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Hepatitis</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.cancer ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Cancer</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.mrsa ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Staph Infection/MRSA</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.hiv ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>HIV/AIDS</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.thyroidProblems ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Thyroid Problems</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.hormoneProblems ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Hormone Problems</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.hysterectomy ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Hysterectomy</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.overiesRemoved ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Overies Removed</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.pacemaker ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Pacemaker</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.hemophilia ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Hemophilia</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.lupus ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Lupus</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.anemia ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Anemia</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.highBloodPressure ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>High Blood Pressure</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.diabetes ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Diabetes</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.metalPinsInBody ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Metal Pins In Body</p>
+              </div>
+
+            </div>
+            
+
+            <h6>Lifestyle Considerations</h6>
+            <div class="mb-5">
+              <div class="mb-3">
+                <p>Are you under a dermatologist’s or other physician’s care?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ1 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>How would you describe your skin?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ2 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Have you ever had any reactions to any products or anything you have put on your face? If so, what products?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ3 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Please list any allergies that you know you have:</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ4 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Do you smoke?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ5 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Do you use fabric softener or fabric softener sheets in the dryer?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ6 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Do you regularly swim in a chlorinated pool?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ7 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Do you work around chemicals, tars, oils, grease or inks?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ8 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Occupation:</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ9 %></p>
+              </div>
+
+              <div class="mb-3">
+                <p>Are you currently under a lot of stress?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ10 %></p>
+              </div>
+
+              <div class="mb-3 <%= checkIn.firstCheckIn.lifestyleQ11 ? '' : 'hidden'%>">
+                <p>Women: Do you use birth control pills, shots or an IUD? If so, which type and brand (if pill)?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ11 %></p>
+              </div>
+
+              <div class="mb-3 <%= checkIn.firstCheckIn.lifestyleQ12 ? '' : 'hidden'%>">
+                <p>Men: Do you have shaving irritation? If so, what type of razor do you use for shaving?</p>
+                <p><%= checkIn.firstCheckIn.lifestyleQ12 %></p>
+              </div> 
+            </div>
+
+            <h6>Diet</h6>
+            <div class="d-flex justify-content-between flex-wrap mb-5">
+              <div class="<%= checkIn.firstCheckIn.fastFood ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Fast Food</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.processedFood ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Processed Food</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.saltySnacks ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Salty Snacks</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.milk ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Milk/Yogurt</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.cheese ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Cheese</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.whey ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Whey or Soy Protien Powder</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.peanutButter ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Peanut Butter</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.peanuts ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Peanuts</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.sushi ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Sushi</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.kelp ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Kelp or Seaweed</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.miso ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Miso Soup</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.soy ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Soy</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.vitaminSupplements ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Vitamin Supplements</p>
+              </div>
+              <div class="<%= checkIn.firstCheckIn.seafood ? '' : 'hidden'%> col-12 col-md-4 col-lg-3 medicationItem">
+                <p>Seafood</p>
+              </div>
+            </div>
+
+
+            <h6>Products currently using</h6>
+            <div class="mb-3">
+              <div class="col-12 col-md-4">
+                <p>Cleanser:</p>
+                <p><%= checkIn.firstCheckIn.cleanser %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Toner:</p>
+                <p><%= checkIn.firstCheckIn.toner %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Serum:</p>
+                <p><%= checkIn.firstCheckIn.serum %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Moisturizer:</p>
+                <p><%= checkIn.firstCheckIn.moisturizer %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Sunscreen:</p>
+                <p><%= checkIn.firstCheckIn.sunscreen %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Mask:</p>
+                <p><%= checkIn.firstCheckIn.mask %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Foundation:</p>
+                <p><%= checkIn.firstCheckIn.foundation %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Blush:</p>
+                <p><%= checkIn.firstCheckIn.blush %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Exfoliant:</p>
+                <p><%= checkIn.firstCheckIn.exfoliant %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Acne Medications:</p>
+                <p><%= checkIn.firstCheckIn.acneMedications %></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>Anything else:</p>
+                <p><%= checkIn.firstCheckIn.productsOther %></p>
+              </div>
+            </div>
+
+            <h6>Treatments</h6>
+            <div class="mb-3">
+              <div class="<%= checkIn.firstCheckIn.chemicalPeelDescription ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Chemical Peel</p>
+                <p><%= checkIn.firstCheckIn.chemicalPeelDescription %></p>
+                <p><%= checkIn.firstCheckIn.chemicalPeelWhen %></p>
+                <p><%= checkIn.firstCheckIn.chemicalPeelWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.dermabrasionWhen ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Dermabrasion</p>
+                <p><%= checkIn.firstCheckIn.dermabrasionWhen %></p>
+                <p><%= checkIn.firstCheckIn.dermabrasionWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.laserHairRemovalWhen ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Laser Hair Removal</p>
+                <p><%= checkIn.firstCheckIn.laserHairRemovalWhen %></p>
+                <p><%= checkIn.firstCheckIn.laserHairRemovalWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.laserRejuvenationWhen? '' : 'hidden'%> col-12 col-md-4">
+                <p>Laser Rejuvenation/Resurfacing</p>
+                <p><%= checkIn.firstCheckIn.laserRejuvenationWhen %></p>
+                <p><%= checkIn.firstCheckIn.laserRejuvenationWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.skinCancerRemovalWhen ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Skin Cancer Removal</p>
+                <p><%= checkIn.firstCheckIn.skinCancerRemovalWhen %></p>
+                <p><%= checkIn.firstCheckIn.skinCancerRemovalWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.facialWaxingWhen ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Facial Waxing</p>
+                <p><%= checkIn.firstCheckIn.facialWaxingWhen %></p>
+                <p><%= checkIn.firstCheckIn.facialWaxingWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.ElectrolysisWhen ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Electrolysis</p>
+                <p><%= checkIn.firstCheckIn.ElectrolysisWhen %></p>
+                <p><%= checkIn.firstCheckIn.ElectrolysisWhere %></p>
+              </div>
+
+              <div class="<%= checkIn.firstCheckIn.otherTreatmentsDescription ? '' : 'hidden'%> col-12 col-md-4">
+                <p>Other</p>
+                <p><%= checkIn.firstCheckIn.otherTreatmentsDescription %></p>
+                <p><%= checkIn.firstCheckIn.otherTreatmentsWhen %></p>
+                <p><%= checkIn.firstCheckIn.otherTreatmentsWhere %></p>
+              </div>
+
+            </div>
+
+            <h6>Pictures</h6>
+            <img class="col-12 col-md-4 mb-5" src="<%= checkIn.pic1URL%>" />
+            <img class="col-12 col-md-4 mb-5" src="<%= checkIn.pic2URL%>" />
+            <img class="col-12 col-md-4 mb-5" src="<%= checkIn.pic3URL%>" />
         </div>
 
         <div class="<%= user.admin === true && checkIn.submitted === false ? '' : 'hidden'%> col-12 text-center ">
@@ -247,13 +857,10 @@
           </div>
         </form>
 
-        <div class="<%= checkIn.submitted == true && checkIn.reviewed == true ? '' : 'hidden'%> col-12">
-          <h4>Madaesthetics Comments</h4>
-          <p><%= checkIn.reviewComments %></p>
-        </div>
+        
 
-        <div class="col-12 d-flex justify-content-center z-reset my-5">
-          <a href="/bootcamp"><button class="btn-primary"><h5>Bootcamp Dashboard</h5></button></a>
+        <div class="col-12 d-md-flex justify-content-start d-none mt-3">
+          <a class="col-12" href="/bootcamp"><h4 >< to Bootcamp Dashboard</h4></a>
         </div>
 
         

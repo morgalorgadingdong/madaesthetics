@@ -101,7 +101,8 @@ const { info } = require('node:console');
     console.log(password)
 
     const user = new User({
-      firstName: req.body.name,
+      firstName: req.body.nameFirst,
+      lastName: req.body.nameLast,
       squareID: req.body.id,
       email: req.body.email,
       password: password,

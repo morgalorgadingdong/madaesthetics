@@ -11,7 +11,7 @@ const router = express.Router()
 const authController = require('../controllers/auth') 
 const bootcampController = require('../controllers/bootcamp')
 const { ensureAuth } = require('../middleware/auth')
-const { updateCheckIns } = require('../middleware/bootcamp')
+const { updateCheckIns, combinePhotos } = require('../middleware/bootcamp')
 const upload = require("../middleware/multer");
 
 
@@ -28,8 +28,10 @@ router.get('/initializeAccount', bootcampController.initializeAccount)
 
 //Check Ins
 router.post('/firstCheckIn', ensureAuth, bootcampController.getFirstCheckIn)
-router.post('/firstCheckInSubmit', upload.single("file"), bootcampController.postFirstCheckIn)
+router.post('/firstCheckInSubmit', upload.array('photos', 3), bootcampController.postFirstCheckIn)
 router.post('/firstCheckInReview', ensureAuth, bootcampController.postFirstCheckInReview)
+
+router.post('/secondCheckIn', ensureAuth, bootcampController.getSecondCheckIn)
 // router.post('/firstCheckIn', upload.single("file"), bootcampController.postFirstCheckIn)
 // router.get('/secondCheckIn', ensureAuth, bootcampController.getSecondCheckIn)
 // router.post('/secondCheckIn', upload.single("file"), bootcampController.postSecondCheckIn)
@@ -38,7 +40,7 @@ router.post('/firstCheckInReview', ensureAuth, bootcampController.postFirstCheck
 
 
 // DEV SPECIFIC ROUTES
-router.get('/createFirst', bootcampController.createOneCheckIn)
+// router.get('/createFirst', bootcampController.createOneCheckIn)
 router.get('/createSecond', bootcampController.createSecondCheckIn)
 router.get('/createAdmin', authController.createAdmin)
 router.get('/test2', updateCheckIns, bootcampController.getAboutPage)
