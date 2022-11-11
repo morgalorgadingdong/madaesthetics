@@ -8,7 +8,10 @@ const cloudinary = require('cloudinary').v2;
 // const path = require('path');
 
 module.exports = {
-    getHomePage: async (req, res) => {
+  register: (req, res) => {
+    console.log(req)
+  }, 
+  getHomePage: async (req, res) => {
         if (req.user) {
             return res.redirect('../bootcamp')
           }
@@ -38,7 +41,7 @@ module.exports = {
             // })
             res.render('dashboard.ejs', {checkIns: checkInItems,  user: req.user, clientCheckIns: clientCheckIns, maddieCheckIns: maddieCheckIns})
         }
-    },  
+    },
     getAboutPage: (req, res) => {
         console.log('sending bootcamp about page')
         // res.sendFile('../public/bootcamp.html', {root: __dirname});
