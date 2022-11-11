@@ -174,15 +174,17 @@ const { info } = require('node:console');
 
   exports.createAdmin = async (req, res, next) => {
     const validationErrors = []
-    let name = 'admin'
-    let email = 'admin@admin.com'
-    let password = 'admin1234'
-    let id = '0000-0000'
+    let firstName = 'Maddie'
+    let lastName = 'Folz'
+    let email = 'madaestheticsllc@gmail.com'
+    let password = 'Dingleberg22'
+    // let id = '0000-0000'
     email = validator.normalizeEmail(email, { gmail_remove_dots: false })
 
     const user = new User({
-      firstName: name,
-      squareID: id,
+      firstName: firstName,
+      lastName: lastName,
+      // squareID: id,
       email: email,
       password: password,
       activeSubscription: true,

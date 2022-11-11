@@ -14,6 +14,7 @@ const { ensureAuth } = require('../middleware/auth')
 
 
 router.get('/', ensureAuth, bootcampController.getAdmin)
+
 // router.get('/tasks', bootcamp.getTasks)
 // router.put('/tasks', bootcamp.updateTask)
 // router.post('/checkins', bootcampController.createCheckIns)

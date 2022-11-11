@@ -1,15 +1,34 @@
 const Bootcamp = require('../models/Bootcamp')
 const User = require('../models/User')
-// const fs = require("fs");
+const fs = require("fs");
 // const axios = require("axios");
+// const client = new Client({
+//   accessToken: env.accessToken,
+//   environment: Environment.Production,
+// });
 
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 // const path = require('path');
 
 module.exports = {
-  register: (req, res) => {
+  register: async (req, res) => {
     console.log(req)
+    try {
+      const response = await client.subscriptionsApi.searchSubscriptions({
+        query: {
+          filter: {}
+        }
+      });
+    
+      console.log(response.result);
+    } catch(error) {
+      console.log(error);
+    }
+    //Search subscriptions
+    //Compare subscriptions to subscritions.json
+    //Take the newest one, and create an account with it
+    //Take web hook req, use customer ID to fetch the full customer profile and build out a signup for them
   }, 
   getHomePage: async (req, res) => {
         if (req.user) {
