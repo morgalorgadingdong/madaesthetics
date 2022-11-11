@@ -24,7 +24,7 @@ router.get('/logout', authController.logout)
 router.post('/signup', authController.postSignup)
 router.get('/admin', updateCheckIns, bootcampController.getAdmin)
 router.get('/initializeAccount', bootcampController.initializeAccount)
-router.get('/register', bootcampController.register)
+router.post('/register', bootcampController.register)
 
 //Check Ins
 router.post('/firstCheckIn', ensureAuth, bootcampController.getFirstCheckIn)
