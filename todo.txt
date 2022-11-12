@@ -5,6 +5,9 @@
 - "Don't start this until you recieve your product"
 - 1 business day response for every check in
 
+- Email notifications for user submitted Check Ins
+- Email notifications for Maddie reviewed Check Ins
+
 - GiddyUp instagram
 - GiddyUp Website
 
@@ -12,7 +15,6 @@
 - Second check in results
 - Default check in form
 - Default check in results
-- Email functionality
 - Update heroku account
 - purchase updated heroku hosting
 - redo acne bootcamp page

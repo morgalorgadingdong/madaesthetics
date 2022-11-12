@@ -47,34 +47,44 @@ header -->
   <header class="header header-transparent default header-sticky py-4">
     <div class="row d-flex justify-content-center">
       <nav id="the-nav" class="col-11 navbar navbar-static-top navbar-expand-lg justify-content-center">
-        <div class="d-lg-flex d-none flex-row col-md-3 col-lg-3 align-items-center navbar-collapse collapse" id="navbarmenu">
+        <!-- <div class="d-lg-flex d-none flex-row col-md-3 col-lg-3 align-items-center navbar-collapse collapse" id="navbarmenu">
           <ul class="nav-list col-12 d-flex" id="navbarmenu">
             <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="bootcamp.html">Bootcamp</a></li>
           </ul>
-        </div>
-        <div class="nav-logo col-8 col-sm-7 col-md-6 col-lg-4 col-xxl-3"><a href="index.html"><img class="col-12" src="images/new-logo-2.png"/></a></div>
+        </div> -->
+        <ul class="d-lg-flex flex-row justify-content-around col-md-3 col-lg-3 nav-list d-none" id="">
+          <li class="nav-item"><a class="nav-link" href="/bootcamp/login"><img src="/images/icons/user-solid.svg"/></a></li>
+          <li class="nav-item"><a class="nav-link" href="/bootcamp">Online Bootcamp</a></li>
+          <li class="nav-item"><a class="nav-link" href="/gallery.html">Gallery</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li> -->
+          
+        </ul>
+        <div class="nav-logo col-8 col-sm-7 col-md-6 col-lg-4 col-xxl-3"><a href="/index.html"><img class="col-12" src="/images/new-logo-2.png"/></a></div>
         <!-- CUSTOM HAMBURGER MENU -->
         <div id="menuToggle" class="position-absolute px-3 d-lg-none">
-					<input type="checkbox" />
-					<span class=""></span>
-					<span class=""></span>
-					<span class=""></span>
-					<ul id="menu">
-					  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="bootcamp.html">Bootcamp</a></li>
+          <input type="checkbox" />
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <ul id="menu">
+            <li class="nav-item"><a class="nav-link" href="/bootcamp/login"><img src="/images/icons/user-solid.svg"/></a></li>
+            <li class="nav-item"><a class="nav-link" href="/bootcamp.html">Online Bootcamp</a></li>
+            <li class="nav-item"><a class="nav-link" href="/gallery.html">Gallery</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li> -->
+            
             <div class="dropdown-divider"></div>
             <li class="nav-item"><a class="nav-link" href="https://square.site/book/J2WJWF13GKN3W/mad-aesthetics">Book</a></li>
-            <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
-            <li class="nav-item"><a class="nav-link" href="cart.html"><img src="images/icons/shopping-cart-black.png"/></a></li>
+            <li class="nav-item"><a class="nav-link" href="/store.html">Store</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cart.html"><img src="/images/icons/shopping-cart-black.png"/></a></li>
           </ul>
         </div>
         <ul class="d-lg-flex flex-row justify-content-around col-md-3 col-lg-3 nav-list d-none">
           <li class="nav-item"><a class="nav-link" href="https://square.site/book/J2WJWF13GKN3W/mad-aesthetics">Book</a></li>
-          <li class="nav-item active"><a class="nav-link" href="store.html">Store</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.html"><img src="images/icons/shopping-cart-black.png"/></a></li>
+          <li class="nav-item"><a class="nav-link" href="/store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cart.html"><img src="/images/icons/shopping-cart-black.png"/></a></li>
+          
         </ul>
       </nav>
     </div>
@@ -219,40 +229,13 @@ header -->
 footer-->
 <footer class="footer space-ptb bg-primary">
   <div class="row flexSpaceAroundH">
-    <!-- <div class="col-lg-3 p-3" id="footerLogoContainer">
-      <a href="index.html"><img id="footerLogo" src="images/Logo-GreenCircle.jpg"/></a>
-    </div> -->
-    <div class="col-md-4 col-lg-3 flexVertical flexCenterH p-5" id="footerSiteNav">
-      <h4 class="">Site Navigation</h4>
-      <ul class="">
-        <li>
-          <a href="our-work.html"><h5>Our work</h5></a>
-        </li>
-        <li>
-          <a href="rigs.html"><h5>Rigs for sale</h5></a>
-        </li>
-        <li>
-          <a href="merch.html"><h5>Merch</h5></a>
-        </li>
-        <li>
-          <a href="about.html"><h5>About</h5></a>
-        </li>
-        <li>
-          <a href="contact.html"><h5>Contact</h5></a>
-        </li>
-        <li><a href="https://www.instagram.com/otbfabrication/" target="_blank"> <h5><i class="fab fa-instagram"></i></h5> </a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-lg-6 flexCenterH"><a href="index.html"><img id="footerLogo" src="images/logo-bw.png" class="col-12"/></a></div>
-    <div class="col-md-4 col-lg-3 flexVertical flexCenterH p-5">
-      <h4>Shop Hours</h4>
-      <h6 class="text-primary">Weekdays: 8ish-noonish, 1ish-5ish</h6>
-      <h6 class="text-primary">Weekends: By appointment only</h6>
-    </div>
+
+    <div class="col-md-4 col-lg-6 flexCenterH"><a href="index.html"><img id="footerLogo" src="images/new-logo-white-2.png" class="col-12"/></a></div>
   </div>
   <div class="col-12 text-center pt-5">
     <p class="whiteText">© mad aesthetics 2022</p>
   </div>
+                                
 </footer>
 <!--=================================
 footer-->
@@ -260,8 +243,8 @@ footer-->
 <!--=================================
 Back To Top-->
 
-<div id="back-to-top" class="back-to-top">
-  <a href="#"> <i class="fas fa-angle-up"></i></a>
+<div id="back-to-top" class="back-to-top" onclick="href='#hero-section'">
+  <a href="#hero-section"> <i class="fas fa-angle-up"></i></a>
  </div>
 
 <!--=================================

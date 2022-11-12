@@ -11,7 +11,7 @@ const router = express.Router()
 const authController = require('../controllers/auth') 
 const bootcampController = require('../controllers/bootcamp')
 const { ensureAuth } = require('../middleware/auth')
-const { updateCheckIns, combinePhotos } = require('../middleware/bootcamp')
+const { updateCheckIns } = require('../middleware/bootcamp')
 const upload = require("../middleware/multer");
 
 
@@ -24,7 +24,7 @@ router.get('/logout', authController.logout)
 router.post('/signup', authController.postSignup)
 router.get('/admin', updateCheckIns, bootcampController.getAdmin)
 router.get('/initializeAccount', bootcampController.initializeAccount)
-router.post('/register', bootcampController.register)
+// router.get('/register', bootcampController.register)
 
 //Check Ins
 router.post('/firstCheckIn', ensureAuth, bootcampController.getFirstCheckIn)

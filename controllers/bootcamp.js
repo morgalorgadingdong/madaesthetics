@@ -1,35 +1,23 @@
 const Bootcamp = require('../models/Bootcamp')
 const User = require('../models/User')
 const fs = require("fs");
-// const axios = require("axios");
-// const client = new Client({
-//   accessToken: env.accessToken,
-//   environment: Environment.Production,
-// });
+const env = require('../env');
+const { Client, Environment, ApiError } =  require('square');
+const axios = require("axios");
+const path = require('path');
+const subscriptionJSON = require('../subscriptions.json')
+const client = new Client({
+  // accessToken: env.accessTokenSandbox,
+  // environment: Environment.Sandbox,
+  accessToken: env.accessToken,
+  environment: Environment.Production,
+});
 
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 // const path = require('path');
 
-module.exports = {
-  register: async (req, res) => {
-    console.log(req)
-    try {
-      const response = await client.subscriptionsApi.searchSubscriptions({
-        query: {
-          filter: {}
-        }
-      });
-    
-      console.log(response.result);
-    } catch(error) {
-      console.log(error);
-    }
-    //Search subscriptions
-    //Compare subscriptions to subscritions.json
-    //Take the newest one, and create an account with it
-    //Take web hook req, use customer ID to fetch the full customer profile and build out a signup for them
-  }, 
+module.exports = { 
   getHomePage: async (req, res) => {
         if (req.user) {
             return res.redirect('../bootcamp')
@@ -122,7 +110,7 @@ module.exports = {
 
         const users = await User.find({_id:req.user._id})
         const user = users[0]
-        user.initializeAccount = true
+        user.accountInitialized = true
         await user.save((err) => {
           if (err) { 
             console.log('error')

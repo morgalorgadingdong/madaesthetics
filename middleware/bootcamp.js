@@ -29,8 +29,5 @@ module.exports = {
         await el.save()
       }
       return next()
-    },
-    combinePhotos: function (req, res, next) {
-      console.log(req.body)
     }
   }

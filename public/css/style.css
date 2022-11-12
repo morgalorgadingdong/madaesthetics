@@ -6454,3 +6454,14 @@ form output {
   border: solid black 1px;
   padding: 2rem;
 }
+
+
+#FAQ {
+  /* border-top: solid 2px black;
+  border-bottom: solid 2px black; */
+  
+}
+
+#FAQ-outer {
+  background-color: var(--color-gray-light);
+}
