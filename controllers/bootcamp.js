@@ -246,7 +246,20 @@ module.exports = {
         
         
 
-
+          var mailOptions = {
+            from: env.email,
+            to: env.email,
+            subject: `New Initial Check in Awaiting review`,
+            html: `<p>${user.firstName} ${user.lsatName} has submitted their initial check in and it is currently awaiting your review`
+          };
+          
+          transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log(info.response);
+            }
+          });
 
         //OLD image upload code
         // await cloudinary.uploader.upload(req.files[0].path)

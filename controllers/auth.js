@@ -245,18 +245,6 @@ let transporter = nodemailer.createTransport({
       console.log('Updated JSON Subscription file') 
     }
 
-    async function saveSubscriptionJSON(json) {
-      let subPath = path.join(__dirname, subscriptionPath);
-      try {
-        fs.writeFileSync(subPath, json, 'utf8', function (err) {
-          if (err) throw err;
-        });
-      } catch (err) {
-        console.log(err)
-      }
-      console.log('Updated JSON Subscription file')
-    }
-
     async function retrieveCustomer(customerId) {
       console.log('retrieving customerID')
       try {
@@ -334,7 +322,8 @@ let transporter = nodemailer.createTransport({
         })
       })
       //Send user email
-      var mailOptions = {
+      
+      var mailOptionsCustomer = {
         from: env.email,
         to: user.email,
         subject: `Welcome to Madaesthetics Online Bootcamp!`,
@@ -349,11 +338,28 @@ let transporter = nodemailer.createTransport({
         <p>Maddie</p>`
       };
       
-      transporter.sendMail(mailOptions, function(error, info){
+      transporter.sendMail(mailOptionsCustomer, function(error, info){
         if (error) {
           console.log(error);
         } else {
           console.log(`Email sent to ${user.email}: ` + info.response);
+        }
+      });
+      
+      //Send Maddie email
+      var mailOptionsMaddie = {
+        from: env.email,
+        to: env.email,
+        subject: `New Online Bootcamp Subscription - ${user.firstName}`,
+        html: `<p>Name: ${user.firstName} ${user.lastName}</p>
+        <p>Email: ${user.email}`
+      };
+      
+      transporter.sendMail(mailOptionsMaddie, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log(`Email sent to Maddie` + info.response);
         }
       });
     }
