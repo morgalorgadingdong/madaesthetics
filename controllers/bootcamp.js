@@ -5,6 +5,7 @@ const env = require('../env');
 const { Client, Environment, ApiError } =  require('square');
 const axios = require("axios");
 const path = require('path');
+const nodemailer = require('nodemailer')
 const subscriptionJSON = require('../subscriptions.json')
 const client = new Client({
   // accessToken: env.accessTokenSandbox,
@@ -12,6 +13,14 @@ const client = new Client({
   accessToken: env.accessToken,
   environment: Environment.Production,
 });
+
+let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: env.email,
+    pass: env.emailPW
+  }
+})
 
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;

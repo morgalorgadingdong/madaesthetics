@@ -5199,6 +5199,7 @@ footer {
 
 .header {
   font-size: 1rem;
+  height: 10vh;
 }
 
 #hero-img div {

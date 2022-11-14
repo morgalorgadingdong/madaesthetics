@@ -12,8 +12,8 @@ const nodemailer = require('nodemailer')
 const subscriptionPath = '../subscriptions.json'
 const subscriptionJSON = require(subscriptionPath)
 const client = new Client({
-  accessToken: env.accessTokenSandbox,
-  environment: Environment.Sandbox,
+  accessToken: env.accessTokenProduction,
+  environment: Environment.Production,
 });
 
 let transporter = nodemailer.createTransport({
