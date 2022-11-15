@@ -81,7 +81,7 @@ module.exports = {
             }
         })
             const users = await User.find({})
-            let userCount = users.length - 1
+            let userCount = users.length - 3
             let unreviewedCheckInCount = unreviewedCheckIns.length
             console.log(unreviewedCheckIns)
             res.render('admin.ejs', {unreviewedCheckIns: unreviewedCheckIns, reviewedCheckIns: reviewedCheckIns, userCount: userCount, checkInCount: unreviewedCheckInCount})
@@ -250,7 +250,7 @@ module.exports = {
             from: env.email,
             to: env.email,
             subject: `New Initial Check in Awaiting review`,
-            html: `<p>${user.firstName} ${user.lsatName} has submitted their initial check in and it is currently awaiting your review`
+            html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review`
           };
           
           transporter.sendMail(mailOptions, function(error, info){
