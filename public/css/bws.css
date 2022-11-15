@@ -160,6 +160,9 @@
     background-color: black;
   }
   
+  .blackText {
+    color: black;
+  }
   
   .gray {
     background-color: #3e3f3c;

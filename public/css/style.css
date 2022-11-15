@@ -223,7 +223,7 @@ h6 {
   font-weight: 500; }
 
 p {
-  font-size: calc(var(--size-multiplier) * 16px) !important;
+  font-size: calc(var(--size-multiplier) * 16px);
   font-weight: normal;
   /* line-height: 26px;  */
   color: var(--color-primary-dark)}
@@ -6457,12 +6457,66 @@ form output {
 }
 
 
-#FAQ {
-  /* border-top: solid 2px black;
-  border-bottom: solid 2px black; */
-  
+#FAQ h3 {
+  border-bottom: solid 2px black;
 }
 
-#FAQ-outer {
+/* #FAQ-outer {
   background-color: var(--color-gray-light);
+} */
+
+
+.bootcamp-hero-caption {
+  text-transform: lowercase;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  padding: 1rem 0;
+}
+
+
+
+
+#onlinebootcamp-quote p {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 2rem;
+  margin: auto;
+}
+
+#onlinebootcamp-overview, #onlinebootcamp-faq, #onlinebootcamp-quote {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#onlinebootcamp-overview h2 {
+  border-bottom: black solid 2px;
+}
+
+.quote-text-container {
+  position: relative;
+  bottom: 25vh;
+  height: 50vh;
+}
+
+.caption-bg-left {
+  position: relative;
+  right: 50%;
+  top: 25vh;
+  height: 50vh;
+  background: var(--color-gray-light);
+  opacity: 50%;
+}
+
+#onlinebootcamp-hero {
+  height: 90vh;
+}
+
+#onlinebootcamp-signup {
+  height: 50vh;
+}
+
+.onlinebootcamp-signup-container {
+  border: solid 1px black;
+  box-shadow: -4px 4px 8px -4px black;
+  padding: 1rem;
 }
