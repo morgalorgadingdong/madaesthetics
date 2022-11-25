@@ -322,12 +322,18 @@ function createItemCard(item) {
   let id = item.id;
   let name = item.itemData.name;
   let price = item.itemData.variations[0].itemVariationData.priceMoney.amount;
-  let category = item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue
+  let category
+  if (item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue) {
+    category = item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue
+  }
+  let imgURL
+  if (item.itemData.imgURL) {
+    imgURL = item.itemData.imgURL;
+  }
   price = price.slice(0, price.length - 1)
   price = Number(price)
   price = price/100
   // let description = item.itemData.description;
-  let imgURL = item.itemData.imgURL;
   let container = document.createElement('a')
   container.classList.add('store-item-wrapper', 'col-6', 'col-md-4', 'col-xl-3')
   container.setAttribute('onclick', `location.href='products/${id}.html';`);
