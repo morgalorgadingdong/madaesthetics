@@ -1,6 +1,101 @@
 [
   {
     "type": "ITEM",
+    "id": "TVBJ7YQPKYDH4V2TRPJQUTLN",
+    "updatedAt": "2022-11-25T17:28:33.523Z",
+    "version": "1669397313523n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "LPC2ZC3XGTREO375M5M5PO26",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "$30 Off One Custom HydraFacial",
+      "description": "((Must be redeemed within 3 months of purchase)). This invigorating treatment includes deeply cleansing, exfoliating, and extracting impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin. The Custom HydraFacial also includes a personalized Booster to address your specific skin concerns, LED Light Therapy to further reduce visible signs of aging and an ice globe massage to finish. ",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "JEPTL4EIPMIOAKYBJ2S73GUF",
+          "updatedAt": "2022-11-25T17:28:33.523Z",
+          "version": "1669397313523n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "B7JJXTZJJAPXUL3K2NMAOIDS"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "VRRA6MS2ZYYIZOMUWKJOTABR",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "TVBJ7YQPKYDH4V2TRPJQUTLN",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "17500n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "FNQ7H7EB6HW6YT7FDMC55T2S"
+      ],
+      "descriptionHtml": "<p>((Must be redeemed within 3 months of purchase)). This invigorating treatment includes deeply cleansing, exfoliating, and extracting impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin. The Custom HydraFacial also includes a personalized Booster to address your specific skin concerns, LED Light Therapy to further reduce visible signs of aging and an ice globe massage to finish.</p>",
+      "descriptionPlaintext": "((Must be redeemed within 3 months of purchase)). This invigorating treatment includes deeply cleansing, exfoliating, and extracting impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin. The Custom HydraFacial also includes a personalized Booster to address your specific skin concerns, LED Light Therapy to further reduce visible signs of aging and an ice globe massage to finish.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d9945258a6d30224472a369cdf8b42db3912213e/original.png"
+    }
+  },
+  {
+    "type": "ITEM",
     "id": "5EP3FBC5TK4NA6DP4J7ZCXHY",
     "updatedAt": "2022-11-25T06:06:22.821Z",
     "version": "1669356382821n",
@@ -1162,6 +1257,164 @@
       "descriptionHtml": "<p>Brighten-C Mask is packed with specialty ingredients like vitamin C to boost radiance, help improve the appearance of discoloration and offer antioxidant support.  Appropriate for all skin types.</p>",
       "descriptionPlaintext": "Brighten-C Mask is packed with specialty ingredients like vitamin C to boost radiance, help improve the appearance of discoloration and offer antioxidant support.  Appropriate for all skin types.",
       "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/b59789a5057b6bc9510bf14a1e8f53170548cefc/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "EUMZB75HLWPSJSBVWANCQPZO",
+    "updatedAt": "2022-11-25T17:28:53.271Z",
+    "version": "1669397333271n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "XVSCBWSBSYTICML5EBM4XL3H",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Buy 3 Dermaplane Facials, Get One 50% Off",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "7FD4CSFIPMEFCESNFAOBU4L3",
+          "updatedAt": "2022-11-25T17:28:53.271Z",
+          "version": "1669397333271n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "M6H7BYI3PFLMZE6E7LPPKLYJ",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "EUMZB75HLWPSJSBVWANCQPZO",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "31500n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "JCONJOPWLX23WHVNILUYKCFG",
+    "updatedAt": "2022-11-25T17:29:17.728Z",
+    "version": "1669397357728n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "CLD7UIBQSEKCWLTNDU7PY2L4",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Buy 3 Dermaplanes, Get One FREE",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "OHO6CQC6BJKRAGO2UI7WFI43",
+          "updatedAt": "2022-11-25T17:29:17.728Z",
+          "version": "1669397357728n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "R7LARNUVIC5NBC7LBQ35FMJR",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "JCONJOPWLX23WHVNILUYKCFG",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "25500n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false
     }
   },
   {

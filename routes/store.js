@@ -13,8 +13,8 @@ const storeController = require('../controllers/store')
 // console.log('test')
 // storeController.updateStore('test')
 
-// router.post('/hook', storeController.updateStore)
-router.get('/hook', storeController.updateStore)
+router.post('/hook', storeController.updateStore)
+// router.get('/hook', storeController.updateStore)
 
 // router.post('/checkout', storeController.checkout)
 router.post('/checkout', storeController.checkoutSale)
