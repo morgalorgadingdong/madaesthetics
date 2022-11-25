@@ -9,10 +9,11 @@ let cart = []
 let checkoutCart = []
 let storeItems = []
 class CartItem{
-  constructor(name, quantity, amount) {
+  constructor(name, quantity, amount, category) {
     this.name = name;
     this.quantity = quantity;
     this.amount = amount
+    this.category = category
     // Object.defineProperty(this.baseMoney, 'amount', {
     //   value: amount,
     // })
@@ -132,11 +133,23 @@ function toggleIndividualFilter(e) {
 
 
 function createCartItem() {
+  console.log(storeItems)
   let name = document.getElementById('product-name').innerHTML
   let qty = document.getElementById('qty').value
   let price = document.getElementById('product-price').innerHTML
+  let index
+  let i = 0
+  storeItems.forEach(el => {
+    if (el.itemData.name == name) {
+      index = i 
+    } else {
+      i++
+    }
+  })
+  console.log(name, index)
+  let category = storeItems[index].itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue
   console.log('Created..',name, qty, price)
-  let item = new CartItem(name, qty, price)
+  let item = new CartItem(name, qty, price, category)
   let itemExists = false
   cart.forEach(el => {
     if (el.name == item.name) {
@@ -319,6 +332,7 @@ function updateCartTotalValue(total) {
 // if (document.getElementById('cart-container')) {buildCartHTML()}
 
 function createItemCard(item) {
+  console.log(item)
   let id = item.id;
   let name = item.itemData.name;
   let price = item.itemData.variations[0].itemVariationData.priceMoney.amount;
@@ -435,16 +449,35 @@ function createItemPage() {
 function translateCartData() {
   checkoutCart = []
   cart.forEach(item => {
+    let discount = '20'
     let newAmount = item.amount.slice(2)
     newAmount = Number(newAmount) * 100
-    let checkoutItem = {
-      name: item.name,
-      quantity: String(item.quantity),
-      basePriceMoney: {
-        amount: newAmount,
-        currency: 'USD'
+    let checkoutItem
+    if (item.category == 'Black Friday') {
+      checkoutItem = {
+        name: item.name,
+        quantity: String(item.quantity),
+        basePriceMoney: {
+          amount: newAmount,
+          currency: 'USD'
+        }
+      }
+    } else {
+      checkoutItem = {
+        name: item.name,
+        quantity: String(item.quantity),
+        basePriceMoney: {
+          amount: newAmount,
+          currency: 'USD'
+        },
+        appliedDiscounts: [
+          {
+            discountUid: 'blackfridaysale2022'
+          }
+        ],
       }
     }
+    
     checkoutCart.push(checkoutItem)
   })
   console.log(checkoutCart)

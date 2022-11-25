@@ -1,9 +1,104 @@
 [
   {
     "type": "ITEM",
+    "id": "5EP3FBC5TK4NA6DP4J7ZCXHY",
+    "updatedAt": "2022-11-25T06:06:22.821Z",
+    "version": "1669356382821n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "JUCYBO5II4YRA2M7HQL4I4RO",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "$35 Off One MAD Signature HydraFacial",
+      "description": "((Must be redeemed within 3 months of purchase)) The ultimate HydraFacial experience! Starting with a Dermaplane to remove dead skin cells and peach fuzz, then this invigorating treatment deeply cleanses, exfoliates, extracts and hydrates the skin while incorporating a Booster designed to target your specific skin concerns. Concluding with LED Light Therapy to further reduce the visible signs of aging, a hydrojelly mask and an ice globe massage. ",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "M2SQ7BHS5X32TAFQY7RLZUZ7",
+          "updatedAt": "2022-11-25T06:06:22.821Z",
+          "version": "1669356382821n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "B7JJXTZJJAPXUL3K2NMAOIDS"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "VWG5UASCY2HVJNHJ2UBPYLTP",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "5EP3FBC5TK4NA6DP4J7ZCXHY",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "20500n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "FNQ7H7EB6HW6YT7FDMC55T2S"
+      ],
+      "descriptionHtml": "<p>((Must be redeemed within 3 months of purchase)) The ultimate HydraFacial experience! Starting with a Dermaplane to remove dead skin cells and peach fuzz, then this invigorating treatment deeply cleanses, exfoliates, extracts and hydrates the skin while incorporating a Booster designed to target your specific skin concerns. Concluding with LED Light Therapy to further reduce the visible signs of aging, a hydrojelly mask and an ice globe massage.</p>",
+      "descriptionPlaintext": "((Must be redeemed within 3 months of purchase)) The ultimate HydraFacial experience! Starting with a Dermaplane to remove dead skin cells and peach fuzz, then this invigorating treatment deeply cleanses, exfoliates, extracts and hydrates the skin while incorporating a Booster designed to target your specific skin concerns. Concluding with LED Light Therapy to further reduce the visible signs of aging, a hydrojelly mask and an ice globe massage.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d9945258a6d30224472a369cdf8b42db3912213e/original.png"
+    }
+  },
+  {
+    "type": "ITEM",
     "id": "VBHSJLUBFU5GJCONUTVC4RV5",
-    "updatedAt": "2022-11-02T23:00:32.481Z",
-    "version": "1667430032481n",
+    "updatedAt": "2022-11-14T22:07:43.405Z",
+    "version": "1668463663405n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1359,6 +1454,101 @@
   },
   {
     "type": "ITEM",
+    "id": "O54FM77TDGGSW2SK2MB5CQ2P",
+    "updatedAt": "2022-11-25T06:06:32.454Z",
+    "version": "1669356392454n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "Q2BMTR3YBKOHKS7BLZO4A5W6",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Custom HydraFacial Package of 3",
+      "description": "((Must be redeemed within 6 months of purchase)) This invigorating treatment includes deeply cleansing, exfoliating, and extracting impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin. The Custom HydraFacial also includes a personalized Booster to address your specific skin concerns, LED Light Therapy to further reduce visible signs of aging and an ice globe massage to finish. ",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "DOHDZ6CKLPDYSM7BEOABTF7S",
+          "updatedAt": "2022-11-25T06:06:32.454Z",
+          "version": "1669356392454n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "B7JJXTZJJAPXUL3K2NMAOIDS"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "BUZKTKPBER7EZXBKHM35QNWK",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "O54FM77TDGGSW2SK2MB5CQ2P",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "49200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "FNQ7H7EB6HW6YT7FDMC55T2S"
+      ],
+      "descriptionHtml": "<p>((Must be redeemed within 6 months of purchase)) This invigorating treatment includes deeply cleansing, exfoliating, and extracting impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin. The Custom HydraFacial also includes a personalized Booster to address your specific skin concerns, LED Light Therapy to further reduce visible signs of aging and an ice globe massage to finish.</p>",
+      "descriptionPlaintext": "((Must be redeemed within 6 months of purchase)) This invigorating treatment includes deeply cleansing, exfoliating, and extracting impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin. The Custom HydraFacial also includes a personalized Booster to address your specific skin concerns, LED Light Therapy to further reduce visible signs of aging and an ice globe massage to finish.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d9945258a6d30224472a369cdf8b42db3912213e/original.png"
+    }
+  },
+  {
+    "type": "ITEM",
     "id": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
     "updatedAt": "2022-10-06T21:08:00.318Z",
     "version": "1665090480318n",
@@ -1904,6 +2094,101 @@
   },
   {
     "type": "ITEM",
+    "id": "5YRUWSCX65XWY4FQ4L3F727C",
+    "updatedAt": "2022-11-25T06:07:52.292Z",
+    "version": "1669356472292n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "DIPEKRMDFOBH6UUKTQCUOSM6",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "MAD Signature HydraFacial Package of 3",
+      "description": "((Must be redeemed within 6 months of purchase)) The ultimate HydraFacial experience! Starting with a Dermaplane to remove dead skin cells and peach fuzz, then this invigorating treatment deeply cleanses, exfoliates, extracts and hydrates the skin while incorporating a Booster designed to target your specific skin concerns. Concluding with LED Light Therapy to further reduce the visible signs of aging, a hydrojelly mask and an ice globe massage. ",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "EAYQ3XUZIQ4ZZMCKMPOUAI7N",
+          "updatedAt": "2022-11-25T06:07:52.292Z",
+          "version": "1669356472292n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "B7JJXTZJJAPXUL3K2NMAOIDS"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "C7KU2INU6GBFKJOVHAK2VYJD",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "5YRUWSCX65XWY4FQ4L3F727C",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "57600n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "FNQ7H7EB6HW6YT7FDMC55T2S"
+      ],
+      "descriptionHtml": "<p>((Must be redeemed within 6 months of purchase)) The ultimate HydraFacial experience! Starting with a Dermaplane to remove dead skin cells and peach fuzz, then this invigorating treatment deeply cleanses, exfoliates, extracts and hydrates the skin while incorporating a Booster designed to target your specific skin concerns. Concluding with LED Light Therapy to further reduce the visible signs of aging, a hydrojelly mask and an ice globe massage.</p>",
+      "descriptionPlaintext": "((Must be redeemed within 6 months of purchase)) The ultimate HydraFacial experience! Starting with a Dermaplane to remove dead skin cells and peach fuzz, then this invigorating treatment deeply cleanses, exfoliates, extracts and hydrates the skin while incorporating a Booster designed to target your specific skin concerns. Concluding with LED Light Therapy to further reduce the visible signs of aging, a hydrojelly mask and an ice globe massage.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d9945258a6d30224472a369cdf8b42db3912213e/original.png"
+    }
+  },
+  {
+    "type": "ITEM",
     "id": "355OC22CQIEYARNAQ3VRJ2K7",
     "updatedAt": "2022-10-06T21:09:21.581Z",
     "version": "1665090561581n",
@@ -2389,6 +2674,101 @@
       "descriptionHtml": "<p>Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.</p>",
       "descriptionPlaintext": "Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
       "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/8f89938934632daf0853004b3d160fd344a56ab0/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "JVDLL55U2BZHC7PJA26G4JKC",
+    "updatedAt": "2022-11-25T06:08:03.249Z",
+    "version": "1669356483249n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "SWDB3GZBPGSQB6OOGNIN2YBR",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Microneedling with AnteAGE Growth Factor Serum Package of 3",
+      "description": "((Must be redeemed within 6 months of purchase)) Microneedling with AnteAGE MD Growth Factor Serum contains pro-healing, anti-inflammatory growth factors and cytokines.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "5JJIUC2ZGQ325KMFYTTF5EGW",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "DQLSQYOEXAVGMMQVXZ4GCCU7",
+          "updatedAt": "2022-11-25T06:08:03.249Z",
+          "version": "1669356483249n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "B7JJXTZJJAPXUL3K2NMAOIDS"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Black Friday",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "KOVS6P3UOF7XO6GLFLUHLOF2",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "JVDLL55U2BZHC7PJA26G4JKC",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "84000n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "FNQ7H7EB6HW6YT7FDMC55T2S"
+      ],
+      "descriptionHtml": "<p>((Must be redeemed within 6 months of purchase)) Microneedling with AnteAGE MD Growth Factor Serum contains pro-healing, anti-inflammatory growth factors and cytokines.</p>",
+      "descriptionPlaintext": "((Must be redeemed within 6 months of purchase)) Microneedling with AnteAGE MD Growth Factor Serum contains pro-healing, anti-inflammatory growth factors and cytokines.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d9945258a6d30224472a369cdf8b42db3912213e/original.png"
     }
   },
   {

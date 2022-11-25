@@ -179,7 +179,8 @@
           let shipping = 0
           cart.forEach(item => {
               total += (item.basePriceMoney.amount * Number(item.quantity))
-          })
+              
+            })
           if (total < 10000) {
               shipping = 600
           }
@@ -194,9 +195,12 @@
                   lineItems: cart,
                   discounts: [
                     {
+                      uid: 'blackfridaysale2022',
                       name: 'Black Friday Sale',
+                      scope: 'LINE_ITEM',
                       percentage: '20'
-                    }
+                    },
+                    
                   ],
                   pricingOptions: {
                   autoApplyTaxes: true
