@@ -92,10 +92,12 @@
             res.status(200).end() // Responding with 200 status
           },
         checkout: async (req, res) => {
-            let cart = req.body
+          console.log('checkout function called from controller')  
+          let cart = req.body
             let password = env.cryptoPW
             function validateCart(cart) {
                 let validCart = true
+                console.log('cart validated')
                 //Take total from cart and compare it to what it should be based on storeItems variable
                 return validCart
               }
@@ -107,7 +109,9 @@
                 total += (item.basePriceMoney.amount * Number(item.quantity))
             })
             if (total < 10000) {
-                shipping = 600
+                shipping = 700
+            } else if (total < 30000) {
+                shipping = 1400
             }
             let key = await getIdempotencyKey()
                 try {
@@ -117,6 +121,15 @@
                     locationId: 'J2WJWF13GKN3W', //production locationId
                     // locationId: 'LY7R6151RVTQ7', //sandbox locationId
                     lineItems: cart,
+                    discounts: [
+                      {
+                        uid: 'blackfridaysale2022',
+                        name: 'Black Friday Sale',
+                        scope: 'LINE_ITEM',
+                        percentage: '0'
+                      },
+                      
+                    ],
                     pricingOptions: {
                     autoApplyTaxes: true
                     }
