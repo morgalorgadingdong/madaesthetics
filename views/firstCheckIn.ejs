@@ -1,222 +1,393 @@
 <%- include('partials/header') -%>
 
 <section id="checkIn" class="col-12">
-    <div class="row col-12 d-flex justify-content-center flex-wrap">
+    <div class="row col-12 d-flex justify-content-center flex-wrap mx-0">
       <!-- <h2 class="col-12 text-center <%= user.admin === true ? 'hidden' : ''%>">Hello, <%= user.firstName %></h2>   -->
       
       <h2 class="col-12 text-center">Initial Questionnaire</h2>
       <h4 class="col-12 text-center">Status: <%= checkIn.status %></h4>
-        <div class="col-12 col-md-9 d-flex justify-content-center flex-wrap mt-5">           
+      <div class="col-12 col-md-9 col-xl-6 d-flex justify-content-center flex-wrap mt-5 px-0">           
             <form id="checkInForm" class="mb-5 col-12 <%= user.admin === true || checkIn.submitted == true ? 'hidden' : ''%>" action="/bootcamp/firstCheckInSubmit" method="POST" enctype="multipart/form-data">
                 <div id="orderForm">
                   <h6 class="textLeft">Your Info</h6>
                   <input name="checkInNumber" value="first" class="hidden"/>
-                  <div class="mb-3">
-                    <input name="nameFirst" type="text" class="form-control col-12 col-md-6" value="<%= user.firstName %>">
+                  <div class="mb-3 col-12 d-flex justify-content-center">
+                    <input name="nameFirst" type="text" class="form-control col-12" value="<%= user.firstName %>">
                   </div>
-                  <div class="mb-3">
-                    <input name="nameLast" type="text" class="form-control col-12 col-md-6" value="<%= user.lastName %>">
+                  <div class="mb-3 col-12 d-flex justify-content-center">
+                    <input name="nameLast" type="text" class="form-control col-12" value="<%= user.lastName %>">
                   </div>                  
-                  <div class="mb-3">
-                    <input name="email" type="email" class="form-control col-12 col-md-6" placeholder="email" value="<%= user.email %>">
+                  <div class="mb-3 col-12 d-flex justify-content-center">
+                    <input name="email" type="email" class="form-control col-12" placeholder="email" value="<%= user.email %>">
                   </div>
-                  <div class="mb-3">
-                    <input name="phone" type="tel" class="form-control col-12 col-md-6" placeholder="Phone Number" value="<%= user.phone %>">
+                  <div class="mb-3 col-12 d-flex justify-content-center">
+                    <input name="phone" type="tel" class="form-control col-12" placeholder="Phone Number" value="<%= user.phone %>">
                   </div>
-                  <div class="mb-3">
-                    <input name="age" type="number" class="form-control col-12 col-md-6" placeholder="Age" value="<%= user.age %>">
+                  <div class="mb-3 col-12 d-flex justify-content-center">
+                    <input name="age" type="number" class="form-control col-12" placeholder="Age" value="<%= user.age %>">
                   </div>
                     <div class="mb-5">
-                        <h6 class="textLeft">Medications</h6>
+                        <h6 class="textLeft mt-5">Medications</h6>
                         <p>Leave medication blank if you've never taken it</p>
-                    <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Accutane</p>  
-                      <input name="accutaneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
-                      <input name="accutaneDuration" type="text" class="form-control mx-1" placeholder="For how long?">
-                    </div>
-                    <div class="mb-3 d-flex align-items-center flex-wrap">
-                        <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Androstendione</p>
-                        <input name="androstendioneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                        <input name="androstendioneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                    </div>
-                    <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Antibiotics</p>
-                      <input name="antibioticsStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="antibioticsDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Avita</p>
-                    <input name="avitaStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="avitaDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Azelex</p>
-                    <input name="azelexStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="azelexDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Benzoyl</p>
-                    <input name="benzoylStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="benzoylDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cleocin-T</p>
-                    <input name="cleocinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="cleocinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cocaine/Speed</p>
-                    <input name="cocaineStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="cocaineDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Copaxone</p>
-                    <input name="copaxoneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="copaxoneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Corticosteroids</p>
-                    <input name="corticosteroidsStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="corticosteroidsDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cream or Gel</p>
-                    <div class="col-md-9 col-12 d-flex flex-wrap align-items-center px-0">
-                      <input type="text" name="creamMedDescription" placeholder="describe" class="form-control col-12 "/>
-                      <div class="d-flex align-items-center col-12 flex-wrap px-0">
-                        <input name="creamStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                        <input name="creamDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cyclosporin</p>
-                    <input name="cyclosporinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="cyclosporinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Danzol</p>
-                    <input name="danzolStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="danzolDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Differin</p>
-                    <input name="differinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="differinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Dilantin/Tegretol</p>
-                    <input name="dilantinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="dilantinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Disulfuram</p>
-                    <input name="disulfuramStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="disulfuramDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">E-mycin-T</p>
-                    <input name="emycinStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="emycinDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Isoniazid</p>
-                    <input name="isoniazidStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="isoniazidDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Immuran</p>
-                    <input name="immuranStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="immuranDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Lithium</p>
-                    <input name="lithiumStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="lithiumDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Marijuana</p>
-                    <input name="marijuanaStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="marijuanaDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Peroxide</p>
-                    <input name="peroxideStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="peroxideDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Progesterone</p>
-                    <input name="progesteroneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="progesteroneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Quinine</p>
-                    <input name="quinineStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="quinineDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Retin A</p>
-                    <input name="retinAStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="retinADuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Steroids</p>
-                    <input name="steroidStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="steroidDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Tazorac</p>
-                    <input name="tazoracStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="tazoracDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Testosterone</p>
-                    <input name="testosteroneStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="testosteroneDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Thyroid</p>
-                    <input name="thyroidStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                    <input name="thyroidDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                  </div>
-                  <div class="mb-3 d-flex align-items-center flex-wrap">
-                    <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Other meds</p>
-                    <div class="col-12 col-md-9 d-flex flex-wrap align-items-center px-0">
-                      <input type="text" name="otherMedDescription" placeholder="describe" class="form-control col-12 "/>
-                      <div class="d-flex align-items-center col-12 px-0 flex-wrap">
-                        <input name="otherMedStart" placeholder="Date started" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                        <input name="otherMedDuration" type="text" class="form-control mx-1" placeholder="For how long?" >
-                      </div>
-                    </div> 
-                  </div> 
+                    
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Accutane</p>  
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="accutaneStart" placeholder="Date started" class="form-control date col-12" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="accutaneDuration" type="text" class="form-control col-12" placeholder="For how long?">
+                          </div>
+                        </div>
+                        
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Androstendione</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="androstendioneStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="androstendioneDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Antibiotics</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="antibioticsStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="antibioticsDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Avita</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="avitaStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="avitaDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Azelex</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="azelexStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="azelexDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>                          
+                        </div>
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Benzoyl</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="benzoylStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="benzoylDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Cleocin-T</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="cleocinStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="cleocinDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Cocaine/Speed</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="cocaineStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="cocaineDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Copaxone</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="copaxoneStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="copaxoneDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Corticosteroids</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="corticosteroidsStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="corticosteroidsDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Cream or Gel</p>
+                          <div class="col-12 mb-1 px-0">
+                            <input type="text" name="creamMedDescription" placeholder="describe" class="form-control col-12 "/>
+                          </div>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="creamStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="creamDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Cyclosporin</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="cyclosporinStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="cyclosporinDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Danzol</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="danzolStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="danzolDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Differin</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="differinStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="differinDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Dilantin/Tegretol</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="dilantinStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="dilantinDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Disulfuram</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="disulfuramStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="disulfuramDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">E-mycin-T</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="emycinStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="emycinDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Isoniazid</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="isoniazidStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="isoniazidDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Immuran</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="immuranStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="immuranDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Lithium</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="lithiumStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="lithiumDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Marijuana</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="marijuanaStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="marijuanaDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Peroxide</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="peroxideStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="peroxideDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>  
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Progesterone</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="progesteroneStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="progesteroneDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Quinine</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="quinineStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="quinineDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Retin A</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="retinAStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="retinADuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Steroids</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="steroidStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="steroidDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Tazorac</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="tazoracStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="tazoracDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Testosterone</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="testosteroneStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="testosteroneDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Thyroid</p>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="thyroidStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="thyroidDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div>
+
+
+                        <div class="firstcheckin-medications-outer">
+                          <p class="firstcheckin-medications-name">Other meds</p>
+                          <div class="col-12 mb-1 px-0">
+                            <input type="text" name="otherMedDescription" placeholder="Describe" class="form-control col-12 "/>
+                          </div>
+                          <div class="firstcheckin-medications-input-container-first col-12 col-sm-6">
+                            <input name="otherMedStart" placeholder="Date started" class="form-control date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                          </div>
+                          <div class="firstcheckin-medications-input-container-second col-12 col-sm-6">
+                            <input name="otherMedDuration" type="text" class="form-control" placeholder="For how long?" >
+                          </div>
+                        </div> 
                   </div>
                   <h6 class="textLeft mt-5">Medical History (please check all that apply)</h6>
                   <div class="mb-5 d-flex align-items-center flex-wrap mb-5">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Herpes Simplex<input name="herpes" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Eczema<input name="eczema" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Psoriasis<input name="psoriasis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hepatitis<input name="hepatitis" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cancer<input name="cancer" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Staph Infection/MRSA<input name="mrsa" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">HIV/AIDS<input name="hiv" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Thyroid Problems<input name="thyroidProblems" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hormone Problems<input name="hormoneProblems" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hysterectomy<input name="hysterectomy" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Overies Removed<input name="overiesRemoved" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Pacemaker<input name="pacemaker" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Hemophilia<input name="hemophilia" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Lupus<input name="lupus" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Anemia<input name="anemia" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">High Blood Pressure<input name="highBloodPressure" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Diabetes<input name="diabetes" type="checkbox" class="d-flex mx-3"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Metal Pins in Body<input name="metalPinsInBody" type="checkbox" class="d-flex mx-3"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="herpes" type="checkbox" class="d-flex mx-3"/>Herpes Simplex</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="eczema" type="checkbox" class="d-flex mx-3"/>Eczema</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="psoriasis" type="checkbox" class="d-flex mx-3"/>Psoriasis</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="hepatitis" type="checkbox" class="d-flex mx-3"/>Hepatitis</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="cancer" type="checkbox" class="d-flex mx-3"/>Cancer</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="mrsa" type="checkbox" class="d-flex mx-3"/>Staph Infection/MRSA</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="hiv" type="checkbox" class="d-flex mx-3"/>HIV/AIDS</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="thyroidProblems" type="checkbox" class="d-flex mx-3"/>Thyroid Problems</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="hormoneProblems" type="checkbox" class="d-flex mx-3"/>Hormone Problems</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="hysterectomy" type="checkbox" class="d-flex mx-3"/>Hysterectomy</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="overiesRemoved" type="checkbox" class="d-flex mx-3"/>Overies Removed</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="pacemaker" type="checkbox" class="d-flex mx-3"/>Pacemaker</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="hemophilia" type="checkbox" class="d-flex mx-3"/>Hemophilia</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="lupus" type="checkbox" class="d-flex mx-3"/>Lupus</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="anemia" type="checkbox" class="d-flex mx-3"/>Anemia</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="highBloodPressure" type="checkbox" class="d-flex mx-3"/>High Blood Pressure</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="diabetes" type="checkbox" class="d-flex mx-3"/>Diabetes</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="metalPinsInBody" type="checkbox" class="d-flex mx-3"/>Metal Pins in Body</p>
                   </div>
                   <p>Are you under a dermatologist’s or other physician’s care?</p>
                   <input type="text" name="lifestyleQ1" class="form-control mb-5" placeholder="Doctor's name">
                   
                   <h6 class="textLeft mt-5">Lifestyle Considerations</h6>
                   <p>How would you describe your skin?</p>
-                  <select name="lifestyleQ2" class="form-control mb-5">
+                  <select name="lifestyleQ2" class="form-control mb-3">
                     <option value="">--Please choose an option--</option>
                     <option value="oily">Oily</option>
                     <option value="dry">Dry</option>
@@ -224,116 +395,116 @@
                     <option value="idk">I don't know</option>
                   </select>  
                   <p>Have you ever had any reactions to any products or anything you have put on your face? If so, what products?</p>
-                    <input type="text" name="lifestyleQ3" class="form-control mb-5">
+                    <input type="text" name="lifestyleQ3" class="form-control mb-3">
                     <p>Please list any allergies that you know you have:</p>
-                    <input type="text" name="lifestyleQ4" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ4" class="form-control mb-3"/>
                     <p>Do you smoke?</p>
-                    <input type="text" name="lifestyleQ5" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ5" class="form-control mb-3"/>
                     <p>Do you use fabric softener or fabric softener sheets in the dryer?</p>
-                    <input type="text" name="lifestyleQ6" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ6" class="form-control mb-3"/>
                     <p>Do you regularly swim in a chlorinated pool?</p>
-                    <input type="text" name="lifestyleQ7" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ7" class="form-control mb-3"/>
                     <p>Do you work around chemicals, tars, oils, grease or inks?</p>
-                    <input type="text" name="lifestyleQ8" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ8" class="form-control mb-3"/>
                     <p>Occupation:</p>
-                    <input type="text" name="lifestyleQ9" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ9" class="form-control mb-3"/>
                     <p>Are you currently under a lot of stress?</p>
-                    <input type="text" name="lifestyleQ10" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ10" class="form-control mb-3"/>
                     <p><b>Women:</b> Do you use birth control pills, shots or an IUD? If so, which type and brand (if pill)?</p>
-                    <input type="text" name="lifestyleQ11" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ11" class="form-control mb-3"/>
                     <p><b>Men:</b> Do you have shaving irritation? If so, what type of razor do you use for shaving?</p>
-                    <input type="text" name="lifestyleQ12" class="form-control mb-5"/>
+                    <input type="text" name="lifestyleQ12" class="form-control mb-3"/>
 
                     <h6 class="textLeft mt-5">Diet</h6>
                     <p>Do you regularly consume any of the following</p>
                     <div class="mb-5 d-flex align-items-center flex-wrap mb-5">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Fast Food<input name="fastFood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Processed Food<input name="processedFood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Salty Snacks<input name="saltySnacks" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Milk/Yogurt<input name="milk" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Cheese<input name="cheese" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Whey or Soy Protein<input name="whey" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Peanut Butter<input name="peanutButter" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Peanuts<input name="peanuts" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Sushi<input name="sushi" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Kelp or Seaweed<input name="kelp" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Miso Soup<input name="miso" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Soy<input name="soy" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Vitamin Supplements<input name="vitaminSupplements" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Seafood<input name="seafood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/></p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="fastFood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Fast Food</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="processedFood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Processed Food</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="saltySnacks" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Salty Snacks</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="milk" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Milk/Yogurt</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="cheese" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Cheese</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="whey" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Whey or Soy Protein</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="peanutButter" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Peanut Butter</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="peanuts" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Peanuts</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="sushi" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Sushi</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="kelp" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Kelp or Seaweed</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="miso" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Miso Soup</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="soy" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Soy</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="vitaminSupplements" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Vitamin Supplements</p>
+                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-left"><input name="seafood" type="checkbox" class="d-flex mx-3" placeholder="How often per week?"/>Seafood</p>
                   </div>
                     <h6 class="textLeft mt-5">Products currently Using</h6>
                     <p>Please provide product names</p>
                     <p>Cleanser</p>
-                    <input type="text" name="cleanser" class="form-control mb-5"/>
+                    <input type="text" name="cleanser" class="form-control mb-3"/>
                     <p>Toner</p>
-                    <input type="text" name="toner" class="form-control mb-5"/>
+                    <input type="text" name="toner" class="form-control mb-3"/>
                     <p>Serum</p>
-                    <input type="text" name="serum" class="form-control mb-5"/>
+                    <input type="text" name="serum" class="form-control mb-3"/>
                     <p>Moisturizer</p>
-                    <input type="text" name="moisturizer" class="form-control mb-5"/>
+                    <input type="text" name="moisturizer" class="form-control mb-3"/>
                     <p>Sunscreen</p>
-                    <input type="text" name="sunscreen" class="form-control mb-5"/>
+                    <input type="text" name="sunscreen" class="form-control mb-3"/>
                     <p>Mask</p>
-                    <input type="text" name="mask" class="form-control mb-5"/>
+                    <input type="text" name="mask" class="form-control mb-3"/>
                     <p>Foundation</p>
-                    <input type="text" name="foundation" class="form-control mb-5"/>
+                    <input type="text" name="foundation" class="form-control mb-3"/>
                     <p>Blush</p>
-                    <input type="text" name="blush" class="form-control mb-5"/>
+                    <input type="text" name="blush" class="form-control mb-3"/>
                     <p>Exfoliant (acids, serums, scrubs)</p>
-                    <input type="text" name="exfoliant" class="form-control mb-5"/>
+                    <input type="text" name="exfoliant" class="form-control mb-3"/>
                     <p>Acne Medications</p>
-                    <input type="text" name="acneMedications" class="form-control mb-5"/>
+                    <input type="text" name="acneMedications" class="form-control mb-3"/>
                     <p>Anything else?</p>
-                    <input type="text" name="productsOther" class="form-control mb-5"/>
+                    <input type="text" name="productsOther" class="form-control mb-3"/>
 
-                    <h6>Other treatments: What else have you done for your skin in the last 90 days?</h6>
+                    <h6 class="mt-5">Other treatments: What else have you done for your skin in the last 90 days?</h6>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Checical Peels</p>
-                      <input name="chemicalPeelDescription" type="text" class="form-control mx-1" placeholder="What type?" >
-                      <input name="chemicalPeelWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="chemicalPeelWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Checical Peels</p>
+                      <input name="chemicalPeelDescription" type="text" class="form-control mx-1 mb-1" placeholder="What type?" >
+                      <input name="chemicalPeelWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="chemicalPeelWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Microdermabrasion</p>
-                      <input name="microdermabrasionWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="microdermabrasionWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Microdermabrasion</p>
+                      <input name="microdermabrasionWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="microdermabrasionWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Dermabrasion</p>
-                      <input name="dermabrasionWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="dermabrasionWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Dermabrasion</p>
+                      <input name="dermabrasionWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="dermabrasionWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Laser Hair Removal</p>
-                      <input name="laserHairRemovalWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="laserHairRemovalWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Laser Hair Removal</p>
+                      <input name="laserHairRemovalWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="laserHairRemovalWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Laser Rejuvenation/Resurfacing</p>
-                      <input name="laserRejuvenationWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="laserRejuvenationWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Laser Rejuvenation/Resurfacing</p>
+                      <input name="laserRejuvenationWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="laserRejuvenationWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Skin Cancer Removal</p>
-                      <input name="skinCancerRemovalWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="skinCancerRemovalWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Skin Cancer Removal</p>
+                      <input name="skinCancerRemovalWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="skinCancerRemovalWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Facial Waxing</p>
-                      <input name="facialWaxingWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="facialWaxingWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Facial Waxing</p>
+                      <input name="facialWaxingWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="facialWaxingWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Electrolysis</p>
-                      <input name="ElectrolysisWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="ElectrolysisWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <p class="d-flex m-0 px-3 col-12">Electrolysis</p>
+                      <input name="ElectrolysisWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="ElectrolysisWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <div class="mb-3 d-flex align-items-center flex-wrap">
-                      <p class="d-flex m-0 px-3 col-12 col-md-3 text-center">Other</p>
+                      <p class="d-flex m-0 px-3 col-12">Other</p>
                       <input name="otherTreatmentsDescription" type="text" class="form-control mx-1" placeholder="Describe" >
-                      <input name="otherTreatmentsWhen" placeholder="When?" class="form-control mx-1 date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
-                      <input name="otherTreatmentsWhere" type="text" class="form-control mx-1" placeholder="Where?" >
+                      <input name="otherTreatmentsWhen" placeholder="When?" class="form-control mx-1 date mb-1" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  />
+                      <input name="otherTreatmentsWhere" type="text" class="form-control mx-1 mb-1" placeholder="Where?" >
                     </div>
                     <%- include('partials/pictureUpload') -%>
                       <div class="d-flex justify-content-center">
