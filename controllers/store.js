@@ -121,15 +121,15 @@
                     locationId: 'J2WJWF13GKN3W', //production locationId
                     // locationId: 'LY7R6151RVTQ7', //sandbox locationId
                     lineItems: cart,
-                    discounts: [
-                      {
-                        uid: 'blackfridaysale2022',
-                        name: 'Black Friday Sale',
-                        scope: 'LINE_ITEM',
-                        percentage: '0'
-                      },
+                    // discounts: [
+                    //   {
+                    //     uid: 'blackfridaysale2022',
+                    //     name: 'Black Friday Sale',
+                    //     scope: 'LINE_ITEM',
+                    //     percentage: '0'
+                    //   },
                       
-                    ],
+                    // ],
                     pricingOptions: {
                     autoApplyTaxes: true
                     }

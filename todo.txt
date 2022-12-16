@@ -8,8 +8,8 @@
 - Email notifications for user submitted Check Ins
 - Email notifications for Maddie reviewed Check Ins
 
-- GiddyUp instagram
-- GiddyUp Website
+
+
 
 - Second check in form
 - Second check in results

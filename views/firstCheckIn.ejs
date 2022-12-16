@@ -12,13 +12,13 @@
                   <h6 class="textLeft">Your Info</h6>
                   <input name="checkInNumber" value="first" class="hidden"/>
                   <div class="mb-3 col-12 d-flex justify-content-center">
-                    <input name="nameFirst" type="text" class="form-control col-12" value="<%= user.firstName %>">
+                    <input name="nameFirst" type="text" class="form-control col-12" value="<%= user.firstName %>" required>
                   </div>
                   <div class="mb-3 col-12 d-flex justify-content-center">
-                    <input name="nameLast" type="text" class="form-control col-12" value="<%= user.lastName %>">
+                    <input name="nameLast" type="text" class="form-control col-12" value="<%= user.lastName %>" required>
                   </div>                  
                   <div class="mb-3 col-12 d-flex justify-content-center">
-                    <input name="email" type="email" class="form-control col-12" placeholder="email" value="<%= user.email %>">
+                    <input name="email" type="email" class="form-control col-12" placeholder="email" value="<%= user.email %>" required>
                   </div>
                   <div class="mb-3 col-12 d-flex justify-content-center">
                     <input name="phone" type="tel" class="form-control col-12" placeholder="Phone Number" value="<%= user.phone %>">
@@ -1002,9 +1002,9 @@
             </div>
 
             <h6>Pictures</h6>
-            <img class="col-12 col-md-4 mb-5" src="<%= checkIn.pic1URL%>" />
-            <img class="col-12 col-md-4 mb-5" src="<%= checkIn.pic2URL%>" />
-            <img class="col-12 col-md-4 mb-5" src="<%= checkIn.pic3URL%>" />
+            <img class="col-12 col-xl-4 mb-5" src="<%= checkIn.pic1URL%>" />
+            <img class="col-12 col-xl-4 mb-5" src="<%= checkIn.pic2URL%>" />
+            <img class="col-12 col-xl-4 mb-5" src="<%= checkIn.pic3URL%>" />
         </div>
 
         <div class="<%= user.admin === true && checkIn.submitted === false ? '' : 'hidden'%> col-12 text-center ">

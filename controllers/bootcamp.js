@@ -87,7 +87,7 @@ module.exports = {
             res.render('admin.ejs', {unreviewedCheckIns: unreviewedCheckIns, reviewedCheckIns: reviewedCheckIns, userCount: userCount, checkInCount: unreviewedCheckInCount})
         }
     },
-    initializeAccount: async (req, res) => {
+    initializeFirstCheckIn: async (req, res) => {
         //
         // Create first checkin
         //
@@ -140,17 +140,7 @@ module.exports = {
             res.render('firstCheckIn.ejs', {user: req.user, checkIn: checkIn[0]})
         }
     },
-    getSecondCheckIn: async (req, res) => {
-      console.log(req.user)
-      console.log(req.body)
-      const checkIn = await Bootcamp.find({_id: req.body.id})
-      console.log(checkIn)
-      if (!req.user) {
-          return res.redirect('../bootcamp')
-      } else {
-          res.render('secondCheckIn.ejs', {user: req.user, checkIn: checkIn[0]})  
-      }
-  },
+    
     postFirstCheckIn: async (req, res) => {
         const checkIns = await Bootcamp.find({userId:req.user.id, checkIn: req.body.checkInNumber})
         const checkIn = checkIns[0]
@@ -250,7 +240,7 @@ module.exports = {
             from: env.email,
             to: env.email,
             subject: `New Initial Check in Awaiting review`,
-            html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review`
+            html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp'>Bootcamp dashboard</a>`
           };
           
           transporter.sendMail(mailOptions, function(error, info){
@@ -340,7 +330,7 @@ module.exports = {
             userName: checkInItem[0].userName,
             userEmail: checkInItem[0].userEmail,
             checkIn: 'third',
-            acneMed: checkInItem[0].acneMed,
+            acneMed: false,
             dueDate: date3,
             submitted: false,
             active: true,
@@ -359,7 +349,7 @@ module.exports = {
             userName: checkInItem[0].userName,
             userEmail: checkInItem[0].userEmail,
             checkIn: 'fourth',
-            acneMed: checkInItem[0].acneMed,
+            acneMed: false,
             dueDate: date4,
             submitted: false,
             active: true,
@@ -377,7 +367,7 @@ module.exports = {
             userName: checkInItem[0].userName,
             userEmail: checkInItem[0].userEmail,
             checkIn: 'fifth',
-            acneMed: checkInItem[0].acneMed,
+            acneMed: false,
             dueDate: date5,
             submitted: false,
             active: true,
@@ -395,7 +385,7 @@ module.exports = {
             userName: checkInItem[0].userName,
             userEmail: checkInItem[0].userEmail,
             checkIn: 'sixth',
-            acneMed: checkInItem[0].acneMed,
+            acneMed: false,
             dueDate: date6,
             submitted: false,
             active: true,
@@ -413,7 +403,7 @@ module.exports = {
             userName: checkInItem[0].userName,
             userEmail: checkInItem[0].userEmail,
             checkIn: 'seventh',
-            acneMed: checkInItem[0].acneMed,
+            acneMed: false,
             dueDate: date7,
             submitted: false,
             active: true,
@@ -428,6 +418,136 @@ module.exports = {
             })
 
         res.redirect('/bootcamp')
+    },
+    initializeAccount: async (req, res) => {
+      console.log(req.user)
+      let date = new Date()
+      let date2 = new Date()
+      let date3 = new Date()
+      let date4 = new Date()
+      let date5 = new Date()
+      let date6 = new Date()
+      let date7 = new Date()
+
+      date2.setDate(date.getDate() + 14)
+      date3.setDate(date.getDate() + 28)
+      date4.setDate(date.getDate() + 42)
+      date5.setDate(date.getDate() + 56)
+      date6.setDate(date.getDate() + 70)
+      date7.setDate(date.getDate() + 84)
+
+      let checkIn2 = new Bootcamp({
+          userId: req.user._id,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          userEmail: req.user.email,
+          checkIn: 'second',
+          acneMed: true,
+          dueDate: date2,
+          submitted: false,
+          active: true,
+          reviewed: false,
+          status: 'Incomplete',
+          title: 'Week 2 Check In'
+        })
+        checkIn2.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+        let checkIn3 = new Bootcamp({
+          // userId: '63645fc5afc0880f6c6a89a9',
+          userId: req.user._id,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          userEmail: req.user.email,
+          checkIn: 'third',
+          acneMed: false,
+          dueDate: date3,
+          submitted: false,
+          active: false,
+          reviewed: false,
+          status: 'Incomplete',
+          title: 'Week 4 Check In'
+          // title: 'Initial Questionnaire'
+        })
+        checkIn3.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+        let checkIn4 = new Bootcamp({
+          userId: req.user._id,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          userEmail: req.user.email,
+          checkIn: 'fourth',
+          acneMed: false,
+          dueDate: date4,
+          submitted: false,
+          active: false,
+          reviewed: false,
+          status: 'Incomplete',
+          title: 'Week 6 Check In'
+        })
+        checkIn4.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+        let checkIn5 = new Bootcamp({
+          userId: req.user._id,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          userEmail: req.user.email,
+          checkIn: 'fifth',
+          acneMed: false,
+          dueDate: date5,
+          submitted: false,
+          active: false,
+          reviewed: false,
+          status: 'Incomplete',
+          title: 'Week 8 Check In'
+        })
+        checkIn5.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+        let checkIn6 = new Bootcamp({
+          userId: req.user._id,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          userEmail: req.user.email,
+          checkIn: 'sixth',
+          acneMed: false,
+          dueDate: date6,
+          submitted: false,
+          active: false,
+          reviewed: false,
+          status: 'Incomplete',
+          title: 'Week 10 Check In'
+        })
+        checkIn6.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+        let checkIn7 = new Bootcamp({
+          userId: req.user._id,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          userEmail: req.user.email,
+          checkIn: 'seventh',
+          acneMed: false,
+          dueDate: date7,
+          submitted: false,
+          active: false,
+          reviewed: false,
+          status: 'Incomplete',
+          title: 'Week 12 Check In'
+        })
+        checkIn7.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+
+      res.redirect('/bootcamp')
     },
     // createOneCheckIn: async (req, res) => {
     //     let date = new Date()
@@ -457,40 +577,201 @@ module.exports = {
     //         })
     //       res.redirect('/bootcamp')
     // },
-    createSecondCheckIn: async (req, res) => {
-        console.log(req.user)
-        let date = new Date()
-        let today = new Date()
+    // createSecondCheckIn: async (req, res) => {
+    //     console.log(req.user)
+    //     let date = new Date()
+    //     let today = new Date()
         
-        date.setDate(date.getDate() + 14)
-        let diff = (date - today) / 1000 / 60 / 60 / 24
-        let checkIn = new Bootcamp({
-            // userId: '63645fc5afc0880f6c6a89a9',
-            // userId: '6366b797532100be8f7ec378', //bob
-            userId: req.user._id,
-            userEmail: req.user.email,
-            checkIn: 'second',
-            acneMed: false,
-            dueDate: date,
-            submitted: false,
-            active: true,
-            reviewed: false,
-            status: 'Incomplete',
-            // title: 'Week 2 Check In'
-            title: 'Week 2 Check In'
+    //     date.setDate(date.getDate() + 14)
+    //     let diff = (date - today) / 1000 / 60 / 60 / 24
+    //     let checkIn = new Bootcamp({
+    //         // userId: '63645fc5afc0880f6c6a89a9',
+    //         // userId: '6366b797532100be8f7ec378', //bob
+    //         userId: req.user._id,
+    //         userEmail: req.user.email,
+    //         checkIn: 'second',
+    //         acneMed: false,
+    //         dueDate: date,
+    //         submitted: false,
+    //         active: true,
+    //         reviewed: false,
+    //         status: 'Incomplete',
+    //         // title: 'Week 2 Check In'
+    //         title: 'Week 2 Check In'
+    //       })
+    //       await checkIn.save((err) => {
+    //         if (err) { 
+    //           console.log('error')
+    //             console.log(err) }
+    //         })
+    //       res.redirect('/bootcamp')
+    // },
+    createSecondCheckIn: async (req, res) => {
+      console.log(req.user)
+      let date = new Date()
+      let today = new Date()
+      
+      date.setDate(date.getDate())
+      let diff = (date - today) / 1000 / 60 / 60 / 24
+      let checkIn = new Bootcamp({
+          // userId: '63645fc5afc0880f6c6a89a9',
+          // userId: '6366b797532100be8f7ec378', //bob
+          userId: req.user._id,
+          userEmail: req.user.email,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          checkIn: 'second',
+          acneMed: false,
+          dueDate: date,
+          submitted: false,
+          active: true,
+          reviewed: false,
+          status: 'Incomplete',
+          // title: 'Week 2 Check In'
+          title: 'Week 2 Check In'
+        })
+        await checkIn.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
           })
-          await checkIn.save((err) => {
+        res.redirect('/bootcamp')
+    },
+    createSecondCheckInAcneMed: async (req, res) => {
+      console.log(req.user)
+      let date = new Date()
+      let today = new Date()
+      
+      date.setDate(date.getDate())
+      let diff = (date - today) / 1000 / 60 / 60 / 24
+      let checkIn = new Bootcamp({
+          // userId: '63645fc5afc0880f6c6a89a9',
+          // userId: '6366b797532100be8f7ec378', //bob
+          userId: req.user._id,
+          userEmail: req.user.email,
+          userName: `${req.user.firstName} ${req.user.lastName}`,
+          checkIn: 'second',
+          acneMed: true,
+          dueDate: date,
+          submitted: false,
+          active: true,
+          reviewed: false,
+          status: 'Incomplete',
+          // title: 'Week 2 Check In'
+          title: 'Week 2 Check In'
+        })
+        await checkIn.save((err) => {
+          if (err) { 
+            console.log('error')
+              console.log(err) }
+          })
+        res.redirect('/bootcamp')
+    },
+    getDefaultCheckIn: async (req, res) => {
+      console.log(req.user)
+      console.log(req.body)
+      const checkIn = await Bootcamp.find({_id: req.body.id})
+      console.log(checkIn)
+      if (!req.user) {
+          return res.redirect('../bootcamp')
+      } else {
+          res.render('defaultCheckIn.ejs', {user: req.user, checkIn: checkIn[0]})  
+      }
+    },
+    postDefaultCheckIn: async (req, res) => {
+      console.log(req.body)
+      const checkIns = await Bootcamp.find({_id: req.body.checkInID})
+      const checkIn = checkIns[0]
+      const users = await User.find({_id:req.user._id})
+      const user = users[0]
+        // console.log(req)
+        // console.log(req.body)
+        // console.log(req.files)
+        // console.log(checkIns)
+
+        //Update user profile with info
+        // user.age = req.body.age
+        // user.skinType = req.body.lifestyleQ2
+
+      checkIn.defaultCheckIn = req.body
+      checkIn.submitted = true
+      checkIn.status = 'Awaiting feedback'
+        // // checkIn.active = false
+
+        // let i = 1
+        // for (const picture of req.files) {
+        //   try {
+        //     const result = await cloudinary.uploader.upload(picture.path)
+        //     if (i == 1) {
+        //       checkIn.pic1URL = result.url
+        //     } else if (i == 2) {
+        //       checkIn.pic2URL = result.url
+        //     } else if (i == 3) {
+        //       checkIn.pic3URL = result.url
+        //     }
+        //     i++
+        //   } catch(error) {
+        //     console.log(error);
+        //   }
+        // }
+        // console.log(req.body)
+        // console.log(checkIn)
+        checkIn.save((err) => {
             if (err) { 
               console.log('error')
-                console.log(err) }
-            })
-          res.redirect('/bootcamp')
-    }
+              console.log(err) }
+            else {
+              console.log('updated Database')
+            }
+          })
+
+        
+        
+
+        //   var mailOptions = {
+        //     from: env.email,
+        //     to: env.email,
+        //     subject: `New Initial Check in Awaiting review`,
+        //     html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp'>Bootcamp dashboard</a>`
+        //   };
+          
+        //   transporter.sendMail(mailOptions, function(error, info){
+        //     if (error) {
+        //       console.log(error);
+        //     } else {
+        //       console.log(info.response);
+        //     }
+        //   });
+
+
+        res.redirect('/bootcamp')
+    },
+    postDefaultCheckInReview: async (req, res) => {
+      const checkInItem = await Bootcamp.find({_id: req.body.id})
+      // console.log(req)
+      console.log(req.body)
+      console.log(checkInItem)
+      checkInItem[0].reviewComments = req.body.comments
+      checkInItem[0].status = 'Complete'
+      checkInItem[0].active = true
+      checkInItem[0].reviewed = true
+      // if (req.body.acneMed) {
+      //     checkInItem[0].acneMed = true
+      // }
+      checkInItem[0].save((err) => {
+          if (err) { 
+              console.log('error')
+              console.log(err) }
+          else {
+              console.log('updated Database')
+          }
+          })
     // initializeFirstCheckIn: (req, res) => {
         //Take user ID from Square webhook, create first checkin with it
         
         // 
     // }
+    res.redirect('/bootcamp')
+      }
 }
 
 

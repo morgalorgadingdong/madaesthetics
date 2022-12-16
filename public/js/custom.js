@@ -21,9 +21,6 @@ class CartItem{
     //   value: 'USD',
     // })
   }
-  updateQty(x) {
-    this.quantity = x
-  }
 }
 
 //On page load, check local storage for cart array
@@ -471,12 +468,12 @@ function translateCartData() {
         basePriceMoney: {
           amount: newAmount,
           currency: 'USD'
-        },
-        appliedDiscounts: [
-          {
-            discountUid: 'blackfridaysale2022'
-          }
-        ],
+        }
+        // appliedDiscounts: [
+        //   {
+        //     discountUid: 'blackfridaysale2022'
+        //   }
+        // ],
       }
     }
     

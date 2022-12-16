@@ -6317,7 +6317,7 @@ form output {
 }
 
 
-/* CHECK IN FORM */
+/* FIRST CHECK IN FORM */
 .firstcheckin-medications-outer {
   margin-bottom: 1rem;
   display: flex;
@@ -6345,6 +6345,106 @@ form output {
   padding-right: 0.25rem;
 }
 
+/* SECOND CHECK IN FORM */
+#checkIn output {
+  font-size: 1.5rem;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+  --slider-thumb-height: 26px;
+  --slider-thumb-width: 16px;
+  --slider-thumb-border-radius: 3px;
+  --slider-thumb-border-thickness: 2px;
+  --slider-thumb-border-color: black;
+  --slider-thumb-box-shadow: 0px 0px 0px #000000;
+  --slider-thumb-background: white;
+  --slider-track-background: var(--color-primary-dark);
+  --slider-track-height: 8.4px;
+  --slider-track-border-radius: 1.3px;
+  --slider-track-focus: var(--color-primary-dark);
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: var(--color-primary-dark);
+  border-radius: var(--slider-track-border-radius);
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: var(--slider-thumb-box-shadow);
+  border: var(--slider-thumb-border-thickness) solid var(--slider-thumb-border-color);
+  height: var(--slider-thumb-height);
+  width: var(--slider-thumb-width);
+  border-radius: var(--slider-thumb-border-radius);
+  background: var(--slider-thumb-background);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: calc((var(--slider-thumb-height) - 7px) / (-2));
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: var(--slider-track-focus);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: var(--slider-track-height);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: var(--color-primary-dark);
+  border-radius: var(--slider-track-border-radius);
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: var(--slider-thumb-box-shadow);
+  border: var(--slider-thumb-border-thickness) solid var(--slider-thumb-border-color);
+  height: var(--slider-thumb-height);
+  width: var(--slider-thumb-width);
+  border-radius: var(--slider-thumb-border-radius);
+  background: var(--slider-thumb-background);
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: var(--slider-track-background);
+  border: 0.2px solid #010101;
+  border-radius: var(--slider-track-border-radius);
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: var(--color-primary-dark);
+  border: 0.2px solid #010101;
+  border-radius: var(--slider-track-border-radius);
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: var(--slider-thumb-box-shadow);
+  border: var(--slider-thumb-border-thickness) solid var(--slider-thumb-border-color);
+  height: var(--slider-thumb-height);
+  width: var(--slider-thumb-width);
+  border-radius: var(--slider-thumb-border-radius);
+  background: var(--slider-thumb-background);
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: var(--color-primary-dark);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: var(--color-primary-dark);
+}
 
 /* Responsive */
 /* Mobile screens and up */

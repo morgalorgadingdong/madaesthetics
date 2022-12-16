@@ -241,6 +241,41 @@ const checkInSchema = new mongoose.Schema({
     otherTreatmentsDescription: '',
     otherTreatmentsWhen: '',
     otherTreatmentsWhere: ''
+  },
+  defaultCheckIn: {  
+    q1: '',
+    q2: '',
+    q3: '',
+    q4: '',
+    q5: '',
+    q6: '',
+    acneMedQ: ''
+  },
+  reviewComments: {
+    type: String,
+    default: ''
+  }
+  // secondCheckIn: {
+  //   type: mongoose.ObjectId,
+  //   ref: 'SecondCheckIn',
+  //   required: false
+  // },
+  // secondCheckInAcneMed: {
+  //   type: mongoose.ObjectId,
+  //   ref: 'SecondCheckInAcneMed',
+  //   required: false
+  // },
+  // defaultCheckIn: {
+  //   type: mongoose.ObjectId,
+  //   ref: 'DefaultCheckIn',
+  //   required: false
+  // }
+})
+
+module.exports = mongoose.model('Bootcamp', checkInSchema)
+
+
+
     // medications: {
     //   accutane: {
     //     start: {
@@ -781,26 +816,3 @@ const checkInSchema = new mongoose.Schema({
     //   }
     // },
     // },
-  },
-  reviewComments: {
-    type: String,
-    default: ''
-  }
-  // secondCheckIn: {
-  //   type: mongoose.ObjectId,
-  //   ref: 'SecondCheckIn',
-  //   required: false
-  // },
-  // secondCheckInAcneMed: {
-  //   type: mongoose.ObjectId,
-  //   ref: 'SecondCheckInAcneMed',
-  //   required: false
-  // },
-  // defaultCheckIn: {
-  //   type: mongoose.ObjectId,
-  //   ref: 'DefaultCheckIn',
-  //   required: false
-  // }
-})
-
-module.exports = mongoose.model('Bootcamp', checkInSchema)
