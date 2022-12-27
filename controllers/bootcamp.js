@@ -240,7 +240,7 @@ module.exports = {
             from: env.email,
             to: env.email,
             subject: `New Initial Check in Awaiting review`,
-            html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp'>Bootcamp dashboard</a>`
+            html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a>`
           };
           
           transporter.sendMail(mailOptions, function(error, info){
@@ -278,6 +278,10 @@ module.exports = {
         checkInItem[0].status = 'Complete'
         checkInItem[0].active = true
         checkInItem[0].reviewed = true
+        let clientEmail = checkInItem[0].userEmail
+        let clientName = checkInItem[0].userName
+        let title = checkInItem[0].title
+        let maddieComments = req.body.comments
         if (req.body.acneMed) {
             checkInItem[0].acneMed = true
         }
@@ -289,6 +293,22 @@ module.exports = {
                 console.log('updated Database')
             }
             })
+        var mailOptions = {
+          from: env.email,
+          to: clientEmail,
+          subject: `${title} review complete!`,
+          html: `<p>${clientName} - Maddie has finished reviewing your virtual check in! See below for her feedback</p>
+          <p>${maddieComments}</p>
+          <p>You can also log in to the <a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a> at anytime to view her feedback on this, and all of your previous, check ins.</p>`
+        };
+        
+        transporter.sendMail(mailOptions, function(error, info){
+          if (error) {
+            console.log(error);
+          } else {
+            console.log(info.response);
+          }
+        });
         
         //Initialize rest of check ins
         let date = new Date()
@@ -725,13 +745,26 @@ module.exports = {
           })
 
         
-        
+          var mailOptions = {
+            from: env.email,
+            to: env.email,
+            subject: `New Initial Check in Awaiting review`,
+            html: `<p>${user.firstName} ${user.lastName} has submitted their check in and it is currently awaiting your review.</p><br><a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a>`
+          };
+          
+          transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log(info.response);
+            }
+          });
 
         //   var mailOptions = {
         //     from: env.email,
         //     to: env.email,
         //     subject: `New Initial Check in Awaiting review`,
-        //     html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp'>Bootcamp dashboard</a>`
+        //     html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a>`
         //   };
           
         //   transporter.sendMail(mailOptions, function(error, info){
@@ -765,6 +798,27 @@ module.exports = {
               console.log('updated Database')
           }
           })
+
+          let clientEmail = checkInItem[0].userEmail
+          let clientName = checkInItem[0].userName
+          let title = checkInItem[0].title
+          let maddieComments = req.body.comments
+          var mailOptions = {
+            from: env.email,
+            to: clientEmail,
+            subject: `${title} review complete!`,
+            html: `<p>${clientName} - Maddie has finished reviewing your virtual check in! See below for her feedback</p>
+            <p>${maddieComments}</p>
+            <p>You can also log in to the <a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a> at anytime to view her feedback on this, and all of your previous, check ins.</p>`
+          };
+          
+          transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log(info.response);
+            }
+          });
     // initializeFirstCheckIn: (req, res) => {
         //Take user ID from Square webhook, create first checkin with it
         

@@ -49,7 +49,15 @@ const checkInSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  emailReminder: {
+  firstEmailReminder: {
+    type: Boolean,
+    default: false
+  },
+  secondEmailReminder: {
+    type: Boolean,
+    default: false
+  },
+  thirdEmailReminder: {
     type: Boolean,
     default: false
   },

@@ -1,4 +1,15 @@
 const checkIn = require('../models/Bootcamp')
+const env = require('../env');
+const nodemailer = require('nodemailer')
+
+
+let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: env.email,
+    pass: env.emailPW
+  }
+})
 
 module.exports = {
     updateCheckIns: async function (req, res, next) {
@@ -10,11 +21,73 @@ module.exports = {
           if (!el.submitted && !el.reviewed) {
             el.set({status: 'Incomplete'})
             el.set({active: true})
-            if (!el.emailReminder) {
-              // Send user email letting them know that they can now complete their next check in
-              el.emailReminder == true
+            if (!el.submitted) {
+              let title = el.title
+              if (!el.firstEmailReminder) {
+                // Send user email letting them know that they can now complete their next check in
+                var mailOptions = {
+                  from: env.email,
+                  to: el.userEmail,
+                  subject: `It's time to complete your ${title}!`,
+                  html: `<p>${el.userName} - it's time to complete your bi-weekly acne check in over at </p><br><a href='https://madaesthetics.co/bootcamp'>madaesthetics.co</a>!
+                  <p>As always, feel free to shoot me an email if you have any questions/comments/concerns!</p>
+                  <p>Best,</p>
+                  <p>Maddie</p>
+                  <p>madaestheticsllc@gmail.com`
+                };
+                
+                transporter.sendMail(mailOptions, function(error, info){
+                  if (error) {
+                    console.log(error);
+                  } else {
+                    console.log(info.response);
+                  }
+                });
+                el.set({firstEmailReminder: true})
+              } else if (delta <= -3 && !el.secondEmailReminder) {
+                //Second email notification
+                var mailOptions = {
+                  from: env.email,
+                  to: el.userEmail,
+                  subject: `Reminder: It's time to complete your ${title}`,
+                  html: `<p>${el.userName} - it's time to complete your bi-weekly acne check in over at </p><br><a href='https://madaesthetics.co/bootcamp'>madaesthetics.co</a>!
+                  <p>As always, feel free to shoot me an email if you have any questions/comments/concerns!</p>
+                  <p>Best,</p>
+                  <p>Maddie</p>
+                  <p>madaestheticsllc@gmail.com`
+                };
+                
+                transporter.sendMail(mailOptions, function(error, info){
+                  if (error) {
+                    console.log(error);
+                  } else {
+                    console.log(info.response);
+                  }
+                });
+                el.set({secondEmailReminder: true})
+              } else if (delta <= -7 && !el.thirdEmailReminder) {
+                //Last email notification
+                var mailOptions = {
+                  from: env.email,
+                  to: el.userEmail,
+                  subject: `Last Reminder: It's time to complete your ${title}`,
+                  html: `<p>${el.userName} - it's time to complete your bi-weekly acne check in over at </p><br><a href='https://madaesthetics.co/bootcamp'>madaesthetics.co</a>!
+                  <p>As always, feel free to shoot me an email if you have any questions/comments/concerns!</p>
+                  <p>Best,</p>
+                  <p>Maddie</p>
+                  <p>madaestheticsllc@gmail.com`
+                };
+                
+                transporter.sendMail(mailOptions, function(error, info){
+                  if (error) {
+                    console.log(error);
+                  } else {
+                    console.log(info.response);
+                  }
+                });
+                el.set({thirdEmailReminder: true})
+              } 
             }
-            // If emailReminder is false, 
           } else if (el.submitted && !el.reviewed) {
             el.set({status: 'Under Review'})
           } else {
