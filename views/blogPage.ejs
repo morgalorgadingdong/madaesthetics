@@ -6,7 +6,7 @@
   </div>
 <div id="" class="d-flex flex-wrap justify-content-center content-container text-start center mb-5" >            
     <div class="col-12 blog-header d-flex align-content-center justify-content-start flex-wrap">
-        <h2 class="col-12 text-left px-3 pb-1"><%= blog.title %></h2>
+        <h2 class="col-12 text-left px-3 pb-1 pt-5"><%= blog.title %></h2>
         <p class="blogDate col-12 text-left px-3">Published by <%= blog.author %> on <%= blog.date %></p>
     </div>
     <div class="col-12 px-3">
@@ -25,7 +25,7 @@
           <% } %>
           </span>
         <% } else if (section.type === 'heading') { %>
-          <h4 class="text-start col-12 mb-0 mt-3"><%= section.content %></h4>
+          <h4 class="text-start col-12 mb-0 mt-3 px-0"><%= section.content %></h4>
         <% } else if (section.type === 'highlight') { %>
           <p class="text-center blog-highlight p-5 col-12 col-lg-8 my-5"><%= section.content %></p>
         <% } else if (section.type === 'divider') { %>
@@ -89,7 +89,7 @@
 } */
 
 .blog-header {
-    height: 23vh;
+    min-height: 23vh;
 }
 
 .blogDate {
