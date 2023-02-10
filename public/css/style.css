@@ -6677,3 +6677,61 @@ input[type=range]:focus::-ms-fill-upper {
 /* XXXL Screens and up */
 @media only screen and (min-width: 1900px)  {
 }
+
+section {
+  padding: 0 !important;
+}
+
+.content-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bootstrap Breakpoints */
+@media (max-width: 576px) { 
+  section .content-container {
+    width: 90%;
+    margin: auto;
+  }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  section .content-container {
+    width: 90%;
+    margin: auto;
+    padding: 0 1rem 0 1rem;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  section .content-container {
+    width: 90%;
+
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  section .content-container {
+    width: 90%;
+
+  }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  section .content-container {
+    width: 85%;
+
+  }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  section .content-container {
+    width: 75%;
+
+  }
+ }

@@ -13,6 +13,7 @@ const mainRoutes = require('./routes/main')
 const storeRoutes = require('./routes/store')
 const bootcampRoutes = require('./routes/bootcamp')
 const adminRoutes = require('./routes/admin')
+const blogRoutes = require('./routes/blog')
 const env = require('./env')
 const cloudinary = require('cloudinary').v2
 const bodyParser = require('body-parser')
@@ -67,6 +68,7 @@ app.use('/', mainRoutes)
 app.use('/store', storeRoutes)
 app.use('/bootcamp', bootcampRoutes)
 app.use('/admin', adminRoutes)
+app.use('/blog', blogRoutes)
 
 
 

@@ -1,0 +1,132 @@
+<%- include('partials/header') -%>
+
+<section id="" class="col-12">
+  <div class="blogBanner col-12 px-0">
+    <img src="/images/blog/<%=blog.number %>. <%=blog.title%>/blog<%=blog.number%>-banner.jpg" alt="banner" class="bannerImg" />
+  </div>
+<div id="" class="d-flex flex-wrap justify-content-center content-container text-start center mb-5" >            
+    <div class="col-12 blog-header d-flex align-content-center justify-content-start flex-wrap">
+        <h2 class="col-12 text-left px-3 pb-1"><%= blog.title %></h2>
+        <p class="blogDate col-12 text-left px-3">Published by <%= blog.author %> on <%= blog.date %></p>
+    </div>
+    <div class="col-12 px-3">
+        <div class="blog-divider col-12 blog-header-divider"></div>
+    </div>
+    <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">  
+      <% blog.sections.forEach( section => { %>
+        <% if (section.type === 'text') { %>
+          <p class="col-12 text-left px-0 my-3 blog-text"><%= section.content %></p>
+        <% } else if (section.type === 'image') { %>
+          <img src="/images/blog/<%=blog.number %>. <%=blog.title%>/blog<%=blog.number%>-<%=section.number%>.jpg" alt="<%= section.alt %>" class="col-10 col-md-8 mt-5 blog-img">
+
+          <span class="col-12 text-center mb-5"><%= section.caption %>.
+          <% if (section.sourced) { %>
+            <a href="<%= section.src %>">source</a>
+          <% } %>
+          </span>
+        <% } else if (section.type === 'heading') { %>
+          <h4 class="text-start col-12 mb-0 mt-3"><%= section.content %></h4>
+        <% } else if (section.type === 'highlight') { %>
+          <p class="text-center blog-highlight p-5 col-12 col-lg-8 my-5"><%= section.content %></p>
+        <% } else if (section.type === 'divider') { %>
+          <div class="mt-5 pb-5 blog-divider col-8"></div>
+        <% } %>
+      <% }) %>
+    </div>
+    <a href="/blog" class=""><div class="button my-5">Back to Blogs</div></a>
+  </div>
+</section>
+
+<form id="blogRouter" class="hidden" action="/blogs/post" method="POST">
+  <input type="text" name="id" id="blogNumber" value=""/>
+  <input type="submit" id="blogSubmit"/>
+</form>
+
+
+<!-- Temporary styling for dev purposes -->
+<style>
+  .blog-text {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-family: var(--bs-body-font-family);
+    }
+
+    .blog-img {
+        object-fit: cover;
+        margin: 0;
+        position: relative;
+        left: 0;
+        top: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .blogBanner {
+        background-color: black;
+        height: 30vh;
+        max-height: 300px;
+        /* background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+        position: relative;
+        margin: auto;
+        /* background-position: center; */
+    }
+
+    .blogBanner > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* mask-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        -webkit-mask-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0)); */
+    }
+/* #blogsContainer {
+    display: flex;
+    gap: 15px;
+} */
+
+.blog-header {
+    height: 23vh;
+}
+
+.blogDate {
+    color: #afadac;
+}
+
+.blog-header-divider {
+    margin-bottom: 40px;
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+.blog-highlight {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    font-style: italic;
+    background-color: rgb(175, 173, 172, 0.1);
+}
+
+.blog-divider {
+    border-top: black solid 2px;
+}
+</style>
+
+<script>
+    const blogRouter = document.getElementById('blogRouter');
+    const blogSubmit = document.getElementById('blogSubmit');
+    const blogNumber = document.getElementById('blogNumber');
+    const blogList = document.querySelectorAll('li');
+    blogList.forEach( blog => {
+      blog.addEventListener('click', () => {
+        blogNumber.value = blog.Number;
+        blogSubmit.click();
+      })
+    })
+</script>
+<%- include('partials/footer') -%>

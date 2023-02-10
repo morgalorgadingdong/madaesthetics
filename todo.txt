@@ -5,18 +5,8 @@
 - "Don't start this until you recieve your product"
 - 1 business day response for every check in
 
-- Email notifications for user submitted Check Ins
-- Email notifications for Maddie reviewed Check Ins
 
 
-
-
-- Second check in form
-- Second check in results
-- Default check in form
-- Default check in results
-- redo acne bootcamp page
-- Web hook on subscription functionality
 - Password rules functionality
 - Cancel subscription functionality
 - Error handling for attempting to submit non pictures to bootcamp
@@ -24,16 +14,11 @@
 - Cart is empty message when cart empty
 - Figure out sales tax debacle
     - Maddie will collect sales tax for state, and then pay it when she places the order through Face Reality
--Redo Services page
-    - 3 sections
-    1. Treatments
-        Services menu
-    2. Online Bootcamp
-        Info on Acne bootcamp, link to sign up page
-    3. Acne Bootcamp
-
+- Turn on image upload to cloudinary
+-Add "required" tags to initial Questionnaire
 
 
 font link
     https://fonts.google.com/share?selection.family=Allura%7CCormorant%20Garamond:wght@400;500;600;700%7CEB%20Garamond%7CMarcellus
 
+  

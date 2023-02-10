@@ -11,23 +11,28 @@
 <% } %>
 <section id="login" class="mt-5 py-5 d-flex justify-content-center flex-wrap col-12">
     <div id="changePW" class="mb-5 py-5 d-flex justify-content-center flex-wrap col-12 col-md-8 col-xl-6">
-            <h1 class="col-12 text-center">Login</h1>
-            <form action="/bootcamp/login" method="POST" class="col-12 d-flex justify-content-center flex-wrap">
-                <div class="col-12 d-flex justify-content-center mt-3 align-content-center">
-                    <p class="mb-0 mx-2">Email:</p>
-                    <input name="email" id="email-input" type="email" placeholder="email">
-                </div>
-                <div class="col-12 d-flex justify-content-center mt-3 align-content-center">
-                    <p class="mb-0 mx-2">Password:</p>
-                    <input name="password" id="password-input" type="password" placeholder="password">
-                </div>
-                
-                <div class="col-12 d-flex justify-content-center mt-5">
-                    <button type="submit" class="btn-secondary">Login</button>
-                </div>
-                
-            </form>
-        </div>
+        <h1 class="col-12 text-center">Online Bootcamp Login</h1>
+        <form action="/bootcamp/login" method="POST" class="col-12 d-flex justify-content-center flex-wrap">
+            <div class="col-12 d-flex justify-content-center mt-3 align-content-center">
+                <p class="mb-0 mx-2">Email:</p>
+                <input name="email" id="email-input" type="email" placeholder="email">
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-3 align-content-center">
+                <p class="mb-0 mx-2">Password:</p>
+                <input name="password" id="password-input" type="password" placeholder="password">
+            </div>
+            
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <button type="submit" class="btn-secondary">Login</button>
+            </div>
+        </form>
+            
+    </div>
+    <div class="col-12 d-flex justify-content-center flex-wrap">
+        <h2 class="col-12 text-center">Not signed up?</h2>
+        <a href="/bootcamp"><h3 class="col-12 text-center"> Learn more</h3></a>
+    </div>
+    
 
 <!-- <div class="col-10 d-flex justify-content-start flex-wrap my-5">
     <h2 class="col-12">Sign Up</h2>

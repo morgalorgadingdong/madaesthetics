@@ -1,0 +1,201 @@
+[
+    {
+        "number": 3,
+        "title": "Numero dos",
+        "date": "02/03/2023",
+        "author": "madaesthetics",
+        "published": false,
+        "bannerPath": "",
+        "bannerSrc": "",
+        "bannerAlt": "",
+        "sections": [
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Curb appeal is the first impression that a potential buyer or visitor gets of your home and can greatly influence the way they perceive the value and condition of your property. Whether you're planning to sell your home or simply want to improve its appearance, there are a few simple ways to drastically improve curb appeal. Here are 3 simple ways to do it:" 
+            },
+            {
+                "type": "heading",
+                "tag": "h4",
+                "content": "1. Maintain your lawn and landscaping" 
+            },
+            {
+                "type": "image",
+                "tag": "img",
+                "caption": "",
+                "src": "https://www.forbes.com/home-improvement/lawn-care/front-yard-landscaping-ideas/",
+                "alt": "Front yard landscaping.",
+                "number": 1
+            },
+            {
+                "type": "divider",
+                "tag": "div"
+            },
+            {
+                "type": "highlight",
+                "tag": "p",
+                "content": "Solid hardwood flooring is more expensive and may require more maintenance, but it can potentially last a lifetime if well-maintained."
+            }
+        ]
+    },
+    {
+        "number": 2,
+        "title": "Importance of wearing sunscreen when treating acne",
+        "date": "02/03/2023",
+        "author": "madaesthetics",
+        "published": false,
+        "bannerSrc": "",
+        "bannerAlt": "",
+        "sections": [
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "The importance of using SPF (sun protection factor) while treating acne or using acne-targeting ingredients cannot be overstated. Not only does SPF help protect the skin from harmful UV rays, which can worsen acne and lead to skin aging and other skin issues, it is also an important part of any acne treatment regimen." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "When it comes to acne, it's important to remember that the sun can be both a friend and a foe. On one hand, a little bit of sunlight can be beneficial for the skin - it can help stimulate the production of vitamin D, which is essential for healthy skin. On the other hand, too much sun exposure can be damaging, especially for those with acne-prone skin." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "UV rays from the sun can stimulate the production of oil in the skin, which can lead to clogged pores and breakouts. Additionally, the heat and humidity that often accompany sunny days can make acne worse by causing sweat and excess oil production. Sun exposure can also lead to inflammation and irritation, which can further aggravate acne-prone skin." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "In addition to the potential negative effects of the sun on acne, it's important to consider the impact that certain acne-targeting ingredients can have on the skin's sensitivity to UV rays. Many acne treatments, such as benzoyl peroxide and salicylic acid, can increase the skin's sensitivity to the sun. This means that using these types of products without proper sun protection can lead to sunburn, skin irritation, and other skin issues." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "That's where SPF comes in. Using a broad-spectrum SPF product, which protects against both UVA and UVB rays, is essential for protecting the skin while using acne-targeting ingredients. It's important to apply SPF every day, even on cloudy or overcast days, as UV rays can still penetrate the clouds and damage the skin." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Hyperpigmentation, or the darkening of certain areas of the skin, can be a concern for those with acne-prone skin. Acne itself can cause hyperpigmentation, as the inflammation caused by acne can lead to the production of excess melanin, the pigment that gives color to the skin. Sun exposure can also worsen hyperpigmentation, as UV rays can stimulate the production of melanin and cause existing hyperpigmentation to become more pronounced." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Using SPF can help to prevent hyperpigmentation by protecting the skin from the harmful effects of UV rays. It's important to choose a broad-spectrum SPF product that provides protection against both UVA and UVB rays, and to apply it every day, even on cloudy or overcast days. In addition to using SPF, it may be helpful to incorporate other skincare products into your routine that are formulated to address hyperpigmentation, such as vitamin C serums or hydroquinone creams. By taking these precautions, you can help to prevent hyperpigmentation and maintain a clear, even skin tone." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "In summary, using SPF is an important part of any acne treatment regimen. Not only does it protect the skin from the harmful effects of UV rays, it also helps to prevent irritation and other skin issues that can be caused by certain acne-targeting ingredients. By incorporating SPF into your daily skincare routine, you can help protect your skin from sun damage and keep your acne under control. So, it is very important to use spf while treating acne or using acne targeting ingredients." 
+            }
+        ]
+    },
+    {
+        "number": 1,
+        "title": "What is a Hydrafacial and why should you get one",
+        "date": "02/10/2023",
+        "author": "madaesthetics",
+        "published": true,
+        "bannerSrc": "",
+        "bannerAlt": "",
+        "sections": [
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "If there’s one skin treatment you should book yourself before an event or for instant results - it’s a HydraFacial. HydraFacials are a multi-step treatment that uses a machine with a special tip to deliver a blend of serums to the skin. It’s painless, luxurious and totally customizable. The machine exfoliates dead skin cells and removes impurities, leaving the skin feeling smooth and refreshed, and the serums nourish and hydrate the skin, helping to boost its overall health and appearance. " 
+            },
+            {
+                "type": "heading",
+                "tag": "h4",
+                "content": "How it works" 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "A HydraFacial machine is designed to deliver a series of specialized serums to the skin using a patented spiral-design tip. The tip has multiple levels of exfoliation, which allows for gentle removal of dead skin cells, deep cleansing, and the delivery of hydration to the skin." 
+            },
+            {
+                "type": "image",
+                "tag": "img",
+                "caption": "",
+                "sourced": false,
+                "src": "",
+                "alt": "Hydrafacial machine.",
+                "number": 1
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "HydraFacials are designed to be both gentle and effective, making them suitable for a wide range of skin types and concerns. The level of suction and pressure can be adjusted to suit individual skin needs, and the machine’s tip can be easily swapped out to target specific concerns, such as hyperpigmentation or fine lines. " 
+            },
+            {
+                "type": "heading",
+                "tag": "h4",
+                "content": "Process" 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "The treatment typically starts with a gentle exfoliation to remove dead skin cells and reveal a brighter, smoother complexion. This is followed by a deep cleansing process that removes impurities and unclogs pores. The suction created by the machine also helps to remove impurities, blackheads, and whiteheads, leaving the skin looking clear, refreshed and insanely glowy! The final step involves the delivery of a nourishing serum that hydrates and revitalizes the skin." 
+            },
+            {
+                "type": "image",
+                "tag": "img",
+                "caption": "",
+                "sourced": false,
+                "src": "",
+                "alt": "Hydrafacial machine in action.",
+                "number": 2
+            },
+            {
+                "type": "heading",
+                "tag": "h4",
+                "content": "Benefits of HydraFacial for Skin Care" 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Deep Hydration: One of the key benefits of a HydraFacial is the deep hydration it provides to the skin. This is achieved by delivering a blend of vitamins and antioxidants directly to the skin, which helps to nourish and revitalize it." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Improved Skin Texture: The gentle exfoliation and deep hydration provided by the HydraFacial help to improve the overall texture of the skin, making it look smoother and clearer. This can help to reduce the appearance of fine lines, wrinkles, and other signs of aging." 
+            },
+            {
+                "type": "image",
+                "tag": "img",
+                "caption": "",
+                "sourced": false,
+                "src": "",
+                "alt": "Post hydrafacial skin.",
+                "number": 3
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Clear Skin: The deep cleansing and extraction steps of the HydraFacial help to remove impurities and unclog pores, leaving the skin looking clear and refreshed. This can be especially beneficial for individuals with acne-prone skin." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Non-Invasive: Unlike other skin treatments that can be invasive and require recovery time, HydraFacials are non-invasive and do not require any downtime. This makes it a convenient and accessible option for individuals looking to improve the appearance of their skin." 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "Customizable: HydraFacials can be customized to suit individual skin care needs, with different serums and treatments available to target specific concerns such as fine lines, hyperpigmentation, and acne." 
+            },
+            {
+                "type": "heading",
+                "tag": "h4",
+                "content": "Conclusion" 
+            },
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "HydraFacials are a safe and effective option for individuals looking to improve the appearance of their skin. With its multi-step treatment that combines deep hydration, exfoliation, and extraction, it provides a comprehensive solution for skin care that leaves the skin looking refreshed, rejuvenated, and glowing!" 
+            }
+            
+        ]
+    }
+]

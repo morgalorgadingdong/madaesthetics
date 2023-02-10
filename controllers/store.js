@@ -29,7 +29,7 @@
 
     module.exports = {
         updateStore: (req, res) => {
-          console.log('Web hook notification recieved, updating store')  
+          // console.log('Web hook notification recieved, updating store')  
           let storeItems
  
             async function retrieveStoreItems() {
