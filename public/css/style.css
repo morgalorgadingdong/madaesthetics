@@ -5357,9 +5357,9 @@ footer {
 
 .glide__slide {
   /* height: 350px !important; */
-  background-color: var(--color-primary-light);
+  background-color: var(--color-gray-light);
   box-shadow: 4px 4px 4px var(--color-primary-dark);
-  border: 1px solid var(--color-primary-dark);
+  /* border: 1px solid var(--color-primary-dark); */
   border-radius: 3px;
   transition: all .5s;
   /* display: flex;
@@ -5385,10 +5385,11 @@ footer {
 .glide__slide--active {
   box-shadow: 8px 8px 8px var(--color-primary-dark);
   transition: all .5s;
+  background-color: var(--color-primary-light);
 }
 
 #testimonies-section {
-  background: linear-gradient(to right, var(--color-gray-light), var(--color-gray-mid));;
+  /* background: linear-gradient(to right, var(--color-gray-light), var(--color-gray-mid)); */
 }
 
 /* Introduction Section */
