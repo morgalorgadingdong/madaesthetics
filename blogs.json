@@ -40,17 +40,17 @@
     },
     {
         "number": 2,
-        "title": "Importance of wearing sunscreen when treating acne",
+        "title": "The importance of spf while treating acne",
         "date": "02/03/2023",
         "author": "madaesthetics",
-        "published": false,
+        "published": true,
         "bannerSrc": "",
         "bannerAlt": "",
         "sections": [
             {
                 "type": "text",
                 "tag": "p",
-                "content": "The importance of using SPF (sun protection factor) while treating acne or using acne-targeting ingredients cannot be overstated. Not only does SPF help protect the skin from harmful UV rays, which can worsen acne and lead to skin aging and other skin issues, it is also an important part of any acne treatment regimen." 
+                "content": "The importance of using SPF while treating acne or using acne-targeting ingredients cannot be overstated. Not only does SPF help protect the skin from harmful UV rays, which can worsen acne and lead to skin aging and other skin issues, it is also an important part of any acne treatment regimen." 
             },
             {
                 "type": "text",
@@ -70,7 +70,7 @@
             {
                 "type": "text",
                 "tag": "p",
-                "content": "That's where SPF comes in. Using a broad-spectrum SPF product, which protects against both UVA and UVB rays, is essential for protecting the skin while using acne-targeting ingredients. It's important to apply SPF every day, even on cloudy or overcast days, as UV rays can still penetrate the clouds and damage the skin." 
+                "content": "That's where SPF comes in. Using a broad-spectrum SPF product, which protects against both UVA and UVB rays, is essential for protecting the skin while using acne-targeting ingredients. It's important to apply SPF every day, even on cloudy or overcast days, as UV rays can still penetrate the clouds and damage the skin. Reapplying every 2 hours is also important as the efficacy wears off. It's also important to remember to reapply SPF every two hours, or immediately after swimming or sweating." 
             },
             {
                 "type": "text",
@@ -80,12 +80,12 @@
             {
                 "type": "text",
                 "tag": "p",
-                "content": "Using SPF can help to prevent hyperpigmentation by protecting the skin from the harmful effects of UV rays. It's important to choose a broad-spectrum SPF product that provides protection against both UVA and UVB rays, and to apply it every day, even on cloudy or overcast days. In addition to using SPF, it may be helpful to incorporate other skincare products into your routine that are formulated to address hyperpigmentation, such as vitamin C serums or hydroquinone creams. By taking these precautions, you can help to prevent hyperpigmentation and maintain a clear, even skin tone." 
+                "content": "Using SPF can help to prevent hyperpigmentation by protecting the skin from the harmful effects of UV rays. In addition to using SPF, it may be helpful to incorporate other skincare products into your routine that are formulated to address hyperpigmentation, such as vitamin C serums or pigment inhibitors. By taking these precautions, you can help to prevent hyperpigmentation and maintain a clear, even skin tone." 
             },
             {
                 "type": "text",
                 "tag": "p",
-                "content": "In summary, using SPF is an important part of any acne treatment regimen. Not only does it protect the skin from the harmful effects of UV rays, it also helps to prevent irritation and other skin issues that can be caused by certain acne-targeting ingredients. By incorporating SPF into your daily skincare routine, you can help protect your skin from sun damage and keep your acne under control. So, it is very important to use spf while treating acne or using acne targeting ingredients." 
+                "content": "In summary, using SPF is an important part of any acne treatment regimen. Not only does it protect the skin from the harmful effects of UV rays, it also helps to prevent irritation and other skin issues that can be caused by certain acne-targeting ingredients. By incorporating SPF into your daily skincare routine, you can help protect your skin from sun damage and keep your acne under control." 
             }
         ]
     },
