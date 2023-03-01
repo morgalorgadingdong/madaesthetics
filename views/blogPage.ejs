@@ -12,7 +12,7 @@
     <div class="col-12 px-3">
         <div class="blog-divider col-12 blog-header-divider"></div>
     </div>
-    <div class="col-12 d-flex justify-content-center flex-wrap mt-3 px-3">  
+    <div class="col-12 d-flex justify-content-center flex-wrap px-3">  
       <% blog.sections.forEach( section => { %>
         <% if (section.type === 'text') { %>
           <p class="col-12 text-left px-0 my-3 blog-text"><%= section.content %></p>
@@ -97,7 +97,7 @@
 }
 
 .blog-header-divider {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 a {

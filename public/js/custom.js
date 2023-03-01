@@ -527,8 +527,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('reveal')
-    } else {
-      entry.target.classList.remove('reveal')
     }
   })
 })
@@ -549,3 +547,18 @@ animateElements.forEach((el) => observer.observe(el));
 //   })
 // }
 
+function toggleHydrafacialSection(targetSectionID) {
+  document.getElementById('hydrafacial').classList.add('hidden')
+  document.getElementById('dermaplane').classList.add('hidden')
+  document.getElementById('booster').classList.add('hidden')
+  document.getElementById('retail').classList.add('hidden')
+  document.getElementById('hydrafacial-btn').classList.remove('active')
+  document.getElementById('dermaplane-btn').classList.remove('active')
+  document.getElementById('booster-btn').classList.remove('active')
+  document.getElementById('retail-btn').classList.remove('active')
+  // let targetedSectionID = e.target.dataset.id
+  document.getElementById(targetSectionID).classList.remove('hidden')
+  document.getElementById(targetSectionID).classList.add('active')
+  let btnID = targetSectionID + '-btn'
+  document.getElementById(btnID).classList.add('active')
+}
