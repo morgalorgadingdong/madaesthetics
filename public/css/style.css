@@ -6861,7 +6861,7 @@ section {
   background-color: var(--color-gray-light);
 }
 
-.hydrafacial-tagline > b {
+.hydrafacial-tagline > b, .hydrafacial-tagline-mobile > b {
   color: var(--color-accent-1);
 }
 
