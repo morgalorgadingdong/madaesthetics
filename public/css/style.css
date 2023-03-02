@@ -5390,6 +5390,11 @@ footer {
   background-color: var(--color-primary-light);
 }
 
+.glide__slide--active .quote {
+  opacity: 1;
+  transition: all .5s;
+}
+
 #testimonies-section {
   /* background: linear-gradient(to right, var(--color-gray-light), var(--color-gray-mid)); */
 }
@@ -5456,8 +5461,12 @@ footer {
 
 .quote {
   /* filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(91%) contrast(91%); */
+  /* filter: invert(11%) sepia(0%) saturate(2396%) hue-rotate(247deg) brightness(102%) contrast(61%); */
+  filter: invert(58%) sepia(0%) saturate(1222%) hue-rotate(201deg) brightness(95%) contrast(89%);
   padding: 0;
   max-width: 40px;
+  opacity: 0;
+  transition: all .5s;
 }
 
 .testimony-img {
