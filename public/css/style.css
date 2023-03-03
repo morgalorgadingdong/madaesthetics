@@ -90,7 +90,7 @@
   --color-gray-light: #cccccc;
   --color-gray-mid: #8a8a8a;
   --color-gray-dark:#444444;
-  --color-primary-dark: black;
+  --color-primary-dark: rgb(25, 25, 25);
   --color-primary-mid: rgb(3, 2, 2);
   /* --color-accent-1: #DAF5AE; */
   --color-accent-1: #AF9178;
