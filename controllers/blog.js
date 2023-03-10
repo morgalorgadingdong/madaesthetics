@@ -3,6 +3,7 @@ const allTheBlogs = require('../blogs.json')
 module.exports = {
     getBlogsPage: (req,res)=> {
         const blogPosts = allTheBlogs
+        console.log(blogPosts)
         res.render('blogs.ejs', {blogs: blogPosts})
     },
     getBlogPostPage: (req,res)=> {

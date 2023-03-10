@@ -1,40 +1,64 @@
 [
     {
         "number": 3,
-        "title": "Numero dos",
-        "date": "02/03/2023",
+        "title": "What is dermaplaning and how does it differ from shaving",
+        "date": "03/10/2023",
         "author": "madaesthetics",
-        "published": false,
+        "published": true,
         "bannerPath": "",
         "bannerSrc": "",
-        "bannerAlt": "",
+        "bannerAlt": "Maddie the esthetician performing a dermaplaning procedure on a client.",
         "sections": [
             {
                 "type": "text",
                 "tag": "p",
-                "content": "Curb appeal is the first impression that a potential buyer or visitor gets of your home and can greatly influence the way they perceive the value and condition of your property. Whether you're planning to sell your home or simply want to improve its appearance, there are a few simple ways to drastically improve curb appeal. Here are 3 simple ways to do it:" 
-            },
-            {
-                "type": "heading",
-                "tag": "h4",
-                "content": "1. Maintain your lawn and landscaping" 
+                "content": "Dermaplaning has been gaining popularity in the skincare world, and you might have stumbled upon it on your social media feed. It's a non-invasive, quick, and effective procedure that uses a medical-grade scalpel to exfoliate the top layer of your skin gently. While it may sound daunting, dermaplaning is painless and has a wide range of benefits, including brighter and softer skin. You may be curious about why dermaplaning is necessary when shaving can serve the same purpose. In this article, we'll explore the unique benefits of dermaplaning and why it's different from a typical shave." 
             },
             {
                 "type": "image",
-                "tag": "img",
                 "caption": "",
-                "src": "https://www.forbes.com/home-improvement/lawn-care/front-yard-landscaping-ideas/",
-                "alt": "Front yard landscaping.",
+                "sourced": false,
+                "src": "",
+                "alt": "Maddie the esthetician performing a dermaplaning procedure on a client.",
                 "number": 1
             },
             {
-                "type": "divider",
-                "tag": "div"
+                "type": "heading",
+                "content": "Dermaplaning Benefits"
             },
             {
-                "type": "highlight",
-                "tag": "p",
-                "content": "Solid hardwood flooring is more expensive and may require more maintenance, but it can potentially last a lifetime if well-maintained."
+                "type": "text",
+                "content": "One of the primary advantages of dermaplaning is that it exfoliates your skin deeply and effectively, removing up to 2 weeks of dead skin cells and debris buildup. This, in turn, can help to unclog your pores, reduce the appearance of fine lines and wrinkles, and promote healthy, glowing skin."
+            },
+            
+            {
+                "type": "text",
+                "content": "Another significant benefit of dermaplaning is that it can make your skin more receptive to other skin care treatments, such as serums and moisturizers. By removing the top layer of dead skin cells, these products can penetrate your skin more effectively, delivering their active ingredients where they are needed most. This can help to increase the effectiveness of your overall skin care routine and help you achieve your desired results more quickly."
+            },
+            {
+                "type": "image",
+                "caption": "",
+                "sourced": false,
+                "src": "",
+                "alt": "Maddie the esthetician cleaning a clients skin in preparation for dermaplaning.",
+                "number": 3
+            },
+            {
+                "type": "text",
+                "content": "Dermaplaning is also a great option for anyone looking to improve the overall appearance of their skin quickly and easily. Unlike some other skin care treatments, dermaplaning requires no downtime and is virtually pain-free. It's a quick procedure that can be done in as little as 30 minutes, making it an excellent option for anyone looking for a simple, effective, and non-invasive way to improve their skin."
+            },
+            {
+                "type": "heading",
+                "content": "Dermaplaning vs. Shaving"
+            },
+            {
+                "type": "text",
+                "content": "While dermaplaning and shaving seem similar on the surface, dermaplaning is a more intensive treatment that is specifically designed to exfoliate your skin more deeply and effectively. While shaving can remove some of the dead skin cells on the surface of your skin, it cannot provide the same benefits as dermaplaning, such as unclogging pores and promoting healthy, glowing skin."
+            }, 
+            
+            {
+                "type": "text",
+                "content": "Dermaplaning is an excellent option for anyone looking to improve the overall appearance and health of their skin quickly and easily. If you're interested in dermaplaning or have any other questions about this treatment, don’t hesitate to reach out! With the right care and attention, dermaplaning can be an incredibly effective way to achieve healthy, beautiful skin that you'll be proud to show off."
             }
         ]
     },
