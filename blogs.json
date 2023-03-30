@@ -1,5 +1,95 @@
 [
     {
+        "number": 4,
+        "title": "Acne Purging - What it is and what it means",
+        "date": "03/29/2023",
+        "author": "madaesthetics",
+        "published": true,
+        "bannerPath": "",
+        "bannerSrc": "",
+        "bannerAlt": "",
+        "sections": [
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "The pursuit of blemish free skin can lead us down a path of products and treatments, with an array of ingredients promising transformative results. However, sometimes these solutions seem to backfire, leading to a curious phenomenon known as skin purging. In this blog post, I want to explore the science behind skin purging and discuss its implications for our skincare journey." 
+            },
+            {
+                "type": "heading",
+                "content": "What is Skin Purging?"
+            },
+            {
+                "type": "text",
+                "content": "Skin purging occurs when an active ingredient in a skincare product accelerates the skin's natural shedding process, causing existing microcomedones (tiny, non-inflammatory acne lesions) to surface more quickly. While it might initially appear counterintuitive, this process can be beneficial in the long run."
+            },
+            
+            {
+                "type": "text",
+                "content": "To understand skin purging, let's first delve into the science of the skin. Our skin goes through a continuous cycle of renewal, shedding dead cells and creating new ones. This process, known as desquamation, takes roughly 28 days for the average adult. However, factors such as age, environment, and product use can impact this timeline."
+            },
+            {
+                "type": "text",
+                "content": "Active ingredients, such as retinoids, alpha and beta hydroxy acids (AHAs and BHAs), and benzoyl peroxide, are commonly found in skincare products designed to treat acne and promote skin cell turnover. When introduced to the skin, these ingredients may cause a rapid acceleration of the desquamation process, expediting the appearance of microcomedones on the skin's surface."
+            },
+            {
+                "type": "text",
+                "content": "Although it might seem counterproductive, skin purging is actually a sign that the product is doing its job. By bringing underlying issues to the surface, the active ingredients in these products help to clear out existing congestion and promote healthier skin over time. The key is to remain patient and trust the process."
+            }, 
+            {
+                "type": "heading",
+                "content": "How to Differentiate Between Purging and Breakouts"
+            },
+            {
+                "type": "text",
+                "content": "It's essential to recognize the difference between skin purging and a regular breakout, as the two require distinct approaches. Skin purging is a temporary reaction to an active ingredient, whereas breakouts can result from various factors, such as hormones, stress, or using comedogenic (pore-clogging) products."
+            },
+            {
+                "type": "text",
+                "content": "Here are some pointers to help differentiate between the two:"
+            },
+            {
+                "type": "text",
+                "content": "Observe the location of the breakouts: If you notice acne emerging in areas where you usually experience congestion, it's likely to be skin purging. However, if you develop breakouts in unfamiliar areas, it may be an adverse reaction to the product."
+            },
+            {
+                "type": "text",
+                "content": "Monitor the duration: Skin purging typically lasts between 4-6 weeks, as this is the average time needed for skin cell turnover. If the breakouts persist beyond this timeframe, it may indicate that the product is not suitable for your skin. However, the life cycle of acne is up to 90 days, so in some cases purging can continue. Always consult with your aesthetician before taking yourself off of a product!"
+            },
+            {
+                "type": "text",
+                "content": "Consider the ingredients: If the product contains known purging agents like retinoids, AHAs, BHAs, or benzoyl peroxide, the breakouts are more likely to be due to skin purging."
+            },
+            {
+                "type": "heading",
+                "content": "How to Manage Skin Purging"
+            },
+            {
+                "type": "text",
+                "content": "While skin purging can be frustrating, remember that it's a temporary phase in the journey to healthier skin. To ease the process, follow these steps:"
+            },
+            {
+                "type": "text",
+                "content": "Be patient: Give your skin time to adjust to the new product. Don't be disheartened if you don't see immediate results."
+            },
+            {
+                "type": "text",
+                "content": "Keep your skincare routine simple: Avoid overloading your skin with additional active ingredients during the purging process."
+            },
+            {
+                "type": "text",
+                "content": "Don't pick or squeeze: As tempting as it may be, resist the urge to pick or squeeze the purging acne. Doing so can lead to inflammation, scarring, and even a longer healing time."
+            },
+            {
+                "type": "text",
+                "content": "Consult your aesthetician: If you're unsure whether your skin is purging or experiencing an adverse reaction, it's best to consult a professional. They can provide expert advice on how to manage the situation and recommend suitable products for your skin type and concerns."
+            },
+            {
+                "type": "text",
+                "content": "Skin purging is a natural and often beneficial process that occurs as our skin adjusts to new products containing active ingredients. Though it may be disheartening to experience breakouts, understanding the science behind purging and differentiating it from regular acne can help us navigate this temporary phase with patience and confidence. By embracing a simple, supportive skincare routine and working with a skin care professional, we can make meaningful progress towards a clearer and healthier complexion!"
+            }
+        ]
+    },
+    {
         "number": 3,
         "title": "What is dermaplaning and how does it differ from shaving",
         "date": "03/10/2023",
