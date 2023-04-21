@@ -98,8 +98,8 @@
   {
     "type": "ITEM",
     "id": "DUSHBZVBQ5I5SJK6C7IUX3NE",
-    "updatedAt": "2023-02-10T22:07:56.158Z",
-    "version": "1676066876158n",
+    "updatedAt": "2023-04-04T16:59:32.764Z",
+    "version": "1680627572764n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -122,8 +122,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "U7XK3HFUZVZ5DDRCE3EMUZ4X",
-          "updatedAt": "2022-10-06T21:04:42.887Z",
-          "version": "1665090282887n",
+          "updatedAt": "2023-04-04T16:59:32.764Z",
+          "version": "1680627572764n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -166,7 +166,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3200n",
+              "amount": "3500n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -194,8 +194,8 @@
   {
     "type": "ITEM",
     "id": "2BGX6HFWFKVMFCUSGOZSNEF3",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:57:34.919Z",
+    "version": "1680627454919n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -218,8 +218,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "WJJ3FWMTPAX2VGUVOYZ4PPVS",
-          "updatedAt": "2022-10-06T21:04:54.314Z",
-          "version": "1665090294314n",
+          "updatedAt": "2023-04-04T16:57:34.919Z",
+          "version": "1680627454919n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -263,7 +263,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2200n",
+              "amount": "2400n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -291,8 +291,8 @@
   {
     "type": "ITEM",
     "id": "43TGNPIH3IL3ZEJXYZL52K5F",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:58:07.192Z",
+    "version": "1680627487192n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -315,8 +315,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "WFQ2WB3LWRWRSCTRMU4DAQSV",
-          "updatedAt": "2022-10-06T21:05:06.261Z",
-          "version": "1665090306261n",
+          "updatedAt": "2023-04-04T16:58:07.192Z",
+          "version": "1680627487192n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -359,7 +359,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2100n",
+              "amount": "2200n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -387,8 +387,8 @@
   {
     "type": "ITEM",
     "id": "DL7AJA54JAX57PXIOMXGLUBD",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:57:53.403Z",
+    "version": "1680627473403n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -411,8 +411,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "7ZKS5XKEA6B66UVWGMNWTDMR",
-          "updatedAt": "2022-10-06T21:05:18.64Z",
-          "version": "1665090318640n",
+          "updatedAt": "2023-04-04T16:57:53.403Z",
+          "version": "1680627473403n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -455,7 +455,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2200n",
+              "amount": "2300n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -483,8 +483,8 @@
   {
     "type": "ITEM",
     "id": "RG2Q55KAI247MJKLHABVJIFB",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:10:16.979Z",
+    "version": "1680628216979n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -495,8 +495,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "MML7VFJKDAXIZIPY43I5A3OS",
-          "updatedAt": "2022-10-06T21:05:29.938Z",
-          "version": "1665090329938n",
+          "updatedAt": "2023-04-04T17:10:16.979Z",
+          "version": "1680628216979n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -530,7 +530,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "10900n",
+              "amount": "11700n",
               "currency": "USD"
             },
             "trackInventory": false,
@@ -552,8 +552,8 @@
   {
     "type": "ITEM",
     "id": "2KBAA6N4WVY3P2GG6ESHUDTI",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:10:44.256Z",
+    "version": "1680628244256n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -564,8 +564,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "BJNZHJ4A6RN5JBPQWVUFVHUU",
-          "updatedAt": "2022-10-06T21:05:38.862Z",
-          "version": "1665090338862n",
+          "updatedAt": "2023-04-04T17:10:44.256Z",
+          "version": "1680628244256n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -599,7 +599,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "10900n",
+              "amount": "11700n",
               "currency": "USD"
             },
             "trackInventory": false,
@@ -621,8 +621,8 @@
   {
     "type": "ITEM",
     "id": "VUOIEQ2Q4BHRJCSKH5ENZCA3",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:11:01.071Z",
+    "version": "1680628261071n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -633,8 +633,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "YCXHP7C47Y36IU5S5325UQSM",
-          "updatedAt": "2022-10-06T21:05:49.836Z",
-          "version": "1665090349836n",
+          "updatedAt": "2023-04-04T17:11:01.071Z",
+          "version": "1680628261071n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -668,7 +668,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "10500n",
+              "amount": "11300n",
               "currency": "USD"
             },
             "trackInventory": false,
@@ -690,8 +690,8 @@
   {
     "type": "ITEM",
     "id": "A3AQ6BDOKKGXGD6HGVRW74A5",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:59:49.364Z",
+    "version": "1680627589364n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -714,8 +714,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "VMQZ4P5EECWN4HLHTJIRN4RR",
-          "updatedAt": "2022-10-06T21:06:00.248Z",
-          "version": "1665090360248n",
+          "updatedAt": "2023-04-04T16:59:49.364Z",
+          "version": "1680627589364n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -758,7 +758,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "4200n",
+              "amount": "4500n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -786,8 +786,8 @@
   {
     "type": "ITEM",
     "id": "OXX4N23Y57277XFZRMGYWMDB",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:02:34.768Z",
+    "version": "1680627754768n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -810,8 +810,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "XMJMRCHHCTPB3VDHOKTHSNBV",
-          "updatedAt": "2022-10-06T21:06:11.975Z",
-          "version": "1665090371975n",
+          "updatedAt": "2023-04-04T17:02:34.768Z",
+          "version": "1680627754768n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -854,7 +854,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "4900n",
+              "amount": "5200n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -882,8 +882,8 @@
   {
     "type": "ITEM",
     "id": "DTJU4XIEAOW5UXEFF2DXJRC4",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:58:53.932Z",
+    "version": "1680627533932n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -906,8 +906,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "ZVCJRIZ53LDWJJ4CFENDVHFP",
-          "updatedAt": "2022-10-06T21:06:23.705Z",
-          "version": "1665090383705n",
+          "updatedAt": "2023-04-04T16:58:53.932Z",
+          "version": "1680627533932n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -950,13 +950,14 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2900n",
+              "amount": "3100n",
               "currency": "USD"
             },
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -977,8 +978,8 @@
   {
     "type": "ITEM",
     "id": "EABAUHGTZOK6MKMT2BCUE2YA",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:00:28.088Z",
+    "version": "1680627628088n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1001,8 +1002,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KIGMFH75EH2IBYGDXXOTHCUL",
-          "updatedAt": "2022-10-06T21:44:30.347Z",
-          "version": "1665092670347n",
+          "updatedAt": "2023-04-04T17:00:28.088Z",
+          "version": "1680627628088n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1045,7 +1046,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "4400n",
+              "amount": "4700n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1072,8 +1073,8 @@
   {
     "type": "ITEM",
     "id": "DN5HK66FSST62RSSRHVBYIEU",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:06:01.193Z",
+    "version": "1680627961193n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1096,8 +1097,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "MONULUMCBZRG5UDJJLXQLH43",
-          "updatedAt": "2022-10-06T21:07:05.169Z",
-          "version": "1665090425169n",
+          "updatedAt": "2023-04-04T17:06:01.193Z",
+          "version": "1680627961193n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1140,7 +1141,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2500n",
+              "amount": "2700n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1168,8 +1169,8 @@
   {
     "type": "ITEM",
     "id": "JTLY75FOTJDBB762TQBEO74T",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:01:35.212Z",
+    "version": "1680627695212n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1192,8 +1193,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KUKJIHRBTHU7OXUF27APXQPV",
-          "updatedAt": "2022-10-06T21:07:21.233Z",
-          "version": "1665090441233n",
+          "updatedAt": "2023-04-04T17:01:35.212Z",
+          "version": "1680627695212n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1236,7 +1237,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2600n",
+              "amount": "2800n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1264,8 +1265,8 @@
   {
     "type": "ITEM",
     "id": "XFOAUGRAT2SAKDJA4H5Z2AYF",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:01:51.579Z",
+    "version": "1680627711579n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1288,8 +1289,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "WF3KHEZHDERB5QNPJGVTBWDP",
-          "updatedAt": "2022-10-06T21:07:45.696Z",
-          "version": "1665090465696n",
+          "updatedAt": "2023-04-04T17:01:51.579Z",
+          "version": "1680627711579n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1332,7 +1333,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2600n",
+              "amount": "2800n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1360,8 +1361,8 @@
   {
     "type": "ITEM",
     "id": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:06:50.665Z",
+    "version": "1680628010665n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1384,8 +1385,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "VU4DPWL7FI5BCOTXE3TH3OJJ",
-          "updatedAt": "2022-10-06T21:08:00.318Z",
-          "version": "1665090480318n",
+          "updatedAt": "2023-04-04T17:06:50.665Z",
+          "version": "1680628010665n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1428,7 +1429,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2900n",
+              "amount": "3100n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1455,8 +1456,8 @@
   {
     "type": "ITEM",
     "id": "QXCBO2XLG7KWP3BXOHOR7R4E",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:04:52.424Z",
+    "version": "1680627892424n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1479,8 +1480,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "THUIMMS7ZZAESXSWAP5XFFSP",
-          "updatedAt": "2022-10-06T21:08:10.419Z",
-          "version": "1665090490419n",
+          "updatedAt": "2023-04-04T17:04:52.424Z",
+          "version": "1680627892424n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1523,7 +1524,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3100n",
+              "amount": "3400n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1550,8 +1551,8 @@
   {
     "type": "ITEM",
     "id": "YXTCEJK5VBVYZ376H7GYL3DD",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:04:37.993Z",
+    "version": "1680627877993n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1574,8 +1575,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "43NUFSNSANFSD6WMWS7A3YSY",
-          "updatedAt": "2022-10-06T21:08:21.466Z",
-          "version": "1665090501466n",
+          "updatedAt": "2023-04-04T17:04:37.993Z",
+          "version": "1680627877993n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1618,7 +1619,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2900n",
+              "amount": "3200n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1645,8 +1646,8 @@
   {
     "type": "ITEM",
     "id": "5W35SPQW3DMPYGMAUHNQT7MA",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:00:06.611Z",
+    "version": "1680627606611n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1669,8 +1670,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "E2LZXM2WZPMZKGMW3DOERHZB",
-          "updatedAt": "2022-10-06T21:08:47.303Z",
-          "version": "1665090527303n",
+          "updatedAt": "2023-04-04T17:00:06.611Z",
+          "version": "1680627606611n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1713,7 +1714,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2600n",
+              "amount": "2800n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1741,8 +1742,8 @@
   {
     "type": "ITEM",
     "id": "TTGU7QJVHI5P3674DFMYTXT5",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:00:56.588Z",
+    "version": "1680627656588n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -1753,8 +1754,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "IHTZLHNPTHPXWX7VZPACQICS",
-          "updatedAt": "2022-10-06T21:08:59.146Z",
-          "version": "1665090539146n",
+          "updatedAt": "2023-04-04T17:00:56.588Z",
+          "version": "1680627656588n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1788,7 +1789,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3700n",
+              "amount": "3900n",
               "currency": "USD"
             },
             "trackInventory": false,
@@ -1905,8 +1906,8 @@
   {
     "type": "ITEM",
     "id": "355OC22CQIEYARNAQ3VRJ2K7",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:58:25.292Z",
+    "version": "1680627505292n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1929,8 +1930,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "PEEONP6DZMC6J3EO66JDEPYP",
-          "updatedAt": "2022-10-06T21:09:21.581Z",
-          "version": "1665090561581n",
+          "updatedAt": "2023-04-04T16:58:25.292Z",
+          "version": "1680627505292n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1973,7 +1974,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3200n",
+              "amount": "3400n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2001,8 +2002,8 @@
   {
     "type": "ITEM",
     "id": "VYYZE4J7WW4FVAAN56PEWCA7",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:02:54.442Z",
+    "version": "1680627774442n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2025,8 +2026,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "3DKDVOAG42CLMACKMCHDDVHI",
-          "updatedAt": "2022-10-06T21:09:29.748Z",
-          "version": "1665090569748n",
+          "updatedAt": "2023-04-04T17:02:54.442Z",
+          "version": "1680627774442n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2069,7 +2070,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3950n",
+              "amount": "4250n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2097,8 +2098,8 @@
   {
     "type": "ITEM",
     "id": "CZXNBB4F2UW47XCGVEGXGFUJ",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:03:41.74Z",
+    "version": "1680627821740n",
     "isDeleted": false,
     "customAttributeValues": {
       "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
@@ -2130,8 +2131,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "6WLDUOPTUOP2MZAWX67GXTC6",
-          "updatedAt": "2022-10-06T21:09:37.769Z",
-          "version": "1665090577769n",
+          "updatedAt": "2023-04-04T17:03:41.74Z",
+          "version": "1680627821740n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2174,7 +2175,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "4100n",
+              "amount": "4400n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2202,8 +2203,8 @@
   {
     "type": "ITEM",
     "id": "6NQLLJGBYFWDP3KRBGM4A7CU",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:03:19.056Z",
+    "version": "1680627799056n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2226,8 +2227,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "Z3S4GUS6JY2YVAVOAIMUUZP3",
-          "updatedAt": "2022-10-06T21:09:47.125Z",
-          "version": "1665090587125n",
+          "updatedAt": "2023-04-04T17:03:19.056Z",
+          "version": "1680627799056n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2270,7 +2271,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3550n",
+              "amount": "3850n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2298,8 +2299,8 @@
   {
     "type": "ITEM",
     "id": "DADAX7HWRLA4SBP3I63E3HSQ",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:02:14.398Z",
+    "version": "1680627734398n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2322,8 +2323,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "4KX2XBNOE5OHARVGGEEADTPI",
-          "updatedAt": "2022-10-06T21:10:06.802Z",
-          "version": "1665090606802n",
+          "updatedAt": "2023-04-04T17:02:14.398Z",
+          "version": "1680627734398n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2366,7 +2367,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3750n",
+              "amount": "4050n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2394,8 +2395,8 @@
   {
     "type": "ITEM",
     "id": "A4KJNVISDZY44GN4OZACNM5A",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:06:21.51Z",
+    "version": "1680627981510n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2418,8 +2419,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "XXR6AAIQRBPP65SHUTORNIZK",
-          "updatedAt": "2022-10-06T21:10:32.848Z",
-          "version": "1665090632848n",
+          "updatedAt": "2023-04-04T17:06:21.51Z",
+          "version": "1680627981510n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2462,7 +2463,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2900n",
+              "amount": "3100n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2490,8 +2491,8 @@
   {
     "type": "ITEM",
     "id": "JFHQQXAQG3CN2I7OWY6H27YW",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:06:34.684Z",
+    "version": "1680627994684n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2514,8 +2515,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "H5Q6NJKKOJD55PKKGJOTKCUJ",
-          "updatedAt": "2022-10-06T21:10:47.317Z",
-          "version": "1665090647317n",
+          "updatedAt": "2023-04-04T17:06:34.684Z",
+          "version": "1680627994684n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2558,7 +2559,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2500n",
+              "amount": "2700n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2586,8 +2587,8 @@
   {
     "type": "ITEM",
     "id": "YVAMKQLRSRHUQGLHMXR73NAP",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:05:08.977Z",
+    "version": "1680627908977n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2610,8 +2611,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "RA7UZI7F5EZHWJNRKHSGR72W",
-          "updatedAt": "2022-10-06T21:10:58.658Z",
-          "version": "1665090658658n",
+          "updatedAt": "2023-04-04T17:05:08.977Z",
+          "version": "1680627908977n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2654,7 +2655,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2600n",
+              "amount": "2900n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2681,8 +2682,8 @@
   {
     "type": "ITEM",
     "id": "QIVSPYQJS7HVTYL2JFO2QKBR",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:01:13.7Z",
+    "version": "1680627673700n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2705,8 +2706,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "4EIY4CKLAXVGYA7YTY7FPZ2X",
-          "updatedAt": "2022-10-06T21:11:07.318Z",
-          "version": "1665090667318n",
+          "updatedAt": "2023-04-04T17:01:13.7Z",
+          "version": "1680627673700n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2749,7 +2750,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3700n",
+              "amount": "3900n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2777,8 +2778,8 @@
   {
     "type": "ITEM",
     "id": "26BBT573FVO2X4GHRIT5JHXM",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:05:41.484Z",
+    "version": "1680627941484n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2801,8 +2802,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "DT5DPHC6ZPVPHXZDUKXMGJ2K",
-          "updatedAt": "2022-10-06T21:11:19.662Z",
-          "version": "1665090679662n",
+          "updatedAt": "2023-04-04T17:05:41.484Z",
+          "version": "1680627941484n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2845,7 +2846,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3100n",
+              "amount": "3300n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2873,8 +2874,8 @@
   {
     "type": "ITEM",
     "id": "VXLCE2JYYNJQIMW6FXBEXQUL",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:05:24.336Z",
+    "version": "1680627924336n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2897,8 +2898,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "DGUZA5QDUKYNW76QLS5WM5QR",
-          "updatedAt": "2022-10-06T21:11:27.854Z",
-          "version": "1665090687854n",
+          "updatedAt": "2023-04-04T17:05:24.336Z",
+          "version": "1680627924336n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2941,7 +2942,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3000n",
+              "amount": "3200n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2969,8 +2970,8 @@
   {
     "type": "ITEM",
     "id": "OASUBZWSCLFHMPBCM2MTIA7I",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:57:15.877Z",
+    "version": "1680627435877n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2993,8 +2994,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "4VZHWC7O7KX4NFHYTRTDOMD2",
-          "updatedAt": "2022-10-06T21:11:36.905Z",
-          "version": "1665090696905n",
+          "updatedAt": "2023-04-04T16:57:15.877Z",
+          "version": "1680627435877n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3037,7 +3038,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2900n",
+              "amount": "3000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -3065,8 +3066,8 @@
   {
     "type": "ITEM",
     "id": "EVEWGWI3XMLECW7N6ZAEGYDI",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T16:56:30.16Z",
+    "version": "1680627390160n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -3089,8 +3090,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "RSDMKJFOLRRR2HUFL57CWQ3A",
-          "updatedAt": "2022-10-06T21:11:45.57Z",
-          "version": "1665090705570n",
+          "updatedAt": "2023-04-04T16:56:30.16Z",
+          "version": "1680627390160n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3133,7 +3134,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2800n",
+              "amount": "3000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -3161,8 +3162,8 @@
   {
     "type": "ITEM",
     "id": "LIOB57JX2GD2FKP6UCUAVDSO",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:03:59.873Z",
+    "version": "1680627839873n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -3185,8 +3186,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "OJ6UAG37AIBT76HMXYKPTBHO",
-          "updatedAt": "2022-10-06T21:11:55.191Z",
-          "version": "1665090715191n",
+          "updatedAt": "2023-04-04T17:03:59.873Z",
+          "version": "1680627839873n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3229,7 +3230,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "4700n",
+              "amount": "5000n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -3257,8 +3258,8 @@
   {
     "type": "ITEM",
     "id": "2YNHWYCJ52CGCGDTYL4NWZNN",
-    "updatedAt": "2023-01-24T17:14:24.457Z",
-    "version": "1674580464457n",
+    "updatedAt": "2023-04-04T17:04:14.945Z",
+    "version": "1680627854945n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -3281,8 +3282,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KQOLHJTSW6YLPBCTWATXDI6T",
-          "updatedAt": "2022-10-06T21:12:01.868Z",
-          "version": "1665090721868n",
+          "updatedAt": "2023-04-04T17:04:14.945Z",
+          "version": "1680627854945n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3325,7 +3326,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5300n",
+              "amount": "5600n",
               "currency": "USD"
             },
             "locationOverrides": [

@@ -1,5 +1,118 @@
 [
     {
+        "number": 5,
+        "title": "Keratosis Pilaris - What it is and Effective Treatments",
+        "date": "04/21/2023",
+        "author": "madaesthetics",
+        "published": true,
+        "bannerPath": "",
+        "bannerSrc": "",
+        "bannerAlt": "",
+        "sections": [
+            {
+                "type": "text",
+                "tag": "p",
+                "content": "When we think about skin conditions, many of us immediately conjure up images of severe acne or psoriasis. But there's a lesser-known and surprisingly common skin condition that often flies under the radar: Keratosis Pilaris. Though it may not be as widely recognized as other skin conditions, Keratosis Pilaris can still impact one's comfort and confidence, making it important for us to understand and address this common issue." 
+            },
+            {
+                "type": "text",
+                "content": "Keratosis Pilaris, sometimes referred to as 'chicken skin' or 'K.P.', a benign skin condition characterized by small, rough bumps on the skin. It is prevalent, affecting around 40% of the adult population and up to 50-80% of adolescents. Though it may not garner as much attention as other skin conditions, Keratosis Pilaris can still cause discomfort and self-consciousness for those who have it."
+            },
+            
+            {
+                "type": "text",
+                "content": "To understand skin purging, let's first delve into the science of the skin. Our skin goes through a continuous cycle of renewal, shedding dead cells and creating new ones. This process, known as desquamation, takes roughly 28 days for the average adult. However, factors such as age, environment, and product use can impact this timeline."
+            },
+            {
+                "type": "text",
+                "content": "The cause of K.P. is rooted in our body's natural process of shedding dead skin cells. Under normal circumstances, our skin sheds these cells and makes way for new, healthy cells. However, for individuals with K.P. a buildup of keratin (a protein that protects the skin) occurs, causing the hair follicles to become clogged and form small, raised bumps. These bumps are often accompanied by mild redness, and they can appear anywhere on the body, but they are most common on the upper arms, thighs, and bum!"
+            },
+            {
+                "type": "text",
+                "content": "Now that we understand the basics of Keratosis Pilaris, let's talk about effective treatments. It's important to remember that while there is no cure for this condition, there are ways to manage and alleviate its symptoms. Here are some evidence-based treatments that can help:"
+            }, 
+            {
+                "type": "heading",
+                "content": "Gentle Exfoliation"
+            },
+            {
+                "type": "text",
+                "content": "Physical exfoliation, using a gentle scrub or a soft loofah, can help remove dead skin cells and unclog hair follicles. It's crucial not to be overly aggressive, as this can exacerbate irritation and inflammation. Instead, gently exfoliate in a circular motion, focusing on the affected areas. "
+            },
+            {
+                "type": "image",
+                "caption": "My recommended Body Scrub from Glymed Plus",
+                "sourced": false,
+                "link": "https://glymedplus.com/products/GM87",
+                "src": "",
+                "alt": "A picture of Glymed Plus's Ultimate Bod Scrub product",
+                "class": "img-contain",
+                "number": 1
+            },
+            {
+                "type": "heading",
+                "content": "Moisturize"
+            },
+            {
+                "type": "text",
+                "content": "Applying a moisturizer can help soothe and hydrate the skin, improving its overall texture. Look for products containing ceramides, urea, or hyaluronic acid, as these ingredients can help retain moisture and reduce dryness. Apply the moisturizer after bathing, when the skin is still damp, for maximum absorption."
+            },
+            {
+                "type": "image",
+                "caption": "My recommended Moisturizer from Glymed Plus",
+                "sourced": false,
+                "link": "https://glymedplus.com/products/GM56",
+                "src": "",
+                "alt": "A picture of Glymed Plus's Comfort Cream with Aloe product",
+                "class": "img-contain",
+                "number": 2
+            },
+            {
+                "type": "heading",
+                "content": "Topical Treatments"
+            },
+            {
+                "type": "text",
+                "content": "Over-the-counter creams and lotions containing alpha-hydroxy acids (AHAs), such as glycolic or lactic acid, can help break down keratin and improve skin texture. Retinoids, derivatives of vitamin A, may also be helpful by promoting cell turnover and reducing inflammation. Consult with a dermatologist or esthetician before using these products, as they may cause irritation for some individuals."
+            },
+            {
+                "type": "image",
+                "caption": "My recommended Treatment Cream from Glymed Plus",
+                "sourced": false,
+                "link": "https://glymedplus.com/products/GRX3",
+                "src": "",
+                "alt": "A picture of Glymed Plus's Treatment Cream product",
+                "class": "img-contain",
+                "number": 3
+            },
+            {
+                "type": "heading",
+                "content": "Humidify"
+            },
+            {
+                "type": "text",
+                "content": "Dry air can exacerbate keratosis pilaris symptoms, especially in colder months when indoor heating is used. Utilizing a humidifier in your living space can help maintain optimal humidity levels, reducing dryness and improving overall skin health."
+            },
+            {
+                "type": "heading",
+                "content": "Professional Treatments"
+            },
+            {
+                "type": "text",
+                "content": "In some cases, professional treatments such as chemical peels or HydraFacial treatments may be recommended by your Aesthetician. These treatments can help remove dead skin cells, unclog hair follicles, and improve skin texture."
+            },
+            
+            {
+                "type": "text",
+                "content": "By understanding its underlying causes and incorporating evidence-based treatments into your daily skincare routine, you can effectively manage and alleviate the symptoms associated with this KP. Remember, consistency is key! Incorporating these treatments and practices regularly will yield the best results. Don't be discouraged if you don't see immediate improvements, as it can take time for your skin to respond to these methods."
+            },
+            {
+                "type": "text",
+                "content": "It's also worth noting that each person's skin is unique, and what works for one individual may not be effective for another. If you're struggling to manage your keratosis pilaris or if symptoms worsen, don't hesitate to reach out to me for personalized advice and treatment options tailored to your specific needs."
+            }
+        ]
+    },
+    {
         "number": 4,
         "title": "Acne Purging - What it is and what it means",
         "date": "03/29/2023",

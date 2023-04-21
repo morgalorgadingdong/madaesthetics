@@ -17,11 +17,20 @@
         <% if (section.type === 'text') { %>
           <p class="col-12 text-left px-0 my-3 blog-text"><%= section.content %></p>
         <% } else if (section.type === 'image') { %>
-          <img src="/images/blog/<%=blog.number %>. <%=blog.title%>/blog<%=blog.number%>-<%=section.number%>.jpg" alt="<%= section.alt %>" class="col-10 col-md-8 mt-5 blog-img">
-
-          <span class="col-12 text-center mb-5"><%= section.caption %>.
-          <% if (section.sourced) { %>
-            <a href="<%= section.src %>">source</a>
+          <% if (section.link) { %>
+            <a href="<%= section.link %>" class="col-10 col-md-8 mt-5 " target="_blank" >
+              <img src="/images/blog/<%=blog.number %>. <%=blog.title%>/blog<%=blog.number%>-<%=section.number%>.jpg" alt="<%= section.alt %>" class="col-12 blog-img <%=section.class%>">
+            
+              
+            </a>
+            <span class="col-12 text-center mb-5"><%= section.caption %>. </span>
+          <% } else { %>
+            <img src="/images/blog/<%=blog.number %>. <%=blog.title%>/blog<%=blog.number%>-<%=section.number%>.jpg" alt="<%= section.alt %>" class="col-10 col-md-8 mt-5 blog-img">
+          
+            <span class="col-12 text-center mb-5"><%= section.caption %>. </span>
+            <% if (section.sourced) { %>
+              <a href="<%= section.src %>">source</a>
+            <% } %>
           <% } %>
           </span>
         <% } else if (section.type === 'heading') { %>
@@ -47,6 +56,8 @@
 
 <!-- Temporary styling for dev purposes -->
 <style>
+  
+  
   .blog-text {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -118,6 +129,10 @@ a {
 .blog-divider {
     border-top: black solid 2px;
 }
+
+.img-contain {
+    object-fit: contain;
+  }
 </style>
 
 <script>
