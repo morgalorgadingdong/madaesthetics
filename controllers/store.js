@@ -80,7 +80,19 @@
                 createStorePages()
               }
             function createStorePages() {
-                for (const item of storeItems) { 
+                //First, we delete all of the old pages
+                fs.readdir(dirPath, (err, files) => {
+                  if (err) throw err;
+              
+                  for (let file of files) {
+                    fs.unlink(path.join('public/products/', file), err => {
+                      if (err) throw err;
+                    });
+                  }
+                }); 
+              
+                //Now, we create the new store pages
+              for (const item of storeItems) { 
                     let id = item.id;
                     fs.copyFile('public/products/product-template.html', `public/products/${id}.html`, (err) => {
                     if (err) throw err;
