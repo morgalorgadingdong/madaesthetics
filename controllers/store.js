@@ -81,11 +81,12 @@
               }
             function createStorePages() {
                 //First, we delete all of the old pages
+                let dirPath = 'public/products/';
                 fs.readdir(dirPath, (err, files) => {
                   if (err) throw err;
               
                   for (let file of files) {
-                    fs.unlink(path.join('public/products/', file), err => {
+                    fs.unlink(path.join(dirPath, file), err => {
                       if (err) throw err;
                     });
                   }
