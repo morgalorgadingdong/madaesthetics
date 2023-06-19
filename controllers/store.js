@@ -79,7 +79,41 @@
                 console.log('Updated JSON Store File')
                 createStorePages()
               }
-            function createStorePages() {
+              function createStorePages() {
+                //First, we delete all of the old pages
+                let dirPath = 'public/products/';
+                fs.readdir(dirPath, (err, files) => {
+                    if (err) throw err;
+                  
+                    let deletePromises = files.map(file => {
+                        return new Promise((resolve, reject) => {
+                            fs.unlink(path.join(dirPath, file), err => {
+                                if (err) {
+                                    reject(err);
+                                } else {
+                                    resolve();
+                                }
+                            });
+                        });
+                    });
+            
+                    //Once all files are deleted, create the new pages
+                    Promise.all(deletePromises)
+                    .then(() => {
+                        for (const item of storeItems) { 
+                            let id = item.id;
+                            fs.copyFile('public/product-template.html', `public/products/${id}.html`, (err) => {
+                                if (err) throw err;
+                                console.log(`Product ${id} page created`);
+                            });
+                        }
+                    })
+                    .catch(err => {
+                        console.error("An error occurred while deleting files: ", err);
+                    });
+                });
+            }
+            function createStorePagesOld() {
                 //First, we delete all of the old pages
                 let dirPath = 'public/products/';
                 fs.readdir(dirPath, (err, files) => {
