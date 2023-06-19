@@ -2492,8 +2492,8 @@
   {
     "type": "ITEM",
     "id": "YVAMKQLRSRHUQGLHMXR73NAP",
-    "updatedAt": "2023-05-12T20:21:04.107Z",
-    "version": "1683922864107n",
+    "updatedAt": "2023-06-12T20:17:27.812Z",
+    "version": "1686601047812n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2516,8 +2516,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "RA7UZI7F5EZHWJNRKHSGR72W",
-          "updatedAt": "2023-04-04T17:05:08.977Z",
-          "version": "1680627908977n",
+          "updatedAt": "2023-06-12T20:17:27.812Z",
+          "version": "1686601047812n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2566,7 +2566,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,

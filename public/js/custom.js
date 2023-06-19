@@ -149,11 +149,15 @@ function createCartItem() {
   let item = new CartItem(name, qty, price, category)
   let itemExists = false
   cart.forEach(el => {
-    if (el.name == item.name) {
-      el.quantity =Number(el.quantity) + Number(item.quantity)
-      itemExists = true
-      updateLocalStorageCart()
+    console.log(el)
+    if (el) {
+      if (el.name == item.name) {
+        el.quantity =Number(el.quantity) + Number(item.quantity)
+        itemExists = true
+        updateLocalStorageCart()
+      }
     }
+
   })
   if (!itemExists){addToCart(item)}
   window.open("../cart.html", '_self')
@@ -168,7 +172,7 @@ function removeFromCart(item) {
   console.log('Removed', item.target.dataset.name)
   let name = item.target.dataset.name
   console.log('Before', cart)
-  cart = cart.filter(el => el.name != name)
+  cart = cart.filter(el => el && el.name && el.name != name)
   console.log('After', cart)
   item.target.parentNode.remove();
   updateLocalStorageCart()
@@ -211,58 +215,60 @@ function buildCartHTML() {
   document.getElementById('empty-cart-msg').remove()
   let total = 0
   cart.forEach(item => {
-    let index
-    storeItems.forEach(item2 => {
-      if (item2.itemData.name == item.name) {
-        index = storeItems.indexOf(item2)
+    if (item && item.name) {
+      let index
+      storeItems.forEach(item2 => {
+        if (item2.itemData.name == item.name) {
+          index = storeItems.indexOf(item2)
+        }
+      })
+      console.log(storeItems)
+      if (storeItems[index]){
+        let name = item.name
+      let price = item.amount
+      let qty = item.quantity
+      let imgURL = storeItems[index].itemData.imgURL;
+      let itemContainer = document.createElement('div')
+      itemContainer.classList.add('col-12', 'd-flex', 'align-items-center', 'mb-3')
+      let imgHTML = document.createElement('div')
+      imgHTML.style.backgroundImage = `url('${imgURL}')`;
+      imgHTML.classList.add('col-2', 'store-item-card')
+      let itemID = storeItems[index].id
+      imgHTML.setAttribute('onclick', `location.href='products/${itemID}.html'`);
+      let nameHTML = document.createElement('p')
+      nameHTML.innerHTML = name
+      nameHTML.classList.add('col-4', 'cart-item-text')
+      let qtyHTML = document.createElement('input')
+      qtyHTML.value = qty
+      qtyHTML.type = 'number'
+      qtyHTML.step = '1'
+      qtyHTML.min = '1'
+      qtyHTML.max = '1000'
+      qtyHTML.setAttribute('data-name', name)
+      // qtyHTML.readOnly = true
+      qtyHTML.classList.add('qty-input')
+      let priceHTML = document.createElement('p')
+      priceHTML.innerHTML = price
+      priceHTML.classList.add('cart-item-text', 'col-2')
+      let qtyContainer = document.createElement('div')
+      qtyContainer.classList.add('col-2', 'd-flex', 'align-content-center')
+      let qtyLabel = document.createElement('p')
+      qtyLabel.innerHTML = 'Qty'
+      qtyLabel.classList.add('cart-item-text')
+      let closeBtn = document.createElement('span')
+      closeBtn.classList.add('col-1', 'col-sm-2', 'close')
+      closeBtn.setAttribute('data-name', name)
+      closeBtn.setAttribute('onclick', `removeFromCart(event)`);
+      closeBtn.innerHTML = 'x'
+      price = Number(price.slice(price.indexOf(' ') + 1))
+      qtyHTML.setAttribute('data-price', price)
+      qty = Number(qty)
+      total += (price * qty)
+      qtyContainer.append(qtyLabel, qtyHTML)
+      itemContainer.append(imgHTML, nameHTML, priceHTML, qtyContainer, closeBtn)
+      container.append(itemContainer)
+      
       }
-    })
-    console.log(storeItems)
-    if (storeItems[index]){
-      let name = item.name
-    let price = item.amount
-    let qty = item.quantity
-    let imgURL = storeItems[index].itemData.imgURL;
-    let itemContainer = document.createElement('div')
-    itemContainer.classList.add('col-12', 'd-flex', 'align-items-center', 'mb-3')
-    let imgHTML = document.createElement('div')
-    imgHTML.style.backgroundImage = `url('${imgURL}')`;
-    imgHTML.classList.add('col-2', 'store-item-card')
-    let itemID = storeItems[index].id
-    imgHTML.setAttribute('onclick', `location.href='products/${itemID}.html'`);
-    let nameHTML = document.createElement('p')
-    nameHTML.innerHTML = name
-    nameHTML.classList.add('col-4', 'cart-item-text')
-    let qtyHTML = document.createElement('input')
-    qtyHTML.value = qty
-    qtyHTML.type = 'number'
-    qtyHTML.step = '1'
-    qtyHTML.min = '1'
-    qtyHTML.max = '1000'
-    qtyHTML.setAttribute('data-name', name)
-    // qtyHTML.readOnly = true
-    qtyHTML.classList.add('qty-input')
-    let priceHTML = document.createElement('p')
-    priceHTML.innerHTML = price
-    priceHTML.classList.add('cart-item-text', 'col-2')
-    let qtyContainer = document.createElement('div')
-    qtyContainer.classList.add('col-2', 'd-flex', 'align-content-center')
-    let qtyLabel = document.createElement('p')
-    qtyLabel.innerHTML = 'Qty'
-    qtyLabel.classList.add('cart-item-text')
-    let closeBtn = document.createElement('span')
-    closeBtn.classList.add('col-1', 'col-sm-2', 'close')
-    closeBtn.setAttribute('data-name', name)
-    closeBtn.setAttribute('onclick', `removeFromCart(event)`);
-    closeBtn.innerHTML = 'x'
-    price = Number(price.slice(price.indexOf(' ') + 1))
-    qtyHTML.setAttribute('data-price', price)
-    qty = Number(qty)
-    total += (price * qty)
-    qtyContainer.append(qtyLabel, qtyHTML)
-    itemContainer.append(imgHTML, nameHTML, priceHTML, qtyContainer, closeBtn)
-    container.append(itemContainer)
-    
     }
   })
   let subtotalHTML = document.createElement('p')
@@ -301,9 +307,11 @@ function cartQtyUpdate() {
     total += increment
     //Update cart object
     for (let j = 0; j < cart.length; j++) {
-      if (cart[j].name == quantities[i].dataset.name) {
-        console.log('match')
-        cart[j].quantity = quantities[i].value
+      if (cart[j] && cart[j].name) {
+        if (cart[j].name == quantities[i].dataset.name) {
+          console.log('match')
+          cart[j].quantity = quantities[i].value
+        }
       }
     }
   }
@@ -448,6 +456,7 @@ function createItemPage() {
 function translateCartData() {
   checkoutCart = []
   cart.forEach(item => {
+    if (item && item.name) {
     let discount = '20'
     let newAmount = item.amount.slice(2)
     newAmount = Number(newAmount) * 100
@@ -476,8 +485,11 @@ function translateCartData() {
         // ],
       }
     }
-    
     checkoutCart.push(checkoutItem)
+    }
+    
+    
+    
   })
   console.log(checkoutCart)
 }

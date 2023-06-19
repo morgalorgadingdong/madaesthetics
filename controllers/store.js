@@ -95,7 +95,7 @@
                 //Now, we create the new store pages
               for (const item of storeItems) { 
                     let id = item.id;
-                    fs.copyFile('public/products/product-template.html', `public/products/${id}.html`, (err) => {
+                    fs.copyFile('public/product-template.html', `public/products/${id}.html`, (err) => {
                     if (err) throw err;
                     console.log(`Product ${id} page created`);
                     });
