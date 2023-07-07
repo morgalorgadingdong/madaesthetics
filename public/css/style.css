@@ -5397,6 +5397,9 @@ footer {
 }
 
 #testimonies-section {
+  /* min-height: 80vh;
+  display: flex;
+  align-content: center; */
   /* background: linear-gradient(to right, var(--color-gray-light), var(--color-gray-mid)); */
 }
 
