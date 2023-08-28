@@ -139,8 +139,10 @@
             res.status(200).end() // Responding with 200 status
           },
         checkout: async (req, res) => {
-          console.log('checkout function called from controller')  
+          console.log('checkout function called from controller')
+
           let cart = req.body
+          console.log(cart)
             let password = env.cryptoPW
             function validateCart(cart) {
                 let validCart = true

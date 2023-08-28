@@ -325,13 +325,15 @@ function updateCartTotalValue(total) {
   shippingHTML = document.getElementById('shipping')
   subtotalHTML = document.getElementById('subtotal')
   subtotalHTML.innerHTML = `Subtotal: ${total}`
-  if (total >= 100) {
+  if (total >= 300) {
     shippingHTML.innerHTML = `Est shipping: FREE`
+  } else if (total >= 100) {
+    shippingHTML.innerHTML = `Est shipping: $ 14`
+    total = total + 14
   } else if (total > 0) {
-    shippingHTML.innerHTML = `Est shipping: $ 6`
-    total = total + 6
+    shippingHTML.innerHTML = `Est shipping: $ 7`
   } else {
-    shippingHTML.innerHTML = `Est shipping: `
+    shippingHTML.innerHTML = `Est shipping: 0`
   }
   totalHTML.innerHTML = `Total: $ ${total}`
 }
