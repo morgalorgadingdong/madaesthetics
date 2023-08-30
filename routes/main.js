@@ -15,5 +15,6 @@ router.get('/changePassword', authController.getChangePassword)
 router.post('/changePassword', authController.changePassword)
 router.get('/createAdmin', authController.createAdmin)
 router.get('/register', authController.register)
+router.get('/registerManual', authController.registerManual)
 
 module.exports = router

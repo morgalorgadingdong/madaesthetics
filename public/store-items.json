@@ -480,8 +480,8 @@
   {
     "type": "ITEM",
     "id": "RG2Q55KAI247MJKLHABVJIFB",
-    "updatedAt": "2023-05-12T20:21:02.662Z",
-    "version": "1683922862662n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -492,8 +492,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "MML7VFJKDAXIZIPY43I5A3OS",
-          "updatedAt": "2023-04-04T17:10:16.979Z",
-          "version": "1680628216979n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -549,8 +549,8 @@
   {
     "type": "ITEM",
     "id": "2KBAA6N4WVY3P2GG6ESHUDTI",
-    "updatedAt": "2023-05-12T20:21:03.095Z",
-    "version": "1683922863095n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -561,8 +561,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "BJNZHJ4A6RN5JBPQWVUFVHUU",
-          "updatedAt": "2023-04-04T17:10:44.256Z",
-          "version": "1680628244256n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -618,8 +618,8 @@
   {
     "type": "ITEM",
     "id": "VUOIEQ2Q4BHRJCSKH5ENZCA3",
-    "updatedAt": "2023-05-12T20:28:23.974Z",
-    "version": "1683923303974n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -630,8 +630,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "YCXHP7C47Y36IU5S5325UQSM",
-          "updatedAt": "2023-04-04T17:11:01.071Z",
-          "version": "1680628261071n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -687,8 +687,8 @@
   {
     "type": "ITEM",
     "id": "A3AQ6BDOKKGXGD6HGVRW74A5",
-    "updatedAt": "2023-05-12T20:21:05.952Z",
-    "version": "1683922865952n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -711,8 +711,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "VMQZ4P5EECWN4HLHTJIRN4RR",
-          "updatedAt": "2023-04-04T16:59:49.364Z",
-          "version": "1680627589364n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -973,8 +973,8 @@
   {
     "type": "ITEM",
     "id": "EABAUHGTZOK6MKMT2BCUE2YA",
-    "updatedAt": "2023-05-12T20:21:12.3Z",
-    "version": "1683922872300n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -997,8 +997,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KIGMFH75EH2IBYGDXXOTHCUL",
-          "updatedAt": "2023-04-04T17:00:28.088Z",
-          "version": "1680627628088n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1163,8 +1163,8 @@
   {
     "type": "ITEM",
     "id": "JTLY75FOTJDBB762TQBEO74T",
-    "updatedAt": "2023-06-30T17:45:36.56Z",
-    "version": "1688147136560n",
+    "updatedAt": "2023-08-24T00:07:24.296Z",
+    "version": "1692835644296n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1187,8 +1187,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KUKJIHRBTHU7OXUF27APXQPV",
-          "updatedAt": "2023-06-30T17:45:36.56Z",
-          "version": "1688147136560n",
+          "updatedAt": "2023-08-24T00:07:24.296Z",
+          "version": "1692835644296n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1237,7 +1237,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -1353,8 +1354,8 @@
   {
     "type": "ITEM",
     "id": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
-    "updatedAt": "2023-05-12T20:21:13.668Z",
-    "version": "1683922873668n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1377,8 +1378,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "VU4DPWL7FI5BCOTXE3TH3OJJ",
-          "updatedAt": "2023-04-04T17:06:50.665Z",
-          "version": "1680628010665n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1448,8 +1449,8 @@
   {
     "type": "ITEM",
     "id": "QXCBO2XLG7KWP3BXOHOR7R4E",
-    "updatedAt": "2023-05-12T20:21:04.23Z",
-    "version": "1683922864230n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1472,8 +1473,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "THUIMMS7ZZAESXSWAP5XFFSP",
-          "updatedAt": "2023-04-04T17:04:52.424Z",
-          "version": "1680627892424n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1543,8 +1544,8 @@
   {
     "type": "ITEM",
     "id": "YXTCEJK5VBVYZ376H7GYL3DD",
-    "updatedAt": "2023-05-12T20:28:21.84Z",
-    "version": "1683923301840n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1567,8 +1568,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "43NUFSNSANFSD6WMWS7A3YSY",
-          "updatedAt": "2023-04-04T17:04:37.993Z",
-          "version": "1680627877993n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1734,8 +1735,8 @@
   {
     "type": "ITEM",
     "id": "TTGU7QJVHI5P3674DFMYTXT5",
-    "updatedAt": "2023-05-12T20:21:10.083Z",
-    "version": "1683922870083n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -1746,8 +1747,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "IHTZLHNPTHPXWX7VZPACQICS",
-          "updatedAt": "2023-04-04T17:00:56.588Z",
-          "version": "1680627656588n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1803,8 +1804,8 @@
   {
     "type": "ITEM",
     "id": "355OC22CQIEYARNAQ3VRJ2K7",
-    "updatedAt": "2023-06-30T17:46:45.492Z",
-    "version": "1688147205492n",
+    "updatedAt": "2023-08-15T22:03:58.009Z",
+    "version": "1692137038009n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1827,8 +1828,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "PEEONP6DZMC6J3EO66JDEPYP",
-          "updatedAt": "2023-06-30T17:46:45.492Z",
-          "version": "1688147205492n",
+          "updatedAt": "2023-08-15T22:03:58.009Z",
+          "version": "1692137038009n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1877,7 +1878,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -1898,8 +1900,8 @@
   {
     "type": "ITEM",
     "id": "VYYZE4J7WW4FVAAN56PEWCA7",
-    "updatedAt": "2023-06-30T17:46:45.873Z",
-    "version": "1688147205873n",
+    "updatedAt": "2023-08-15T22:03:56.985Z",
+    "version": "1692137036985n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1922,8 +1924,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "3DKDVOAG42CLMACKMCHDDVHI",
-          "updatedAt": "2023-06-30T17:46:45.873Z",
-          "version": "1688147205873n",
+          "updatedAt": "2023-08-15T22:03:56.985Z",
+          "version": "1692137036985n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1972,7 +1974,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -1993,8 +1996,8 @@
   {
     "type": "ITEM",
     "id": "CZXNBB4F2UW47XCGVEGXGFUJ",
-    "updatedAt": "2023-06-30T17:47:21.231Z",
-    "version": "1688147241231n",
+    "updatedAt": "2023-08-08T00:51:36.578Z",
+    "version": "1691455896578n",
     "isDeleted": false,
     "customAttributeValues": {
       "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
@@ -2026,8 +2029,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "6WLDUOPTUOP2MZAWX67GXTC6",
-          "updatedAt": "2023-06-30T17:47:21.231Z",
-          "version": "1688147241231n",
+          "updatedAt": "2023-08-08T00:51:36.578Z",
+          "version": "1691455896578n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2076,7 +2079,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -2575,8 +2579,8 @@
   {
     "type": "ITEM",
     "id": "QIVSPYQJS7HVTYL2JFO2QKBR",
-    "updatedAt": "2023-05-12T20:21:05.506Z",
-    "version": "1683922865506n",
+    "updatedAt": "2023-08-09T06:10:21.134Z",
+    "version": "1691561421134n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2599,8 +2603,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "4EIY4CKLAXVGYA7YTY7FPZ2X",
-          "updatedAt": "2023-04-04T17:01:13.7Z",
-          "version": "1680627673700n",
+          "updatedAt": "2023-08-09T06:10:21.134Z",
+          "version": "1691561421134n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2958,8 +2962,8 @@
   {
     "type": "ITEM",
     "id": "EVEWGWI3XMLECW7N6ZAEGYDI",
-    "updatedAt": "2023-06-30T17:51:05.347Z",
-    "version": "1688147465347n",
+    "updatedAt": "2023-08-16T17:29:34.578Z",
+    "version": "1692206974578n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2982,8 +2986,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "RSDMKJFOLRRR2HUFL57CWQ3A",
-          "updatedAt": "2023-06-30T17:51:05.347Z",
-          "version": "1688147465347n",
+          "updatedAt": "2023-08-16T17:29:34.578Z",
+          "version": "1692206974578n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3032,7 +3036,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -3149,8 +3154,8 @@
   {
     "type": "ITEM",
     "id": "2YNHWYCJ52CGCGDTYL4NWZNN",
-    "updatedAt": "2023-06-30T17:51:52.031Z",
-    "version": "1688147512031n",
+    "updatedAt": "2023-08-23T19:25:43.21Z",
+    "version": "1692818743210n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -3173,8 +3178,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KQOLHJTSW6YLPBCTWATXDI6T",
-          "updatedAt": "2023-06-30T17:51:52.031Z",
-          "version": "1688147512031n",
+          "updatedAt": "2023-08-23T19:25:43.21Z",
+          "version": "1692818743210n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3223,7 +3228,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,

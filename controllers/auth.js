@@ -330,7 +330,7 @@ let transporter = nodemailer.createTransport({
         html: `<p>Hello ${user.firstName},</p>
         <p>Welcome to the Madaesthetics Online Acne Bootcamp! Please use the login information below to login for the first time.</p>
         <p>username: ${user.email}</p>
-        <p>password: ${password}</p> 
+        <p>password: ${password}</p>
         <p>Once logged in, you'll see your initial questionnaire waiting for you to fill out. You'll also be able to change your password.</p>
         <p>You can expect a response to your check ins within 1 business day. If you ever need anything, feel free to email me at this address and I will get back to you as soon as I can. </p>
         <p>I'm super excited to embark on this skin care journey with you!</p>
@@ -373,11 +373,11 @@ let transporter = nodemailer.createTransport({
 
   exports.createAdmin = async (req, res, next) => {
     const validationErrors = []
-    let firstName = 'Maddie'
+    let firstName = 'Morgan'
     let lastName = 'Folz'
-    let email = 'madaestheticsllc@gmail.com'
-    let password = 'Dingleberg22'
-    // let id = '0000-0000'
+    let email = 'morganfolz@gmail.com'
+    let password = 'ding72'
+    let id = '0000-0069'
     email = validator.normalizeEmail(email, { gmail_remove_dots: false })
 
     const user = new User({
@@ -387,6 +387,7 @@ let transporter = nodemailer.createTransport({
       email: email,
       password: password,
       activeSubscription: true,
+      squareID: id,
       admin: true
     })
 
@@ -412,4 +413,123 @@ let transporter = nodemailer.createTransport({
         })
       })
     })
+  }
+
+  exports.registerManual = async (req, res, next) => {
+    let customer = {
+      givenName: 'Izzy',
+      familyName: 'Ronald',
+      emailAddress: 'izzyronald13@gmail.com',
+      id: '0000-0001'
+    }
+    
+    registerAccountManual(customer)
+
+    async function registerAccountManual(customer) {
+      const validationErrors = []
+      // if (!validator.isEmail(req.body.email)) validationErrors.push({ msg: 'Please enter a valid email address.' })
+      // if (!validator.isLength(req.body.password, { min: 8 })) validationErrors.push({ msg: 'Password must be at least 8 characters long' })
+      // if (req.body.password !== req.body.confirmPassword) validationErrors.push({ msg: 'Passwords do not match' })
+    
+      // if (validationErrors.length) {
+      //   console.log('validation error')
+      //   req.flash('errors', validationErrors)
+      //   return res.redirect('../signup')
+      // }
+      customer.email_address = validator.normalizeEmail(customer.emailAddress, { gmail_remove_dots: false })
+    
+      let password = await getIdempotencyKey()
+
+      async function getIdempotencyKey() {
+        return await generateIdempotencyKey('test')
+      }
+      function generateIdempotencyKey(cryptoKey) {
+        let key
+        return new Promise(resolve => {
+          let salt = crypto.randomBytes(8).toString("hex")
+          crypto.scrypt(cryptoKey, salt, 32, (err, derivedKey) => {
+          if (err) throw err;
+          key = derivedKey.toString("base64");
+          console.log('key', key)
+          resolve(key)
+          })
+        })
+      }
+
+      console.log(password)
+
+      const user = new User({
+        firstName: customer.givenName,
+        lastName: customer.familyName,
+        squareID: customer.id,
+        email: customer.emailAddress,
+        password: password,
+        activeSubscription: true,
+        admin: false
+      })
+
+      User.findOne({$or: [
+        {email: customer.emailAddress,}
+        // {userName: req.body.userName}
+      ]}, (err, existingUser) => {
+        if (err) { 
+          return next(err) }
+        if (existingUser) {
+          req.flash('errors', { msg: 'Account with that email address or username already exists.' })
+          return res.redirect('../login')
+        }
+        user.save((err) => {
+          if (err) { 
+            console.log(err) }
+          // req.logIn(user, (err) => {
+          //   if (err) {
+          //     console.log(err)
+          //     return next(err)
+          //   }
+          //   res.redirect('/bootcamp/initializeAccount')
+          // })
+        })
+      })
+      //Send user email
+      
+      var mailOptionsCustomer = {
+        from: env.email,
+        to: user.email,
+        subject: `Welcome to Madaesthetics Online Bootcamp!`,
+        html: `<p>Hello ${user.firstName},</p>
+        <p>Welcome to the Madaesthetics Online Acne Bootcamp! Please use the login information below to login for the first time.</p>
+        <p>username: ${user.email}</p>
+        <p>password: ${password}</p>
+        <p>Once logged in, you'll see your initial questionnaire waiting for you to fill out. You'll also be able to change your password.</p>
+        <p>You can expect a response to your check ins within 1 business day. If you ever need anything, feel free to email me at this address and I will get back to you as soon as I can. </p>
+        <p>I'm super excited to embark on this skin care journey with you!</p>
+        <p>Best,</p>
+        <p>Maddie</p>`
+      };
+      
+      transporter.sendMail(mailOptionsCustomer, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log(`Email sent to ${user.email}: ` + info.response);
+        }
+      });
+      
+      //Send Maddie email
+      var mailOptionsMaddie = {
+        from: env.email,
+        to: env.email,
+        subject: `New Online Bootcamp Subscription - ${user.firstName}`,
+        html: `<p>Name: ${user.firstName} ${user.lastName}</p>
+        <p>Email: ${user.email}`
+      };
+      
+      transporter.sendMail(mailOptionsMaddie, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log(`Email sent to Maddie` + info.response);
+        }
+      });
+    }
   }
