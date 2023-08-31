@@ -298,7 +298,7 @@ module.exports = {
           to: clientEmail,
           subject: `${title} review complete!`,
           html: `<p>${clientName} - Maddie has finished reviewing your virtual check in! See below for her feedback</p>
-          <p>${maddieComments}</p>
+          <pre>${maddieComments}</pre>
           <p>You can also log in to the <a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a> at anytime to view her feedback on this, and all of your previous, check ins.</p>`
         };
         
@@ -793,7 +793,7 @@ module.exports = {
             to: clientEmail,
             subject: `${title} review complete!`,
             html: `<p>${clientName} - Maddie has finished reviewing your virtual check in! See below for her feedback</p>
-            <p>${maddieComments}</p>
+            <pre>${maddieComments}</pre>
             <p>You can also log in to the <a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a> at anytime to view her feedback on this, and all of your previous, check ins.</p>`
           };
           
