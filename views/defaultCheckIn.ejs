@@ -83,7 +83,7 @@
        <!-- Maddie comments -->
        <div class="<%= checkIn.submitted == true && checkIn.reviewed == true ? '' : 'hidden'%> col-12 mb-5">
         <h4>Madaesthetics Comments</h4>
-        <p><%= checkIn.reviewComments %></p>
+        <p><%= checkIn.reviewComments.replace(\r\n\r\n, '<br>') %></p>
       </div>
             
       <!-- User Response -->

@@ -417,10 +417,10 @@ let transporter = nodemailer.createTransport({
 
   exports.registerManual = async (req, res, next) => {
     let customer = {
-      givenName: 'Izzy',
-      familyName: 'Ronald',
-      emailAddress: 'izzyronald13@gmail.com',
-      id: '0000-0001'
+      givenName: 'Mo',
+      familyName: 'Jangle',
+      emailAddress: 'morganfolzbackup@gmail.com',
+      id: '0000-0002'
     }
     
     registerAccountManual(customer)

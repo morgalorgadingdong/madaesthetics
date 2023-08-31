@@ -182,7 +182,7 @@ h5 {
   h6 a {
     color: inherit; }
 
-h6, p {
+h6, p, pre {
   font-family: var(--font-paragraph);
   font-weight: normal;
   color: var(--color-primary-dark);
@@ -223,7 +223,7 @@ h6 {
   /* font-size: 18px; */
   font-weight: 500; }
 
-p {
+p, pre {
   font-size: calc(var(--size-multiplier) * 16px);
   font-weight: normal;
   /* line-height: 26px;  */
@@ -6681,7 +6681,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 24px;
     font-weight: 500; }
   
-  p, li {
+  p, li, pre {
     font-weight: normal;
     font-size: 18px;}
   

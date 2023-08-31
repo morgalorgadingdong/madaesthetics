@@ -760,21 +760,6 @@ module.exports = {
             }
           });
 
-        //   var mailOptions = {
-        //     from: env.email,
-        //     to: env.email,
-        //     subject: `New Initial Check in Awaiting review`,
-        //     html: `<p>${user.firstName} ${user.lastName} has submitted their initial check in and it is currently awaiting your review</p><br><a href='https://madaesthetics.co/bootcamp/login'>Bootcamp dashboard</a>`
-        //   };
-          
-        //   transporter.sendMail(mailOptions, function(error, info){
-        //     if (error) {
-        //       console.log(error);
-        //     } else {
-        //       console.log(info.response);
-        //     }
-        //   });
-
 
         res.redirect('/bootcamp')
     },
