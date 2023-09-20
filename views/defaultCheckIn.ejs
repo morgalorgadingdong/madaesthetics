@@ -83,7 +83,7 @@
        <!-- Maddie comments -->
        <div class="<%= checkIn.submitted == true && checkIn.reviewed == true ? '' : 'hidden'%> col-12 mb-5">
         <h4>Madaesthetics Comments</h4>
-        <p><%= checkIn.reviewComments.replace(\r\n\r\n, '<br>') %></p>
+        <pre><%= checkIn.reviewComments %></pre>
       </div>
             
       <!-- User Response -->
@@ -124,37 +124,4 @@
   </div>
 </section>
 
-
-  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-  <script type="text/javascript">
-    (function(){
-    var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-    i.src="https://cdn.curator.io/published/da680799-c8d9-419f-aae6-e7446d6857d2.js";
-    e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-    })();
-    </script>
-
-<footer class="footer space-ptb bg-primary">
-  <div class="row flexSpaceAroundH">
-
-    <div class="col-md-4 col-lg-6 flexCenterH"><a href="index.html"><img id="footerLogo" src="images/new-logo-white-2.png" class="col-12"/></a></div>
-  </div>
-  <div class="col-12 text-center pt-5">
-    <p class="whiteText">© mad aesthetics 2022</p>
-  </div>
-                                
-</footer>
-
-
-<div id="back-to-top" class="back-to-top" onclick="href='#top'">
-  <a href="#top"> <i class="fas fa-angle-up"></i></a>
- </div>
-
-  <script defer src="/js/scroll.js"></script>
-  <script defer src="/js/custom.js"></script>
-  <script src="/js/preload.js"></script>
-  
-  <script src="/js/glide/dist/glide.min.js"></script>
-
-</body>
-</html>
+<%- include('partials/footer') -%>

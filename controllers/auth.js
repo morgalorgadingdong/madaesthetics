@@ -373,11 +373,11 @@ let transporter = nodemailer.createTransport({
 
   exports.createAdmin = async (req, res, next) => {
     const validationErrors = []
-    let firstName = 'Morgan'
-    let lastName = 'Folz'
-    let email = 'morganfolz@gmail.com'
+    let firstName = 'Izzy'
+    let lastName = 'Ronald'
+    let email = 'izzyronald@gmail.com'
     let password = 'ding72'
-    let id = '0000-0069'
+    let id = '0000-0002'
     email = validator.normalizeEmail(email, { gmail_remove_dots: false })
 
     const user = new User({
@@ -388,7 +388,8 @@ let transporter = nodemailer.createTransport({
       password: password,
       activeSubscription: true,
       squareID: id,
-      admin: true
+      accountInitialized: true,
+      admin: false
     })
 
     User.findOne({$or: [
@@ -397,10 +398,10 @@ let transporter = nodemailer.createTransport({
     ]}, (err, existingUser) => {
       if (err) { 
         return next(err) }
-      if (existingUser) {
-        req.flash('errors', { msg: 'Account with that email address or username already exists.' })
-        return res.redirect('../login')
-      }
+      // if (existingUser) {
+      //   req.flash('errors', { msg: 'Account with that email address or username already exists.' })
+      //   return res.redirect('../login')
+      // }
       user.save((err) => {
         if (err) { 
           return next(err) }

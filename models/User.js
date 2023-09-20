@@ -15,8 +15,8 @@ const UserSchema = new mongoose.Schema({
     type: Number
   },
   squareID: {
-    type: String, 
-    unique: true
+    type: String 
+    // unique: true
   },
   activeSubscription: {
     type: Boolean,

@@ -36,10 +36,12 @@ module.exports = {
         },
     getDashboard: async (req, res) => {
         // res.render('dashboard.ejs', {checkIns: checkInItems, user: req.user})
+        let tempID = '64ee953a30277dbfe31029a3'
         if (req.user.admin) {
             res.redirect('/admin')
         } else {
-            const checkInItems = await Bootcamp.find({userId:req.user.id})
+          // const checkInItems = await Bootcamp.find({userId:tempID})  
+          const checkInItems = await Bootcamp.find({userId:req.user.id})
             let clientCheckIns = []
             let maddieCheckIns = []
             checkInItems.forEach(el => {

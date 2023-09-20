@@ -13,7 +13,7 @@ router.get('/logout', authController.logout)
 router.post('/signup', authController.postSignup)
 router.get('/changePassword', authController.getChangePassword)
 router.post('/changePassword', authController.changePassword)
-router.get('/createAdmin', authController.createAdmin)
+// router.get('/createAdmin', authController.createAdmin)
 router.get('/register', authController.register)
 router.get('/registerManual', authController.registerManual)
 
