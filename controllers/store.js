@@ -157,10 +157,14 @@
             cart.forEach(item => {
                 total += (item.basePriceMoney.amount * Number(item.quantity))
             })
+            // Old shipping rates
+            // if (total < 10000) {
+            //     shipping = 700
+            // } else if (total >= 30000) {
+            //     shipping = 1400
+            // }
             if (total < 10000) {
-                shipping = 700
-            } else if (total < 30000) {
-                shipping = 1400
+              shipping = 700
             }
             let key = await getIdempotencyKey()
                 try {

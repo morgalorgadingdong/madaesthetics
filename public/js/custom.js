@@ -25,12 +25,27 @@ class CartItem{
 
 //On page load, check local storage for cart array
   //If exists, copy data from local storage to cart variable
+// function checkLocalStorageCart() {
+//   if (localStorage.length > 0) {
+//     let temp = Object.values(localStorage)
+//     temp.forEach(item => {
+//       cart.push(JSON.parse(item))
+//     })
+//   }
+// }
 function checkLocalStorageCart() {
   if (localStorage.length > 0) {
-    let temp = Object.values(localStorage)
+    let temp = Object.values(localStorage);
     temp.forEach(item => {
-      cart.push(JSON.parse(item))
-    })
+      try {
+        // Attempt to parse each item as JSON
+        let parsedItem = JSON.parse(item);
+        cart.push(parsedItem);
+      } catch (e) {
+        // If parsing fails, log the error and skip the item
+        console.error("Invalid JSON format in localStorage:", item, e);
+      }
+    });
   }
 }
 checkLocalStorageCart()
