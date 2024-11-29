@@ -105,7 +105,7 @@ function createItemFilterBtns() {
   let filters = []
   let filter
   storeItems.forEach(item => {
-    filter = item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue
+    filter = item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"]
     if (!filters.indexOf(filter)) {
       filters.push(filter)
     }
@@ -361,8 +361,8 @@ function createItemCard(item) {
   let name = item.itemData.name;
   let price = item.itemData.variations[0].itemVariationData.priceMoney.amount;
   let category
-  if (item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue) {
-    category = item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"].stringValue
+  if (item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"]) {
+    category = item.itemData.variations[0].customAttributeValues["Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"]
   }
   let imgURL
   if (item.itemData.imgURL) {

@@ -1,6 +1,583 @@
 [
   {
     "type": "ITEM",
+    "id": "2BGX6HFWFKVMFCUSGOZSNEF3",
+    "updatedAt": "2024-10-01T22:26:47.499Z",
+    "version": "1727821607499n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "B8136A7F-950E-4F22-94C4-2F1E7E92E07C",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "10% Advanced Acne Med",
+      "description": "A highly effective water-based gel containing 10% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for oily skin types.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "WJJ3FWMTPAX2VGUVOYZ4PPVS",
+          "updatedAt": "2024-10-01T22:26:39.127Z",
+          "version": "1727821599127n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LXA4ULBG7BUO2HYNEVYBB3ZG"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Acne Care",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "31C45572-3E6A-4086-B7BC-9B547DC28C87",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "2BGX6HFWFKVMFCUSGOZSNEF3",
+            "name": "Regular",
+            "sku": "dnjdsv938dnsg2385nv",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "2900n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "66QYTNVIUXCH4KOCVZHUEAQ5"
+      ],
+      "descriptionHtml": "<p>A highly effective water-based gel containing 10% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for oily skin types.</p>",
+      "descriptionPlaintext": "A highly effective water-based gel containing 10% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for oily skin types.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/cba43d6bc15f78d673b8e4a661336cd4d6fd7692/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "VYYZE4J7WW4FVAAN56PEWCA7",
+    "updatedAt": "2024-10-01T22:37:04.788Z",
+    "version": "1727822224788n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "4E3C460C-84A5-4889-B8E7-A733AC45CD3A",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "11% L-Mandelic Serum ",
+      "description": "Our gold standard 11% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid.\n\nL-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "3DKDVOAG42CLMACKMCHDDVHI",
+          "updatedAt": "2024-10-01T22:36:59.44Z",
+          "version": "1727822219440n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LBTJSMXMEFTCMFJUHLJFM7AF"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Serums",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "1BDC353E-4745-4F68-BD06-CBE1ABF45047",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "VYYZE4J7WW4FVAAN56PEWCA7",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "4400n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "WLSU3GJW7SPBNIKUBBM33NBQ"
+      ],
+      "descriptionHtml": "<p>Our gold standard 11% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid.</p><p><br/></p><p>L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.</p>",
+      "descriptionPlaintext": "Our gold standard 11% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid.\n\nL-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/862ad2c0c2ca4f597333ddee226e0d14ca5de792/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "43TGNPIH3IL3ZEJXYZL52K5F",
+    "updatedAt": "2024-10-01T22:28:22.894Z",
+    "version": "1727821702894n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "2A02FF6B-09D2-4896-A9E8-CEA908C761E1",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "2.5% Advanced Acne Med",
+      "description": "A highly effective water-based gel containing 2.5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores and keeps them from clogging. Appropriate for dry and mature skin types.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "WFQ2WB3LWRWRSCTRMU4DAQSV",
+          "updatedAt": "2024-10-01T22:28:15.221Z",
+          "version": "1727821695221n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LXA4ULBG7BUO2HYNEVYBB3ZG"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Acne Care",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "3044FBB5-E452-4C8B-9CC3-324E63596CDF",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "43TGNPIH3IL3ZEJXYZL52K5F",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "2700n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "LUDED6ZGUURZW2RHHX6WWJ2G"
+      ],
+      "descriptionHtml": "<p>A highly effective water-based gel containing 2.5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores and keeps them from clogging. Appropriate for dry and mature skin types.</p>",
+      "descriptionPlaintext": "A highly effective water-based gel containing 2.5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores and keeps them from clogging. Appropriate for dry and mature skin types.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/f29360b5f26dc69963336ebf45f6975ae3a7a7c2/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "DL7AJA54JAX57PXIOMXGLUBD",
+    "updatedAt": "2024-10-01T22:27:33.607Z",
+    "version": "1727821653607n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "CEFCE7DF-69E7-42D4-B51C-60B65119A5C5",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "5% Advanced Acne Med",
+      "description": "A highly effective water-based gel containing 5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for normal and oily skin types.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "7ZKS5XKEA6B66UVWGMNWTDMR",
+          "updatedAt": "2024-10-01T22:27:20.535Z",
+          "version": "1727821640535n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LXA4ULBG7BUO2HYNEVYBB3ZG"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Acne Care",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "0AE279E9-5848-47E2-98F6-DBBB0AAE8A2C",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "DL7AJA54JAX57PXIOMXGLUBD",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "2800n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "PTLBH2XXPWOV6G6RJOV7E2XU"
+      ],
+      "descriptionHtml": "<p>A highly effective water-based gel containing 5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for normal and oily skin types.</p>",
+      "descriptionPlaintext": "A highly effective water-based gel containing 5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for normal and oily skin types.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/e7c5707621c853d36073e00d00fd79480b41b37f/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "6NQLLJGBYFWDP3KRBGM4A7CU",
+    "updatedAt": "2024-10-01T22:35:15.243Z",
+    "version": "1727822115243n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "84082110-447C-405C-8C18-36A5AF424A6B",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "5% L-Mandelic Serum",
+      "description": "Our gold standard 5% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration, resulting in a more even exfoliation with less irritation.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "Z3S4GUS6JY2YVAVOAIMUUZP3",
+          "updatedAt": "2024-10-01T22:35:09.943Z",
+          "version": "1727822109943n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LBTJSMXMEFTCMFJUHLJFM7AF"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Serums",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "2EB43350-77B6-4160-9C93-8DEECE4046DF",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "6NQLLJGBYFWDP3KRBGM4A7CU",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "4000n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "BBOY2OEIUS2J65OSUK7KVRXX"
+      ],
+      "descriptionHtml": "<p>Our gold standard 5% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration, resulting in a more even exfoliation with less irritation.</p>",
+      "descriptionPlaintext": "Our gold standard 5% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration, resulting in a more even exfoliation with less irritation.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/03a0380c8285f7e0bcd77dc7d15c315d43b638de/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "DADAX7HWRLA4SBP3I63E3HSQ",
+    "updatedAt": "2024-10-01T22:36:12.914Z",
+    "version": "1727822172914n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "FCA09295-B86F-4343-84A0-B519A94A10BA",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "8% L-Mandelic Serum ",
+      "description": "Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "4KX2XBNOE5OHARVGGEEADTPI",
+          "updatedAt": "2024-10-01T22:36:07.435Z",
+          "version": "1727822167435n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LBTJSMXMEFTCMFJUHLJFM7AF"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Serums",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "C9A78766-7068-42BD-B7CF-F7AD1D6FDAB5",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "DADAX7HWRLA4SBP3I63E3HSQ",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "4200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "APWBG7QIOQTYDHPWYNYQ3EQ4"
+      ],
+      "descriptionHtml": "<p>Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.</p>",
+      "descriptionPlaintext": "Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/2f54f86e3b7f6ca3cc84ddf50538ba624ddb2fb9/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
     "id": "VBHSJLUBFU5GJCONUTVC4RV5",
     "updatedAt": "2023-06-30T17:40:20.195Z",
     "version": "1688146820195n",
@@ -99,8 +676,8 @@
   {
     "type": "ITEM",
     "id": "DUSHBZVBQ5I5SJK6C7IUX3NE",
-    "updatedAt": "2023-06-30T17:40:19.76Z",
-    "version": "1688146819760n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -123,8 +700,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "U7XK3HFUZVZ5DDRCE3EMUZ4X",
-          "updatedAt": "2023-06-30T17:40:19.76Z",
-          "version": "1688146819760n",
+          "updatedAt": "2023-09-14T00:24:49.248Z",
+          "version": "1694651089248n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -173,7 +750,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -193,295 +771,9 @@
   },
   {
     "type": "ITEM",
-    "id": "2BGX6HFWFKVMFCUSGOZSNEF3",
-    "updatedAt": "2023-06-30T17:41:04.453Z",
-    "version": "1688146864453n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "B8136A7F-950E-4F22-94C4-2F1E7E92E07C",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Acne Med 10%",
-      "description": "A highly effective water-based gel containing 10% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for oily skin types.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "WJJ3FWMTPAX2VGUVOYZ4PPVS",
-          "updatedAt": "2023-06-30T17:41:04.453Z",
-          "version": "1688146864453n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LXA4ULBG7BUO2HYNEVYBB3ZG"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Acne Care",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "31C45572-3E6A-4086-B7BC-9B547DC28C87",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "2BGX6HFWFKVMFCUSGOZSNEF3",
-            "name": "Regular",
-            "sku": "dnjdsv938dnsg2385nv",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "2400n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "XZ42B5U6YAQFRCU2JPJDDV7X"
-      ],
-      "descriptionHtml": "<p>A highly effective water-based gel containing 10% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for oily skin types.</p>",
-      "descriptionPlaintext": "A highly effective water-based gel containing 10% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for oily skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/6b3dc13a3fbe41dbec46e62d1d8c093a34791a6a/original.png"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "43TGNPIH3IL3ZEJXYZL52K5F",
-    "updatedAt": "2023-06-30T17:41:04.073Z",
-    "version": "1688146864073n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "2A02FF6B-09D2-4896-A9E8-CEA908C761E1",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Acne Med 2.5%",
-      "description": "A highly effective water-based gel containing 2.5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores and keeps them from clogging. Appropriate for dry and mature skin types.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "WFQ2WB3LWRWRSCTRMU4DAQSV",
-          "updatedAt": "2023-06-30T17:41:04.073Z",
-          "version": "1688146864073n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LXA4ULBG7BUO2HYNEVYBB3ZG"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Acne Care",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "3044FBB5-E452-4C8B-9CC3-324E63596CDF",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "43TGNPIH3IL3ZEJXYZL52K5F",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "2200n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "JRHTAS5D5DHUWNLURR774L4R"
-      ],
-      "descriptionHtml": "<p>A highly effective water-based gel containing 2.5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores and keeps them from clogging. Appropriate for dry and mature skin types.</p>",
-      "descriptionPlaintext": "A highly effective water-based gel containing 2.5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores and keeps them from clogging. Appropriate for dry and mature skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/2a23c97ab3b744907caab405b2ee1524d2ebfeaf/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "DL7AJA54JAX57PXIOMXGLUBD",
-    "updatedAt": "2023-06-30T17:41:37.733Z",
-    "version": "1688146897733n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "CEFCE7DF-69E7-42D4-B51C-60B65119A5C5",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Acne Med 5%",
-      "description": "A highly effective water-based gel containing 5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for normal and oily skin types.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "7ZKS5XKEA6B66UVWGMNWTDMR",
-          "updatedAt": "2023-06-30T17:41:37.733Z",
-          "version": "1688146897733n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LXA4ULBG7BUO2HYNEVYBB3ZG"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Acne Care",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "0AE279E9-5848-47E2-98F6-DBBB0AAE8A2C",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "DL7AJA54JAX57PXIOMXGLUBD",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "2300n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "PUPXQSVUPFJPKB6LLDYHER7H"
-      ],
-      "descriptionHtml": "<p>A highly effective water-based gel containing 5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for normal and oily skin types.</p>",
-      "descriptionPlaintext": "A highly effective water-based gel containing 5% benzoyl peroxide that penetrates the pore where it fights acne-causing bacteria, helps unclog pores, and keeps them from clogging. Appropriate for normal and oily skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/91e2059fc070f3ff41aa397633d89b8c20254240/original.png"
-    }
-  },
-  {
-    "type": "ITEM",
     "id": "RG2Q55KAI247MJKLHABVJIFB",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -549,8 +841,8 @@
   {
     "type": "ITEM",
     "id": "2KBAA6N4WVY3P2GG6ESHUDTI",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -618,8 +910,8 @@
   {
     "type": "ITEM",
     "id": "VUOIEQ2Q4BHRJCSKH5ENZCA3",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -687,8 +979,8 @@
   {
     "type": "ITEM",
     "id": "A3AQ6BDOKKGXGD6HGVRW74A5",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -783,8 +1075,8 @@
   {
     "type": "ITEM",
     "id": "OXX4N23Y57277XFZRMGYWMDB",
-    "updatedAt": "2023-06-30T17:43:34.509Z",
-    "version": "1688147014509n",
+    "updatedAt": "2024-10-01T22:38:27.863Z",
+    "version": "1727822307863n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -797,7 +1089,7 @@
       "J2WJWF13GKN3W"
     ],
     "itemData": {
-      "name": "Antioxidant Peptide Face Serum",
+      "name": "Antioxidant Peptide Serum",
       "description": "Formulated with a potent blend of antioxidants and peptides that work together to improve the overall appearance of the skin. This serum is appropriate for all skin types and is great for anyone looking for a skin rejuvenating serum that is safe for blemish-prone skin.",
       "availableOnline": false,
       "availableForPickup": false,
@@ -807,8 +1099,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "XMJMRCHHCTPB3VDHOKTHSNBV",
-          "updatedAt": "2023-06-30T17:43:34.509Z",
-          "version": "1688147014509n",
+          "updatedAt": "2024-10-01T22:38:22.272Z",
+          "version": "1727822302272n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -851,13 +1143,14 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "5200n",
+              "amount": "5400n",
               "currency": "USD"
             },
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -868,18 +1161,18 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "EUOBGCNXJL4J4ZD5IXPLBMOD"
+        "X5RBQ7O4GWEQYGLSXLQJV37Q"
       ],
       "descriptionHtml": "<p>Formulated with a potent blend of antioxidants and peptides that work together to improve the overall appearance of the skin. This serum is appropriate for all skin types and is great for anyone looking for a skin rejuvenating serum that is safe for blemish-prone skin.</p>",
       "descriptionPlaintext": "Formulated with a potent blend of antioxidants and peptides that work together to improve the overall appearance of the skin. This serum is appropriate for all skin types and is great for anyone looking for a skin rejuvenating serum that is safe for blemish-prone skin.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/8d09cd5b279620c937184feb4766c9bc276283c9/original.jpeg"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/02395ff95ec16f3c30adcc16197760053a1ecdf9/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "DTJU4XIEAOW5UXEFF2DXJRC4",
-    "updatedAt": "2023-06-30T17:43:34.346Z",
-    "version": "1688147014346n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -902,8 +1195,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "ZVCJRIZ53LDWJJ4CFENDVHFP",
-          "updatedAt": "2023-06-30T17:43:34.346Z",
-          "version": "1688147014346n",
+          "updatedAt": "2023-11-30T20:39:22.199Z",
+          "version": "1701376762199n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -952,7 +1245,8 @@
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -973,8 +1267,8 @@
   {
     "type": "ITEM",
     "id": "EABAUHGTZOK6MKMT2BCUE2YA",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-10-01T22:32:08.355Z",
+    "version": "1727821928355n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -997,8 +1291,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KIGMFH75EH2IBYGDXXOTHCUL",
-          "updatedAt": "2023-08-09T06:10:21.134Z",
-          "version": "1691561421134n",
+          "updatedAt": "2024-10-01T22:31:44.721Z",
+          "version": "1727821904721n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1041,13 +1335,14 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "4700n",
+              "amount": "4800n",
               "currency": "USD"
             },
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -1058,18 +1353,18 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "N73DGQDA67XAOL6M6BQMJG2V"
+        "ALFML3RL5TSCCTJMJXU7B5EZ"
       ],
       "descriptionHtml": "<p>Brighten-C Mask is packed with specialty ingredients like vitamin C to boost radiance, help improve the appearance of discoloration and offer antioxidant support.  Appropriate for all skin types.</p>",
       "descriptionPlaintext": "Brighten-C Mask is packed with specialty ingredients like vitamin C to boost radiance, help improve the appearance of discoloration and offer antioxidant support.  Appropriate for all skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/b59789a5057b6bc9510bf14a1e8f53170548cefc/original.jpeg"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/37c74769626924287b580b1a8110d1da294dd9fa/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "DN5HK66FSST62RSSRHVBYIEU",
-    "updatedAt": "2023-06-30T17:44:08.199Z",
-    "version": "1688147048199n",
+    "updatedAt": "2024-10-01T22:30:57.411Z",
+    "version": "1727821857411n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1092,8 +1387,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "MONULUMCBZRG5UDJJLXQLH43",
-          "updatedAt": "2023-06-30T17:44:08.199Z",
-          "version": "1688147048199n",
+          "updatedAt": "2024-10-01T22:30:49.326Z",
+          "version": "1727821849326n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1136,13 +1431,14 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2700n",
+              "amount": "2900n",
               "currency": "USD"
             },
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -1152,19 +1448,173 @@
       ],
       "productType": "REGULAR",
       "skipModifierScreen": false,
-      "imageIds": [
-        "4IWCOKLMNZL2VJVYEYASIDCR"
-      ],
       "descriptionHtml": "<p>A gentle toner with soothing, hydrating, and moisturizing properties. Appropriate for all skin types.</p>",
-      "descriptionPlaintext": "A gentle toner with soothing, hydrating, and moisturizing properties. Appropriate for all skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/8d5427590ab52516915622173a228cb8bf6335be/original.jpeg"
+      "descriptionPlaintext": "A gentle toner with soothing, hydrating, and moisturizing properties. Appropriate for all skin types."
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "LTBIEGDP2EY3NSX7SJKFHWY5",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "P3MDW7LC3IB72EIEI7WKKO6V",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Clear Skin Balance",
+      "description": "Designed by the #1 Professional Acne Brand, Clear Skin Balance contains Omega-3s and a proprietary Antioxidant Skin Defense Blend that may clear, balance, and brighten skin while supporting overall health and wellness.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "3D4FKCKTAMXJFP5JT53D4WRL",
+          "updatedAt": "2024-04-17T16:46:43.677Z",
+          "version": "1713372403677n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "KVDEXFDHTQO7QXQSZRV4SBHJ",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "LTBIEGDP2EY3NSX7SJKFHWY5",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "4200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "trackInventory": false,
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "NYOVOCN45RQIZ6QPH3TCESMB"
+      ],
+      "descriptionHtml": "<p>Designed by the #1 Professional Acne Brand, Clear Skin Balance contains Omega-3s and a proprietary Antioxidant Skin Defense Blend that may clear, balance, and brighten skin while supporting overall health and wellness.</p>",
+      "descriptionPlaintext": "Designed by the #1 Professional Acne Brand, Clear Skin Balance contains Omega-3s and a proprietary Antioxidant Skin Defense Blend that may clear, balance, and brighten skin while supporting overall health and wellness.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d8f651ef014047a8fa2151620c2e2ab962dcbaf7/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "R2VD573WNZBQJXV5VN2HIICP",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "JZWWE7ZTEXPENUJFTTDJ4VN2",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Clear Skin Restore",
+      "description": "Designed by the #1 Professional Acne Brand, Clear Skin Restore contains Zinc and a proprietary Probiotic Gut-Skin Axis Blend to help clear skin while supporting overall health and wellness.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "6YLYKMKRR4N6IUS6QLQBK6CM",
+          "updatedAt": "2024-04-17T16:46:43.677Z",
+          "version": "1713372403677n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "FCO4P4YZYQSWDUVIHGWBPQS6",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "R2VD573WNZBQJXV5VN2HIICP",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "3200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": false
+              }
+            ],
+            "trackInventory": false,
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "WOC72G5ZW23SB72BT2AUT65U"
+      ],
+      "descriptionHtml": "<p>Designed by the #1 Professional Acne Brand, Clear Skin Restore contains Zinc and a proprietary Probiotic Gut-Skin Axis Blend to help clear skin while supporting overall health and wellness.</p>",
+      "descriptionPlaintext": "Designed by the #1 Professional Acne Brand, Clear Skin Restore contains Zinc and a proprietary Probiotic Gut-Skin Axis Blend to help clear skin while supporting overall health and wellness.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/dbba6d18e57f928ff921f27caf9f603da0d4dc56/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "JTLY75FOTJDBB762TQBEO74T",
-    "updatedAt": "2023-08-24T00:07:24.296Z",
-    "version": "1692835644296n",
+    "updatedAt": "2024-10-01T22:30:25.432Z",
+    "version": "1727821825432n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1177,7 +1627,7 @@
       "J2WJWF13GKN3W"
     ],
     "itemData": {
-      "name": "Clearderma",
+      "name": "ClearDerma Moisturizer",
       "description": "Lightweight yet deeply moisturizing, Clearderma offers potent antioxidant support and contains soothing properties. Appropriate for normal to oily skin types.",
       "availableOnline": false,
       "availableForPickup": false,
@@ -1187,8 +1637,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "KUKJIHRBTHU7OXUF27APXQPV",
-          "updatedAt": "2023-08-24T00:07:24.296Z",
-          "version": "1692835644296n",
+          "updatedAt": "2024-10-01T22:30:19.545Z",
+          "version": "1727821819545n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1231,7 +1681,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2800n",
+              "amount": "2900n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1249,18 +1699,18 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "SSUVU5I4WC7F53AOXQYORAHB"
+        "RVTJO35PVYZF5FLZ4VSDAMGB"
       ],
       "descriptionHtml": "<p>Lightweight yet deeply moisturizing, Clearderma offers potent antioxidant support and contains soothing properties. Appropriate for normal to oily skin types.</p>",
       "descriptionPlaintext": "Lightweight yet deeply moisturizing, Clearderma offers potent antioxidant support and contains soothing properties. Appropriate for normal to oily skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/ae7bc6dcdf77182d114f77f686ac2d8f9659e8d1/original.jpeg"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/e592e3ee127159a034ce542e78d329dfb2deb4a1/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "XFOAUGRAT2SAKDJA4H5Z2AYF",
-    "updatedAt": "2023-06-30T17:45:37.277Z",
-    "version": "1688147137277n",
+    "updatedAt": "2024-11-29T01:56:51.466Z",
+    "version": "1732845411466n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1274,7 +1724,7 @@
     ],
     "itemData": {
       "name": "Cran-Peptide Cream",
-      "description": "An intensely rich and soothing moisturizer packed with a powerful blend of antioxidants and peptides to keep skin nourished. Appropriate for all skin types, especially aging, dry and dehydrated skin.",
+      "description": "An intensely rich and soothing moisturizer packed with a powerful blend of antioxidants and peptides to keep skin nourished. Appropriate for all skin types, especially aging, dry and dehydrated skin. test",
       "availableOnline": false,
       "availableForPickup": false,
       "availableElectronically": false,
@@ -1283,8 +1733,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "WF3KHEZHDERB5QNPJGVTBWDP",
-          "updatedAt": "2023-06-30T17:45:37.277Z",
-          "version": "1688147137277n",
+          "updatedAt": "2024-10-01T22:28:57.363Z",
+          "version": "1727821737363n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1327,13 +1777,14 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2800n",
+              "amount": "2900n",
               "currency": "USD"
             },
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -1344,113 +1795,18 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "7T2VZLGAAUJFSW5SV7RSCSGV"
+        "PTYCVFEPI5LDGW5OCASQBDZL"
       ],
-      "descriptionHtml": "<p>An intensely rich and soothing moisturizer packed with a powerful blend of antioxidants and peptides to keep skin nourished. Appropriate for all skin types, especially aging, dry and dehydrated skin.</p>",
-      "descriptionPlaintext": "An intensely rich and soothing moisturizer packed with a powerful blend of antioxidants and peptides to keep skin nourished. Appropriate for all skin types, especially aging, dry and dehydrated skin.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/9bf796334f670bb913095ead1f887dd2abe97284/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "E30239F7-E857-4E13-8DD9-1BDFAB85E424",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Glycolic - Lactic Toner",
-      "description": "An advanced home care product with powerful alpha hydroxy acid toner that has exfoliating and brightening properties. Appropriate for non-sensitive and oily skin types only.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "VU4DPWL7FI5BCOTXE3TH3OJJ",
-          "updatedAt": "2023-08-09T06:10:21.134Z",
-          "version": "1691561421134n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "CITTNO22BRRZ4OTY3WYVM5I3"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Toners",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "6B16F268-5F02-46C1-AC00-37FF668CEE16",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "3100n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "VMWKDTNMEFGLK4YJXTI45JSW"
-      ],
-      "descriptionHtml": "<p>An advanced home care product with powerful alpha hydroxy acid toner that has exfoliating and brightening properties. Appropriate for non-sensitive and oily skin types only.</p>",
-      "descriptionPlaintext": "An advanced home care product with powerful alpha hydroxy acid toner that has exfoliating and brightening properties. Appropriate for non-sensitive and oily skin types only.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/dc56afc6714f7eb99cb41eae21822edfd5a62329/original.jpeg"
+      "descriptionHtml": "<p>An intensely rich and soothing moisturizer packed with a powerful blend of antioxidants and peptides to keep skin nourished. Appropriate for all skin types, especially aging, dry and dehydrated skin. test</p>",
+      "descriptionPlaintext": "An intensely rich and soothing moisturizer packed with a powerful blend of antioxidants and peptides to keep skin nourished. Appropriate for all skin types, especially aging, dry and dehydrated skin. test",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/00aad80aaeef49fde8c97aa2bcc4bb5d403690be/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "QXCBO2XLG7KWP3BXOHOR7R4E",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1544,8 +1900,8 @@
   {
     "type": "ITEM",
     "id": "YXTCEJK5VBVYZ376H7GYL3DD",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1638,9 +1994,104 @@
   },
   {
     "type": "ITEM",
+    "id": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
+    "updatedAt": "2024-10-01T22:25:38.171Z",
+    "version": "1727821538171n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "E30239F7-E857-4E13-8DD9-1BDFAB85E424",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Glycolic-Lactic Toner",
+      "description": "An advanced home care product with powerful alpha hydroxy acid toner that has exfoliating and brightening properties. Appropriate for non-sensitive and oily skin types only.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "VU4DPWL7FI5BCOTXE3TH3OJJ",
+          "updatedAt": "2024-10-01T22:25:22.236Z",
+          "version": "1727821522236n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "CITTNO22BRRZ4OTY3WYVM5I3"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Toners",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "6B16F268-5F02-46C1-AC00-37FF668CEE16",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "4QHBT4U2Z6LJFEKZ7OVUNLHF",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "3200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "XETZ5LZTPX2TXC3RMXXE2SH2"
+      ],
+      "descriptionHtml": "<p>An advanced home care product with powerful alpha hydroxy acid toner that has exfoliating and brightening properties. Appropriate for non-sensitive and oily skin types only.</p>",
+      "descriptionPlaintext": "An advanced home care product with powerful alpha hydroxy acid toner that has exfoliating and brightening properties. Appropriate for non-sensitive and oily skin types only.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/604bb187a2c4976150e8d1d2288ce051744b1cb5/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
     "id": "5W35SPQW3DMPYGMAUHNQT7MA",
-    "updatedAt": "2023-08-02T22:43:18.059Z",
-    "version": "1691016198059n",
+    "updatedAt": "2024-10-01T22:24:22.875Z",
+    "version": "1727821462875n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1653,7 +2104,7 @@
       "J2WJWF13GKN3W"
     ],
     "itemData": {
-      "name": "Hydrabalance",
+      "name": "HydraBalance Gel ",
       "description": "Hydrabalance is a water-based hydrating gel that contains antioxidant properties and can help reduce the appearance of oily shine.  This hydrating gel can be used under Clearderma, Cran-Peptide Cream, or a sunscreen during the day.  Because it is water-based, Hydrabalance can be safely used under Acne Med.  It can also be used before and after a serum to provide extra hydration for dehydrated skin.",
       "availableOnline": false,
       "availableForPickup": false,
@@ -1663,8 +2114,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "E2LZXM2WZPMZKGMW3DOERHZB",
-          "updatedAt": "2023-08-02T22:43:18.059Z",
-          "version": "1691016198059n",
+          "updatedAt": "2024-10-01T22:23:43.071Z",
+          "version": "1727821423071n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -1707,7 +2158,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "2800n",
+              "amount": "2900n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -1725,18 +2176,18 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "OKAAH7IVIYHN2MF7DOBYHP23"
+        "VINSMNTFWGFPPLKTKAK5HP66"
       ],
       "descriptionHtml": "<p>Hydrabalance is a water-based hydrating gel that contains antioxidant properties and can help reduce the appearance of oily shine.  This hydrating gel can be used under Clearderma, Cran-Peptide Cream, or a sunscreen during the day.  Because it is water-based, Hydrabalance can be safely used under Acne Med.  It can also be used before and after a serum to provide extra hydration for dehydrated skin.</p>",
       "descriptionPlaintext": "Hydrabalance is a water-based hydrating gel that contains antioxidant properties and can help reduce the appearance of oily shine.  This hydrating gel can be used under Clearderma, Cran-Peptide Cream, or a sunscreen during the day.  Because it is water-based, Hydrabalance can be safely used under Acne Med.  It can also be used before and after a serum to provide extra hydration for dehydrated skin.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/1d7c413622f4d7ba27032a316b3dd07257cd85a7/original.jpeg"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/f98873011a175b4d7cf295a78bb0f2e0c64a0363/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "TTGU7QJVHI5P3674DFMYTXT5",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "presentAtAllLocations": true,
     "itemData": {
@@ -1804,8 +2255,8 @@
   {
     "type": "ITEM",
     "id": "355OC22CQIEYARNAQ3VRJ2K7",
-    "updatedAt": "2023-08-15T22:03:58.009Z",
-    "version": "1692137038009n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -1899,105 +2350,9 @@
   },
   {
     "type": "ITEM",
-    "id": "VYYZE4J7WW4FVAAN56PEWCA7",
-    "updatedAt": "2023-08-15T22:03:56.985Z",
-    "version": "1692137036985n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "4E3C460C-84A5-4889-B8E7-A733AC45CD3A",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Mandelic Serum 11%",
-      "description": "Our gold standard 11% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid.\n\nL-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "3DKDVOAG42CLMACKMCHDDVHI",
-          "updatedAt": "2023-08-15T22:03:56.985Z",
-          "version": "1692137036985n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LBTJSMXMEFTCMFJUHLJFM7AF"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Serums",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "1BDC353E-4745-4F68-BD06-CBE1ABF45047",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "VYYZE4J7WW4FVAAN56PEWCA7",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "4250n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "FEMJYMWMZCOEZI7LQSB3JYQZ"
-      ],
-      "descriptionHtml": "<p>Our gold standard 11% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid.</p><p><br/></p><p>L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.</p>",
-      "descriptionPlaintext": "Our gold standard 11% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid.\n\nL-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/7ff2154dae93f6f340548c152b5855f594cfe1c6/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
     "id": "CZXNBB4F2UW47XCGVEGXGFUJ",
-    "updatedAt": "2023-08-08T00:51:36.578Z",
-    "version": "1691455896578n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "customAttributeValues": {
       "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
@@ -2100,583 +2455,9 @@
   },
   {
     "type": "ITEM",
-    "id": "6NQLLJGBYFWDP3KRBGM4A7CU",
-    "updatedAt": "2023-06-30T17:47:24.369Z",
-    "version": "1688147244369n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "84082110-447C-405C-8C18-36A5AF424A6B",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Mandelic Serum 5%",
-      "description": "Our gold standard 5% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration, resulting in a more even exfoliation with less irritation.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "Z3S4GUS6JY2YVAVOAIMUUZP3",
-          "updatedAt": "2023-06-30T17:47:24.369Z",
-          "version": "1688147244369n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LBTJSMXMEFTCMFJUHLJFM7AF"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Serums",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "2EB43350-77B6-4160-9C93-8DEECE4046DF",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "6NQLLJGBYFWDP3KRBGM4A7CU",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "3850n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "C3NMKJW44CN57HJQ3R7QMOFU"
-      ],
-      "descriptionHtml": "<p>Our gold standard 5% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration, resulting in a more even exfoliation with less irritation.</p>",
-      "descriptionPlaintext": "Our gold standard 5% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration, resulting in a more even exfoliation with less irritation.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/36c5e76164c22448726dfb25deb993eca488eb37/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "DADAX7HWRLA4SBP3I63E3HSQ",
-    "updatedAt": "2023-08-02T22:43:18.059Z",
-    "version": "1691016198059n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "FCA09295-B86F-4343-84A0-B519A94A10BA",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Mandelic Serum 8%",
-      "description": "Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "4KX2XBNOE5OHARVGGEEADTPI",
-          "updatedAt": "2023-08-02T22:43:18.059Z",
-          "version": "1691016198059n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LBTJSMXMEFTCMFJUHLJFM7AF"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Serums",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "C9A78766-7068-42BD-B7CF-F7AD1D6FDAB5",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "DADAX7HWRLA4SBP3I63E3HSQ",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "4050n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "6YTHLBL2ZYU5QQFZ6DU4FFMF"
-      ],
-      "descriptionHtml": "<p>Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.</p>",
-      "descriptionPlaintext": "Our gold standard 8% L-Mandelic Serum is an alpha hydroxy acid serum that contains the chirally correct versions of both l-mandelic acid and l-lactic acid. L-Mandelic acid has a larger molecular weight than other alpha hydroxy acids slowing down epidermal penetration resulting in a more even exfoliation with less irritation.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/8f89938934632daf0853004b3d160fd344a56ab0/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "A4KJNVISDZY44GN4OZACNM5A",
-    "updatedAt": "2023-06-30T17:48:41.587Z",
-    "version": "1688147321587n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "D0532D41-FD2D-4882-9D3F-FC0A4298750F",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Moisture Balance Toner",
-      "description": "A fragrance-free toner that provides intense, soothing hydration and helps the skin maintain moisture. This is the perfect toner for those who are exposed to harsh weather and chronically dry skin.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "XXR6AAIQRBPP65SHUTORNIZK",
-          "updatedAt": "2023-06-30T17:48:41.587Z",
-          "version": "1688147321587n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "CITTNO22BRRZ4OTY3WYVM5I3"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Toners",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "B3359458-185E-4026-8306-1EDD974C0DF5",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "A4KJNVISDZY44GN4OZACNM5A",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "3100n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "GRLSE72D4E54N5VMT5EDEGBZ"
-      ],
-      "descriptionHtml": "<p>A fragrance-free toner that provides intense, soothing hydration and helps the skin maintain moisture. This is the perfect toner for those who are exposed to harsh weather and chronically dry skin.</p>",
-      "descriptionPlaintext": "A fragrance-free toner that provides intense, soothing hydration and helps the skin maintain moisture. This is the perfect toner for those who are exposed to harsh weather and chronically dry skin.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d210aeb8fa65f32a184507b5691284fd3d861cb9/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "JFHQQXAQG3CN2I7OWY6H27YW",
-    "updatedAt": "2023-08-02T20:16:22.718Z",
-    "version": "1691007382718n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "4B646EDA-7361-42E2-BCA7-74DC475F121F",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Sal-C Toner",
-      "description": "This multi-functional, antioxidant-rich toner exfoliates and helps brighten the appearance of the skin all while keeping the skin adequately moisturized. Appropriate for oily skin and all types of acne.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "H5Q6NJKKOJD55PKKGJOTKCUJ",
-          "updatedAt": "2023-08-02T20:16:22.718Z",
-          "version": "1691007382718n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "CITTNO22BRRZ4OTY3WYVM5I3"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Toners",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "4F1B3DD1-2678-43B2-B308-CD180B988F7F",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "JFHQQXAQG3CN2I7OWY6H27YW",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "2700n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "2M5F5EYAZHPSFQFZSJVPZHG6"
-      ],
-      "descriptionHtml": "<p>This multi-functional, antioxidant-rich toner exfoliates and helps brighten the appearance of the skin all while keeping the skin adequately moisturized. Appropriate for oily skin and all types of acne.</p>",
-      "descriptionPlaintext": "This multi-functional, antioxidant-rich toner exfoliates and helps brighten the appearance of the skin all while keeping the skin adequately moisturized. Appropriate for oily skin and all types of acne.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/acc01cf9bd13d9cac325b896aa1df914ee1e2441/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "YVAMKQLRSRHUQGLHMXR73NAP",
-    "updatedAt": "2023-06-30T17:48:41.95Z",
-    "version": "1688147321950n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "DF278A34-053A-4EA3-A7AA-4C2D50F2F396",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Salicylic Serum",
-      "description": "A potent serum that combines salicylic acid with alpha hydroxy acids to provide a dynamic solution for blemish-prone skin.  This serum has exfoliating and brightening properties and is appropriate for all skin types.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "RA7UZI7F5EZHWJNRKHSGR72W",
-          "updatedAt": "2023-06-30T17:48:41.95Z",
-          "version": "1688147321950n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LBTJSMXMEFTCMFJUHLJFM7AF"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Serums",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "C9102A0B-1CE0-4B17-81D7-F5CFD12439AD",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "YVAMKQLRSRHUQGLHMXR73NAP",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "2900n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "GNKBRDZSNVDTL3EESNXKD2IK"
-      ],
-      "descriptionHtml": "<p>A potent serum that combines salicylic acid with alpha hydroxy acids to provide a dynamic solution for blemish-prone skin.  This serum has exfoliating and brightening properties and is appropriate for all skin types.</p>",
-      "descriptionPlaintext": "A potent serum that combines salicylic acid with alpha hydroxy acids to provide a dynamic solution for blemish-prone skin.  This serum has exfoliating and brightening properties and is appropriate for all skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/40ad031a64bcd1e231c130b6de80a852958c9df6/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "QIVSPYQJS7HVTYL2JFO2QKBR",
-    "updatedAt": "2023-08-09T06:10:21.134Z",
-    "version": "1691561421134n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "7431E4B5-CCE5-4FA6-9162-90F6470EAE0E",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Soothing Clay Mask",
-      "description": "A purifying mask that draws impurities and absorbs excess oil from the skin, revealing a refreshed and soothed complexion. Unlike other clay masks, this mask does not have a chalky feel and is easy to remove from the skin. This mineral-rich mask is appropriate for normal and oily skin types.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "4EIY4CKLAXVGYA7YTY7FPZ2X",
-          "updatedAt": "2023-08-09T06:10:21.134Z",
-          "version": "1691561421134n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "MYXQWEYGAVBG6GYJC5SPZDGX"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Masks",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "5AD5E7C9-638B-4619-8F25-A786138212D9",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "QIVSPYQJS7HVTYL2JFO2QKBR",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "3900n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "WGYNXSTARALHEY3AGHAFGMVI"
-      ],
-      "descriptionHtml": "<p>A purifying mask that draws impurities and absorbs excess oil from the skin, revealing a refreshed and soothed complexion. Unlike other clay masks, this mask does not have a chalky feel and is easy to remove from the skin. This mineral-rich mask is appropriate for normal and oily skin types.</p>",
-      "descriptionPlaintext": "A purifying mask that draws impurities and absorbs excess oil from the skin, revealing a refreshed and soothed complexion. Unlike other clay masks, this mask does not have a chalky feel and is easy to remove from the skin. This mineral-rich mask is appropriate for normal and oily skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/af8cd263019675c8ffc940141947bb57ed17544f/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
     "id": "26BBT573FVO2X4GHRIT5JHXM",
-    "updatedAt": "2023-06-30T17:49:14.7Z",
-    "version": "1688147354700n",
+    "updatedAt": "2024-10-01T22:23:11.12Z",
+    "version": "1727821391120n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2689,7 +2470,7 @@
       "J2WJWF13GKN3W"
     ],
     "itemData": {
-      "name": "SPF 28",
+      "name": "Mineral Matte SPF28",
       "description": "A broad-spectrum physical sunscreen that protects against UVA & UVB rays, all while providing a mattifying finish. Appropriate for everyone, especially sensitive skin.",
       "availableOnline": false,
       "availableForPickup": false,
@@ -2699,8 +2480,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "DT5DPHC6ZPVPHXZDUKXMGJ2K",
-          "updatedAt": "2023-06-30T17:49:14.7Z",
-          "version": "1688147354700n",
+          "updatedAt": "2024-10-01T22:22:54.213Z",
+          "version": "1727821374213n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2743,13 +2524,14 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3300n",
+              "amount": "3400n",
               "currency": "USD"
             },
             "locationOverrides": [
               {
                 "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true
+                "trackInventory": true,
+                "soldOut": true
               }
             ],
             "sellable": true,
@@ -2760,18 +2542,594 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "YYX4M7T4PRTGTX6SHDYGGUJ3"
+        "W4YAP2C6ILCDTAWHHQXPCYVD"
       ],
       "descriptionHtml": "<p>A broad-spectrum physical sunscreen that protects against UVA &amp; UVB rays, all while providing a mattifying finish. Appropriate for everyone, especially sensitive skin.</p>",
       "descriptionPlaintext": "A broad-spectrum physical sunscreen that protects against UVA & UVB rays, all while providing a mattifying finish. Appropriate for everyone, especially sensitive skin.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/d53205afe7715839df54f9e1aaaf4c8a1d26831c/original.jpeg"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/9d1ef1324afc9b8d0c1f8e874e5bbf55d9143dee/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "A4KJNVISDZY44GN4OZACNM5A",
+    "updatedAt": "2024-10-01T22:21:58.963Z",
+    "version": "1727821318963n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "D0532D41-FD2D-4882-9D3F-FC0A4298750F",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Moisture Balance Toner",
+      "description": "A fragrance-free toner that provides intense, soothing hydration and helps the skin maintain moisture. This is the perfect toner for those who are exposed to harsh weather and chronically dry skin.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "XXR6AAIQRBPP65SHUTORNIZK",
+          "updatedAt": "2024-10-01T22:21:58.963Z",
+          "version": "1727821318963n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "CITTNO22BRRZ4OTY3WYVM5I3"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Toners",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "B3359458-185E-4026-8306-1EDD974C0DF5",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "A4KJNVISDZY44GN4OZACNM5A",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "3200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "AKTXNENK2CNBDRGNQMCHIYFG"
+      ],
+      "descriptionHtml": "<p>A fragrance-free toner that provides intense, soothing hydration and helps the skin maintain moisture. This is the perfect toner for those who are exposed to harsh weather and chronically dry skin.</p>",
+      "descriptionPlaintext": "A fragrance-free toner that provides intense, soothing hydration and helps the skin maintain moisture. This is the perfect toner for those who are exposed to harsh weather and chronically dry skin.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/ad9e15d4e05a8d5268fe12fbe74e7111074643c3/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "LIOB57JX2GD2FKP6UCUAVDSO",
+    "updatedAt": "2024-10-01T22:21:21.731Z",
+    "version": "1727821281731n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "DC086B36-37A9-474C-9683-CE360DF87D9A",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Retinal B3 Serum",
+      "description": "This high-performance exfoliating serum uses microencapsulated technology that delivers a high potency Retinaldehyde via controlled release for enhanced efficacy and minimal irritation. This serum is the ideal introduction of Vitamin A into any skincare routine.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "OJ6UAG37AIBT76HMXYKPTBHO",
+          "updatedAt": "2024-10-01T22:21:16.232Z",
+          "version": "1727821276232n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LBTJSMXMEFTCMFJUHLJFM7AF"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Serums",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "91037BD1-3799-4AAA-8E41-5A603AA2C31D",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "LIOB57JX2GD2FKP6UCUAVDSO",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "5200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "C4RMQ7IGXYGNDNUNVQKPTHJO"
+      ],
+      "descriptionHtml": "<p>This high-performance exfoliating serum uses microencapsulated technology that delivers a high potency Retinaldehyde via controlled release for enhanced efficacy and minimal irritation. This serum is the ideal introduction of Vitamin A into any skincare routine.</p>",
+      "descriptionPlaintext": "This high-performance exfoliating serum uses microencapsulated technology that delivers a high potency Retinaldehyde via controlled release for enhanced efficacy and minimal irritation. This serum is the ideal introduction of Vitamin A into any skincare routine.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/eeb758596967c38ae950b774e2e0ae749ce47c69/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "2YNHWYCJ52CGCGDTYL4NWZNN",
+    "updatedAt": "2024-10-01T22:20:39.077Z",
+    "version": "1727821239077n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "ABC5AB85-CA0D-472D-9F10-0900F3B17051",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Retinal Peptide Serum ",
+      "description": "This exfoliating serum uses microencapsulated technology that delivers a high potency Retinol over time via controlled release for enhanced efficacy and minimal irritation. Paired with 3 potent peptides, this serum aids in overall skin rejuvenation. Appropriate for all skin types.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "KQOLHJTSW6YLPBCTWATXDI6T",
+          "updatedAt": "2024-10-01T22:20:23.165Z",
+          "version": "1727821223165n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LBTJSMXMEFTCMFJUHLJFM7AF"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Serums",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "A2CE4A08-3BFC-4E3A-892B-C227EE009B6E",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "2YNHWYCJ52CGCGDTYL4NWZNN",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "5800n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "D2WVNK42OBKKNW2BAXXTJDXZ"
+      ],
+      "descriptionHtml": "<p>This exfoliating serum uses microencapsulated technology that delivers a high potency Retinol over time via controlled release for enhanced efficacy and minimal irritation. Paired with 3 potent peptides, this serum aids in overall skin rejuvenation. Appropriate for all skin types.</p>",
+      "descriptionPlaintext": "This exfoliating serum uses microencapsulated technology that delivers a high potency Retinol over time via controlled release for enhanced efficacy and minimal irritation. Paired with 3 potent peptides, this serum aids in overall skin rejuvenation. Appropriate for all skin types.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/9e6847db84730ca5456c12863e120ae2357f0b55/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "JFHQQXAQG3CN2I7OWY6H27YW",
+    "updatedAt": "2024-10-01T22:19:50.526Z",
+    "version": "1727821190526n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "4B646EDA-7361-42E2-BCA7-74DC475F121F",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Sal-C Toner",
+      "description": "This multi-functional, antioxidant-rich toner exfoliates and helps brighten the appearance of the skin all while keeping the skin adequately moisturized. Appropriate for oily skin and all types of acne.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "H5Q6NJKKOJD55PKKGJOTKCUJ",
+          "updatedAt": "2024-10-01T22:19:44.946Z",
+          "version": "1727821184946n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "CITTNO22BRRZ4OTY3WYVM5I3"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Toners",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "4F1B3DD1-2678-43B2-B308-CD180B988F7F",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "JFHQQXAQG3CN2I7OWY6H27YW",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "2900n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "3ZJ3BEK4NGY7UDBLHLZST46N"
+      ],
+      "descriptionHtml": "<p>This multi-functional, antioxidant-rich toner exfoliates and helps brighten the appearance of the skin all while keeping the skin adequately moisturized. Appropriate for oily skin and all types of acne.</p>",
+      "descriptionPlaintext": "This multi-functional, antioxidant-rich toner exfoliates and helps brighten the appearance of the skin all while keeping the skin adequately moisturized. Appropriate for oily skin and all types of acne.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/729c2fa16c5b70d27c7e1ddfbda1e5d48e2d14a9/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "YVAMKQLRSRHUQGLHMXR73NAP",
+    "updatedAt": "2024-10-01T22:19:20.577Z",
+    "version": "1727821160577n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "DF278A34-053A-4EA3-A7AA-4C2D50F2F396",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Salicylic+ Serum",
+      "description": "A potent serum that combines salicylic acid with alpha hydroxy acids to provide a dynamic solution for blemish-prone skin.  This serum has exfoliating and brightening properties and is appropriate for all skin types.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "RA7UZI7F5EZHWJNRKHSGR72W",
+          "updatedAt": "2024-10-01T22:18:54.891Z",
+          "version": "1727821134891n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "LBTJSMXMEFTCMFJUHLJFM7AF"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Serums",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "C9102A0B-1CE0-4B17-81D7-F5CFD12439AD",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "YVAMKQLRSRHUQGLHMXR73NAP",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "3200n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "YM6WC3FVNRGG7ZPMB4ETKQKP"
+      ],
+      "descriptionHtml": "<p>A potent serum that combines salicylic acid with alpha hydroxy acids to provide a dynamic solution for blemish-prone skin.  This serum has exfoliating and brightening properties and is appropriate for all skin types.</p>",
+      "descriptionPlaintext": "A potent serum that combines salicylic acid with alpha hydroxy acids to provide a dynamic solution for blemish-prone skin.  This serum has exfoliating and brightening properties and is appropriate for all skin types.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/6790413675a936e0c0e884ae4812a74dd18de6f1/original.jpeg"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "QIVSPYQJS7HVTYL2JFO2QKBR",
+    "updatedAt": "2024-10-01T22:18:13.571Z",
+    "version": "1727821093571n",
+    "isDeleted": false,
+    "catalogV1Ids": [
+      {
+        "catalogV1Id": "7431E4B5-CCE5-4FA6-9162-90F6470EAE0E",
+        "locationId": "J2WJWF13GKN3W"
+      }
+    ],
+    "presentAtAllLocations": false,
+    "presentAtLocationIds": [
+      "J2WJWF13GKN3W"
+    ],
+    "itemData": {
+      "name": "Soothing Clay Mask",
+      "description": "A purifying mask that draws impurities and absorbs excess oil from the skin, revealing a refreshed and soothed complexion. Unlike other clay masks, this mask does not have a chalky feel and is easy to remove from the skin. This mineral-rich mask is appropriate for normal and oily skin types.",
+      "availableOnline": false,
+      "availableForPickup": false,
+      "availableElectronically": false,
+      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
+      "variations": [
+        {
+          "type": "ITEM_VARIATION",
+          "id": "4EIY4CKLAXVGYA7YTY7FPZ2X",
+          "updatedAt": "2024-10-01T22:18:08.129Z",
+          "version": "1727821088129n",
+          "isDeleted": false,
+          "customAttributeValues": {
+            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
+              "name": "product_type_sel",
+              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
+              "type": "SELECTION",
+              "selectionUidValues": [
+                "MYXQWEYGAVBG6GYJC5SPZDGX"
+              ],
+              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
+            },
+            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
+              "name": "online_store",
+              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
+              "type": "BOOLEAN",
+              "booleanValue": true,
+              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
+            },
+            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
+              "name": "product_category",
+              "stringValue": "Masks",
+              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
+              "type": "STRING",
+              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
+            }
+          },
+          "catalogV1Ids": [
+            {
+              "catalogV1Id": "5AD5E7C9-638B-4619-8F25-A786138212D9",
+              "locationId": "J2WJWF13GKN3W"
+            }
+          ],
+          "presentAtAllLocations": false,
+          "presentAtLocationIds": [
+            "J2WJWF13GKN3W"
+          ],
+          "itemVariationData": {
+            "itemId": "QIVSPYQJS7HVTYL2JFO2QKBR",
+            "name": "Regular",
+            "ordinal": 1,
+            "pricingType": "FIXED_PRICING",
+            "priceMoney": {
+              "amount": "4000n",
+              "currency": "USD"
+            },
+            "locationOverrides": [
+              {
+                "locationId": "J2WJWF13GKN3W",
+                "trackInventory": true,
+                "soldOut": true
+              }
+            ],
+            "sellable": true,
+            "stockable": true
+          }
+        }
+      ],
+      "productType": "REGULAR",
+      "skipModifierScreen": false,
+      "imageIds": [
+        "ZHRFZDUQ5B4XREGEAUC2C7EK"
+      ],
+      "descriptionHtml": "<p>A purifying mask that draws impurities and absorbs excess oil from the skin, revealing a refreshed and soothed complexion. Unlike other clay masks, this mask does not have a chalky feel and is easy to remove from the skin. This mineral-rich mask is appropriate for normal and oily skin types.</p>",
+      "descriptionPlaintext": "A purifying mask that draws impurities and absorbs excess oil from the skin, revealing a refreshed and soothed complexion. Unlike other clay masks, this mask does not have a chalky feel and is easy to remove from the skin. This mineral-rich mask is appropriate for normal and oily skin types.",
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/0b231addd4995b7b1ae04c4c20b6e348b0751a88/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "VXLCE2JYYNJQIMW6FXBEXQUL",
-    "updatedAt": "2023-08-02T23:44:33.823Z",
-    "version": "1691019873823n",
+    "updatedAt": "2024-04-17T16:46:43.677Z",
+    "version": "1713372403677n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2866,8 +3224,8 @@
   {
     "type": "ITEM",
     "id": "OASUBZWSCLFHMPBCM2MTIA7I",
-    "updatedAt": "2023-07-27T22:46:29.284Z",
-    "version": "1690497989284n",
+    "updatedAt": "2024-10-01T22:17:40.666Z",
+    "version": "1727821060666n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2890,8 +3248,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "4VZHWC7O7KX4NFHYTRTDOMD2",
-          "updatedAt": "2023-07-27T22:46:29.284Z",
-          "version": "1690497989284n",
+          "updatedAt": "2024-10-01T22:17:31.192Z",
+          "version": "1727821051192n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -2934,7 +3292,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3000n",
+              "amount": "3300n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -2952,18 +3310,18 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "Y3F3CK6PYYTUNJLZQUKOXU3J"
+        "YGQT2QDGKPT6ZKCREB7UVJAF"
       ],
       "descriptionHtml": "<p>Around the Clock Blemish Rescue. Sulfur Spot Treatment is a gentle yet potent combination of 6% sulfur and an innovative peptide that provides an instant fix for red and inflamed acne lesions. With its invisible application, Sulfur Spot Treatment allows you to spot treat on the sly. Go ahead and take this secret weapon on the go—it can be used throughout the day and night!</p>",
       "descriptionPlaintext": "Around the Clock Blemish Rescue. Sulfur Spot Treatment is a gentle yet potent combination of 6% sulfur and an innovative peptide that provides an instant fix for red and inflamed acne lesions. With its invisible application, Sulfur Spot Treatment allows you to spot treat on the sly. Go ahead and take this secret weapon on the go—it can be used throughout the day and night!",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/24ddae7aaa086c2e21288fc8c469fcd14151ef71/original.png"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/06716c31ce8bc2e2bd8c8c9410c9a04825c79995/original.jpeg"
     }
   },
   {
     "type": "ITEM",
     "id": "EVEWGWI3XMLECW7N6ZAEGYDI",
-    "updatedAt": "2023-08-16T17:29:34.578Z",
-    "version": "1692206974578n",
+    "updatedAt": "2024-10-01T22:16:31.912Z",
+    "version": "1727820991912n",
     "isDeleted": false,
     "catalogV1Ids": [
       {
@@ -2976,7 +3334,7 @@
       "J2WJWF13GKN3W"
     ],
     "itemData": {
-      "name": "Ultra Gentle Cleanser",
+      "name": "Ultra Gentle Gel Cleanser",
       "description": "#1 best-selling sulfate-free gel cleanser is safe for all skin types, including skin prone to blemishes. The perfect daily cleanser to wash away the day (including makeup) and nourish the skin.",
       "availableOnline": false,
       "availableForPickup": false,
@@ -2986,8 +3344,8 @@
         {
           "type": "ITEM_VARIATION",
           "id": "RSDMKJFOLRRR2HUFL57CWQ3A",
-          "updatedAt": "2023-08-16T17:29:34.578Z",
-          "version": "1692206974578n",
+          "updatedAt": "2024-10-01T22:16:26.495Z",
+          "version": "1727820986495n",
           "isDeleted": false,
           "customAttributeValues": {
             "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
@@ -3030,7 +3388,7 @@
             "ordinal": 1,
             "pricingType": "FIXED_PRICING",
             "priceMoney": {
-              "amount": "3000n",
+              "amount": "3100n",
               "currency": "USD"
             },
             "locationOverrides": [
@@ -3048,203 +3406,11 @@
       "productType": "REGULAR",
       "skipModifierScreen": false,
       "imageIds": [
-        "YTDR7TQMSMHFLJN4ILKGBET7"
+        "JZTR5XMQUVVA4QSABA2TFSVX"
       ],
       "descriptionHtml": "<p>#1 best-selling sulfate-free gel cleanser is safe for all skin types, including skin prone to blemishes. The perfect daily cleanser to wash away the day (including makeup) and nourish the skin.</p>",
       "descriptionPlaintext": "#1 best-selling sulfate-free gel cleanser is safe for all skin types, including skin prone to blemishes. The perfect daily cleanser to wash away the day (including makeup) and nourish the skin.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/b02e7a4a8619ef1d315ee9c97b6a455e71c4d161/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "LIOB57JX2GD2FKP6UCUAVDSO",
-    "updatedAt": "2023-06-30T17:51:51.492Z",
-    "version": "1688147511492n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "DC086B36-37A9-474C-9683-CE360DF87D9A",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Vitamin A Serum 1",
-      "description": "This high-performance exfoliating serum uses microencapsulated technology that delivers a high potency Retinaldehyde via controlled release for enhanced efficacy and minimal irritation. This serum is the ideal introduction of Vitamin A into any skincare routine.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "OJ6UAG37AIBT76HMXYKPTBHO",
-          "updatedAt": "2023-06-30T17:51:51.492Z",
-          "version": "1688147511492n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LBTJSMXMEFTCMFJUHLJFM7AF"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Serums",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "91037BD1-3799-4AAA-8E41-5A603AA2C31D",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "LIOB57JX2GD2FKP6UCUAVDSO",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "5000n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "SEI43WQHZVSWJPQGPMHPTAV3"
-      ],
-      "descriptionHtml": "<p>This high-performance exfoliating serum uses microencapsulated technology that delivers a high potency Retinaldehyde via controlled release for enhanced efficacy and minimal irritation. This serum is the ideal introduction of Vitamin A into any skincare routine.</p>",
-      "descriptionPlaintext": "This high-performance exfoliating serum uses microencapsulated technology that delivers a high potency Retinaldehyde via controlled release for enhanced efficacy and minimal irritation. This serum is the ideal introduction of Vitamin A into any skincare routine.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/94f08fa4a8f52d551d6c84ccfcd71183881488b4/original.jpeg"
-    }
-  },
-  {
-    "type": "ITEM",
-    "id": "2YNHWYCJ52CGCGDTYL4NWZNN",
-    "updatedAt": "2023-08-23T19:25:43.21Z",
-    "version": "1692818743210n",
-    "isDeleted": false,
-    "catalogV1Ids": [
-      {
-        "catalogV1Id": "ABC5AB85-CA0D-472D-9F10-0900F3B17051",
-        "locationId": "J2WJWF13GKN3W"
-      }
-    ],
-    "presentAtAllLocations": false,
-    "presentAtLocationIds": [
-      "J2WJWF13GKN3W"
-    ],
-    "itemData": {
-      "name": "Vitamin A Serum 2",
-      "description": "This exfoliating serum uses microencapsulated technology that delivers a high potency Retinol over time via controlled release for enhanced efficacy and minimal irritation. Paired with 3 potent peptides, this serum aids in overall skin rejuvenation. Appropriate for all skin types.",
-      "availableOnline": false,
-      "availableForPickup": false,
-      "availableElectronically": false,
-      "categoryId": "FXCV2IT4QVMN733JXZ4H3DT7",
-      "variations": [
-        {
-          "type": "ITEM_VARIATION",
-          "id": "KQOLHJTSW6YLPBCTWATXDI6T",
-          "updatedAt": "2023-08-23T19:25:43.21Z",
-          "version": "1692818743210n",
-          "isDeleted": false,
-          "customAttributeValues": {
-            "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f": {
-              "name": "product_type_sel",
-              "customAttributeDefinitionId": "FI4B45I5EKQVVI3OVYLKYNBM",
-              "type": "SELECTION",
-              "selectionUidValues": [
-                "LBTJSMXMEFTCMFJUHLJFM7AF"
-              ],
-              "key": "Square:1a6b02e7-c911-4dd3-9204-b76d4475182f"
-            },
-            "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4": {
-              "name": "online_store",
-              "customAttributeDefinitionId": "SOHE7MR2IVQ73GE3BUFWN44F",
-              "type": "BOOLEAN",
-              "booleanValue": true,
-              "key": "Square:6c790e36-c03e-45ec-89f9-7a2465c864a4"
-            },
-            "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef": {
-              "name": "product_category",
-              "stringValue": "Serums",
-              "customAttributeDefinitionId": "6DDSDPZZHVWEC7ORYMJRGVQT",
-              "type": "STRING",
-              "key": "Square:c23a60de-7fd4-411b-ab54-9f2449b423ef"
-            }
-          },
-          "catalogV1Ids": [
-            {
-              "catalogV1Id": "A2CE4A08-3BFC-4E3A-892B-C227EE009B6E",
-              "locationId": "J2WJWF13GKN3W"
-            }
-          ],
-          "presentAtAllLocations": false,
-          "presentAtLocationIds": [
-            "J2WJWF13GKN3W"
-          ],
-          "itemVariationData": {
-            "itemId": "2YNHWYCJ52CGCGDTYL4NWZNN",
-            "name": "Regular",
-            "ordinal": 1,
-            "pricingType": "FIXED_PRICING",
-            "priceMoney": {
-              "amount": "5600n",
-              "currency": "USD"
-            },
-            "locationOverrides": [
-              {
-                "locationId": "J2WJWF13GKN3W",
-                "trackInventory": true,
-                "soldOut": true
-              }
-            ],
-            "sellable": true,
-            "stockable": true
-          }
-        }
-      ],
-      "productType": "REGULAR",
-      "skipModifierScreen": false,
-      "imageIds": [
-        "OXOZZ3CKMZKDLQVDNF4PR4OO"
-      ],
-      "descriptionHtml": "<p>This exfoliating serum uses microencapsulated technology that delivers a high potency Retinol over time via controlled release for enhanced efficacy and minimal irritation. Paired with 3 potent peptides, this serum aids in overall skin rejuvenation. Appropriate for all skin types.</p>",
-      "descriptionPlaintext": "This exfoliating serum uses microencapsulated technology that delivers a high potency Retinol over time via controlled release for enhanced efficacy and minimal irritation. Paired with 3 potent peptides, this serum aids in overall skin rejuvenation. Appropriate for all skin types.",
-      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/9dd7bc966008ddc931c80bfb1bd500fff202c1de/original.jpeg"
+      "imgURL": "https://items-images-production.s3.us-west-2.amazonaws.com/files/e0681308f4b5af706ee2247c0beb40462bdb05d8/original.jpeg"
     }
   }
 ]

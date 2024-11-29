@@ -248,7 +248,7 @@
               
             })
           if (total < 10000) {
-              shipping = 600
+              shipping = 700
           }
           
           let key = await getIdempotencyKey()
@@ -261,10 +261,10 @@
                   lineItems: cart,
                   discounts: [
                     {
-                      uid: 'blackfridaysale2022',
-                      name: 'Black Friday Sale',
-                      scope: 'LINE_ITEM',
-                      percentage: '20'
+                      uid: 'ENSZ5ZCATDGGP6P2YR6GOLM5',
+                      name: 'Black Friday 2024',
+                      // scope: 'LINE_ITEM',
+                      percentage: '15'
                     },
                     
                   ],
