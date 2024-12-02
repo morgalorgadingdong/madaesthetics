@@ -16,7 +16,7 @@ const storeController = require('../controllers/store')
 router.post('/hook', storeController.updateStore)
 router.get('/hook', storeController.updateStore)
 
-// router.post('/checkout', storeController.checkout)
-router.post('/checkout', storeController.checkoutSale)
+router.post('/checkout', storeController.checkout)
+// router.post('/checkout', storeController.checkoutSale)
 
 module.exports = router
