@@ -163,9 +163,13 @@
             // } else if (total >= 30000) {
             //     shipping = 1400
             // }
-            if (total < 10000) {
-              shipping = 700
-            }
+            
+            // Less Old Shipping Rates
+            // if (total < 10000) {
+            //   shipping = 700
+            // }
+
+            
             let key = await getIdempotencyKey()
                 try {
                 const response = await client.checkoutApi.createPaymentLink({
@@ -247,9 +251,10 @@
               total += (item.basePriceMoney.amount * Number(item.quantity))
               
             })
-          if (total < 10000) {
-              shipping = 700
-          }
+          // Old shipping rates
+            // if (total < 10000) {
+          //     shipping = 700
+          // }
           
           let key = await getIdempotencyKey()
               try {

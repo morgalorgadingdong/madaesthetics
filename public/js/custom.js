@@ -294,12 +294,18 @@ function buildCartHTML() {
   shippingHTML.classList.add('col-12', 'text-right')
   shippingHTML.id = 'shipping'
   let totalHTML = document.createElement('p')
-  if (total >= 100) {
-      shippingHTML.innerHTML = `Est shipping: FREE`
-    } else if (total <= 100) {
-      shippingHTML.innerHTML = `Est shipping: $ 7`
-      total = total + 7
-    }
+  // New FREE Shipping Rates
+  shippingHTML.innerHTML = `Est shipping: FREE`
+  
+  // Old Shipping Rates
+  // if (total >= 100) {
+  //     shippingHTML.innerHTML = `Est shipping: FREE`
+  //   } else if (total <= 100) {
+  //     shippingHTML.innerHTML = `Est shipping: $ 7`
+  //     total = total + 7
+  //   }
+
+
   // if (total >= 300) {
   //   shippingHTML.innerHTML = `Est shipping: FREE`
   // } else if (total >= 100) {
