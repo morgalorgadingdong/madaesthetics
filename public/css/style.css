@@ -2249,6 +2249,20 @@ button {
   background: var(--color-primary-dark);
   border-color: var(--color-primary-dark); }
 
+  .btn-primary:disabled {
+    background-color: var(--color-gray-dark) !important;
+  }
+
+  .btn-primary:disabled::after {
+    box-shadow: none !important;
+  }
+
+  
+
+  .btn-primary:disabled:hover::after {
+    box-shadow: none !important;
+  }
+
 .btn-secondary {
   background: var(--color-primary-dark);
   border: none;
